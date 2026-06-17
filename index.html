@@ -154,6 +154,19 @@
 
     /* Pin da casa no mapa */
     .pin-casa-leaflet { background: transparent !important; border: none !important; }
+
+    /* Tabela rede credenciada */
+    .rede-tabela { border-collapse: separate; border-spacing: 0; }
+    .rede-tabela thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .rede-tabela tbody tr:hover { background-color: rgba(248, 250, 252, 0.9); }
+    .rede-tabela td, .rede-tabela th { vertical-align: top; }
+    .rede-cat-badge { font-size: 0.65rem; line-height: 1.2; }
+    .rede-plano-linha-inclui { background: linear-gradient(90deg, rgba(240,253,244,0.9) 0%, rgba(255,255,255,1) 100%); }
+    .rede-plano-linha-exclui { background: #f8fafc; }
   </style>
 </head>
 
@@ -201,7 +214,7 @@
       <div class="hero-blob hero-blob-delay absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-select-green/20 blur-3xl pointer-events-none" aria-hidden="true"></div>
 
       <div class="relative max-w-3xl mx-auto text-center">
-        <p class="inline-flex items-center gap-2 glass-badge text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+        <p class="inline-flex items-center gap-2 glass-badge text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-10 md:mb-12">
           <svg class="w-4 h-4 text-select-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
           Plano só para seu filho · Pessoa física
         </p>
@@ -215,7 +228,7 @@
           Depender apenas do SUS é arriscado — crianças precisam de cuidados com mais frequência. Aqui você encontra planos para contratar <strong class="text-white font-semibold">só o seu filho</strong>, no CPF dele, sem incluir a família inteira.
         </p>
 
-        <ul class="flex flex-wrap justify-center gap-2 mb-10 text-sm font-medium">
+        <ul class="flex flex-wrap justify-center gap-2 mb-4 text-sm font-medium">
           <li class="glass-badge rounded-full px-4 py-2 text-white/95 flex items-center gap-2">
             <svg class="w-4 h-4 text-select-green shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             Sem empresa
@@ -229,19 +242,6 @@
             Suporte pós-venda
           </li>
         </ul>
-
-        <a
-          href="#"
-          id="hero-whatsapp"
-          class="btn-whatsapp-pulse inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-whatsapp hover:bg-green-500 text-white font-bold text-lg px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          Quero saber o valor — é grátis
-        </a>
       </div>
 
       <!-- Wave para próxima seção -->
@@ -1215,7 +1215,6 @@
 
   <!-- Dados da rede credenciada (PDFs Select e Hapvida) -->
   <script src="rede-dados.js"></script>
-  <script src="mapa-coordenadas.js"></script>
 
   <!-- ========== SCRIPTS: WhatsApp, rede e mapa ========== -->
   <script>
@@ -1227,7 +1226,6 @@
     function initWhatsAppLinks() {
       const defaultLinks = [
         document.getElementById('nav-whatsapp'),
-        document.getElementById('hero-whatsapp'),
         document.getElementById('footer-whatsapp'),
       ];
 
@@ -1494,40 +1492,88 @@
     }
 
     function renderCatBadges(cats, badgeClass) {
-      if (!cats) return '<span class="text-xs text-gray-400 italic">não incluído</span>';
+      if (!cats || cats === '-' || /^[\s"'".]+$/.test(cats)) {
+        return '';
+      }
       return cats.split(',').map((c) => c.trim()).filter(Boolean).map(
-        (c) => `<span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${badgeClass}">${escapeHtml(c)}</span>`
+        (c) => `<span class="rede-cat-badge inline-block font-bold px-1.5 py-0.5 rounded ${badgeClass}">${escapeHtml(c)}</span>`
       ).join(' ');
     }
 
-    function renderPlanoRow(planoNome, cats, badgeClass) {
+    function resumoPlanosHospital(item, rede) {
+      const planos = Array.isArray(item.planos) ? item.planos : [];
+      const incluidos = rede.planos.filter((nome, i) => planos[i]);
+      if (incluidos.length === 0) {
+        return '<p class="text-xs text-red-600 font-medium mb-2">Não consta em nenhum plano desta tabela.</p>';
+      }
+      if (incluidos.length === rede.planos.length) {
+        return '<p class="text-xs text-green-700 font-medium mb-2">✓ Disponível em <strong>todos</strong> os planos abaixo.</p>';
+      }
+      if (incluidos.length === 1) {
+        return `<p class="text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-lg px-2.5 py-1.5 mb-2"><strong>Somente no plano:</strong> ${escapeHtml(incluidos[0])}</p>`;
+      }
+      return `<p class="text-xs text-gray-700 bg-slate-100 border border-gray-200 rounded-lg px-2.5 py-1.5 mb-2"><strong>Incluído nos planos:</strong> ${incluidos.map(escapeHtml).join(' · ')}</p>`;
+    }
+
+    function renderLinhaPlano(planoNome, cats, theme) {
+      const inclui = Boolean(cats && cats !== '-' && !/^[\s"'".]+$/.test(cats));
+      const badgeClass = theme === 'select'
+        ? 'bg-select-purple/20 text-select-purple'
+        : 'bg-hapvida-orange/20 text-hapvida-blue';
+      const planoTagClass = theme === 'select'
+        ? 'bg-select-purple text-white'
+        : 'bg-hapvida-blue text-white';
+      const rowClass = inclui ? 'rede-plano-linha-inclui border-green-200' : 'rede-plano-linha-exclui border-gray-200';
+      const cobertura = inclui
+        ? `<div class="flex flex-wrap items-center gap-1.5"><span class="text-[10px] font-semibold text-green-700 uppercase tracking-wide shrink-0">Cobertura:</span>${renderCatBadges(cats, badgeClass)}</div>`
+        : '<span class="text-xs text-gray-400 font-medium">Não incluído neste plano</span>';
+
       return `
-        <div class="min-w-0">
-          <span class="block text-[10px] font-bold uppercase tracking-wide text-gray-400 mb-0.5">${escapeHtml(planoNome)}</span>
-          <div class="flex flex-wrap gap-1">${renderCatBadges(cats, badgeClass)}</div>
+        <div class="flex flex-col gap-1.5 rounded-lg border px-3 py-2.5 ${rowClass}">
+          <span class="text-xs font-bold ${planoTagClass} self-start px-2.5 py-1 rounded-md leading-tight">${escapeHtml(planoNome)}</span>
+          ${cobertura}
         </div>
       `;
     }
 
-    function renderHospitalItem(item, rede, theme) {
-      const badgeClass = theme === 'select'
-        ? 'bg-select-purple/10 text-select-purple'
-        : 'bg-hapvida-green/15 text-hapvida-blue';
-      const cols = rede.planos.map((plano, i) => renderPlanoRow(plano, item.planos[i], badgeClass)).join('');
-      const allIguais = item.planos.every((p) => p === item.planos[0]);
-
-      let corpo = '';
-      if (allIguais && item.planos[0]) {
-        corpo = `<div class="flex flex-wrap gap-1 mt-1">${renderCatBadges(item.planos[0], badgeClass)}</div>`;
-      } else {
-        corpo = `<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-2">${cols}</div>`;
-      }
+    function renderHospitalCard(item, rede, theme) {
+      const planos = Array.isArray(item.planos) ? item.planos : [];
+      const linhas = rede.planos.map((plano, i) => renderLinhaPlano(plano, planos[i], theme)).join('');
+      const borderAccent = theme === 'select' ? 'border-select-purple/25' : 'border-hapvida-green/30';
 
       return `
-        <li class="py-3 border-b border-gray-100 last:border-0">
-          <p class="font-medium text-gray-900 text-sm leading-snug">${escapeHtml(item.nome)}</p>
-          ${corpo}
-        </li>
+        <article class="rounded-xl border-2 ${borderAccent} bg-white p-4 shadow-sm">
+          <h4 class="font-bold text-base text-gray-900 mb-1 leading-snug">${escapeHtml(item.nome)}</h4>
+          ${resumoPlanosHospital(item, rede)}
+          <div class="space-y-2">${linhas}</div>
+        </article>
+      `;
+    }
+
+    function renderRedeLegenda(rede, theme) {
+      const borderClass = theme === 'select' ? 'border-select-purple/25 bg-select-light/40' : 'border-hapvida-green/30 bg-hapvida-light/50';
+      const titleClass = theme === 'select' ? 'text-select-purple' : 'text-hapvida-blue';
+      const chips = Object.entries(rede.legenda).map(([k, v]) =>
+        `<span class="inline-flex items-center gap-1.5 text-xs bg-white border border-gray-200 rounded-lg px-2.5 py-1.5 shadow-sm"><strong class="${titleClass}">${escapeHtml(k)}</strong><span class="text-gray-600">${escapeHtml(v)}</span></span>`
+      ).join('');
+      const planos = rede.planos.map((p) =>
+        `<span class="inline-block text-xs font-bold px-2.5 py-1 rounded-full ${theme === 'select' ? 'bg-select-purple text-white' : 'bg-hapvida-blue text-white'}">${escapeHtml(p)}</span>`
+      ).join('');
+      return `
+        <div class="rounded-xl border ${borderClass} p-4 mb-4 space-y-3">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Como ler</p>
+            <p class="text-sm text-gray-600 leading-relaxed">Cada hospital mostra <strong>um bloco por plano</strong>. Se o plano inclui o hospital, aparecem as siglas do que está coberto (H, M, PSA…). Se não inclui, aparece <em>Não incluído neste plano</em>.</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Planos desta tabela</p>
+            <div class="flex flex-wrap gap-2">${planos}</div>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wide text-gray-500 mb-2">Siglas de cobertura</p>
+            <div class="flex flex-wrap gap-2">${chips}</div>
+          </div>
+        </div>
       `;
     }
 
@@ -1536,7 +1582,7 @@
       const hoverClass = theme === 'select' ? 'hover:bg-select-light/80' : 'hover:bg-hapvida-light';
       const accentClass = theme === 'select' ? 'text-select-purple' : 'text-hapvida-green';
       const iconBg = theme === 'select' ? 'bg-select-purple/12' : 'bg-hapvida-green/15';
-      const itens = regiao.itens.map((item) => renderHospitalItem(item, rede, theme)).join('');
+      const cards = regiao.itens.map((item) => renderHospitalCard(item, rede, theme)).join('');
 
       return `
         <details class="rede-regiao-item group rounded-xl border-2 ${borderClass} bg-white overflow-hidden shadow-sm">
@@ -1549,7 +1595,9 @@
             </span>
             <svg class="rede-regiao-chevron w-4 h-4 ${accentClass} shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
           </summary>
-          <ul class="px-4 md:px-5 pb-4 border-t border-gray-100 bg-slate-50/90">${itens}</ul>
+          <div class="border-t border-gray-100 bg-slate-50/90 p-3 md:p-4 grid gap-4 sm:grid-cols-1 lg:grid-cols-2">
+            ${cards}
+          </div>
         </details>
       `;
     }
@@ -1558,11 +1606,26 @@
       const selectEl = document.getElementById('rede-select-accordions');
       const hapvidaEl = document.getElementById('rede-hapvida-accordions');
 
-      if (selectEl && typeof REDE_SELECT !== 'undefined') {
-        selectEl.innerHTML = REDE_SELECT.regioes.map((r) => renderRegiaoAccordion(r, REDE_SELECT, 'select')).join('');
-      }
-      if (hapvidaEl && typeof REDE_HAPVIDA !== 'undefined') {
-        hapvidaEl.innerHTML = REDE_HAPVIDA.regioes.map((r) => renderRegiaoAccordion(r, REDE_HAPVIDA, 'hapvida')).join('');
+      try {
+        if (selectEl && typeof REDE_SELECT !== 'undefined') {
+          const html = renderRedeLegenda(REDE_SELECT, 'select')
+            + REDE_SELECT.regioes.map((r) => renderRegiaoAccordion(r, REDE_SELECT, 'select')).join('');
+          selectEl.innerHTML = html;
+        } else if (selectEl) {
+          selectEl.innerHTML = '<p class="text-sm text-red-600 p-4">Não foi possível carregar a rede Select. Recarregue a página.</p>';
+        }
+
+        if (hapvidaEl && typeof REDE_HAPVIDA !== 'undefined') {
+          const html = renderRedeLegenda(REDE_HAPVIDA, 'hapvida')
+            + REDE_HAPVIDA.regioes.map((r) => renderRegiaoAccordion(r, REDE_HAPVIDA, 'hapvida')).join('');
+          hapvidaEl.innerHTML = html;
+        } else if (hapvidaEl) {
+          hapvidaEl.innerHTML = '<p class="text-sm text-red-600 p-4">Não foi possível carregar a rede Hapvida. Recarregue a página.</p>';
+        }
+      } catch (err) {
+        console.error('Erro ao montar accordions da rede:', err);
+        if (selectEl) selectEl.innerHTML = '<p class="text-sm text-red-600 p-4">Erro ao exibir a rede Select.</p>';
+        if (hapvidaEl) hapvidaEl.innerHTML = '<p class="text-sm text-red-600 p-4">Erro ao exibir a rede Hapvida.</p>';
       }
     }
 
