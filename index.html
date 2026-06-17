@@ -101,6 +101,18 @@
     .faq-chevron { transition: transform 0.3s ease; }
     .faq-item[open] .faq-chevron { transform: rotate(180deg); }
 
+    /* Accordions de preços dos planos */
+    .plano-accordion {
+      transition: box-shadow 0.25s;
+      align-self: start;
+      width: 100%;
+    }
+    .plano-accordion summary { outline: none; }
+    .plano-accordion summary::-webkit-details-marker { display: none; }
+    .plano-accordion-chevron { transition: transform 0.3s ease; }
+    .plano-accordion[open] .plano-accordion-chevron { transform: rotate(180deg); }
+    .plano-accordion[open] { box-shadow: 0 10px 32px rgba(15, 23, 42, 0.1); }
+
     /* Rede hospital accordions — destaque */
     .rede-accordion-main {
       box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
@@ -294,11 +306,12 @@
           <span class="inline-block bg-select-purple text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3">
             A partir de 2 anos no CPF da criança
           </span>
-          <h2 id="select-title" class="font-display text-2xl md:text-4xl font-extrabold text-select-blue mb-4 tracking-tight">
-            Minha principal indicação: Select
+          <h2 id="select-title" class="font-display mb-4 tracking-tight">
+            <span class="block text-lg md:text-xl font-semibold text-select-blue/70 mb-1">Minha principal indicação:</span>
+            <span class="block text-3xl md:text-5xl font-extrabold text-select-blue">Select</span>
           </h2>
-          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg mb-4">
-            O Select é um dos poucos planos <strong class="text-select-purple">pessoa física</strong> que permite contratar apenas o seu filho no CPF, com acesso a uma rede de hospitais de alto nível, como Beneficência Portuguesa, Hospital Santa Catarina, Leforte, Nove de Julho, Samaritano e São Camilo.
+          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-sm md:text-base mb-4">
+            O Select é um dos poucos planos <strong class="text-select-purple">pessoa física</strong> que permite contratar apenas o seu filho no CPF, com acesso a uma rede de hospitais de alto nível, como <strong>Beneficência Portuguesa</strong>, <strong>Hospital Santa Catarina</strong>, <strong>Leforte</strong>, <strong>Nove de Julho</strong>, <strong>Samaritano</strong> e <strong>São Camilo</strong>.
           </p>
           <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
             É uma boa opção quando você busca qualidade de atendimento sem precisar fazer um plano familiar completo.
@@ -315,97 +328,141 @@
         </div>
 
         <!-- Tipos de plano Select -->
-        <h3 class="text-lg font-bold text-select-blue mb-4 text-center">Qual plano Select escolher?</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <h3 class="text-lg font-bold text-select-blue mb-2 text-center">Qual plano Select escolher?</h3>
+        <p class="text-center text-sm text-gray-500 mb-3">Saúde PF · Criança 0–18 anos · Individual</p>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-5 max-w-2xl mx-auto text-center">
+          <p class="text-sm text-amber-900"><strong>Preços válidos até 31 de agosto.</strong> Valores de tabela; a operadora pode alterar após essa data.</p>
+        </div>
 
-          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-gray-300 flex flex-col card-lift">
-            <span class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Entrada básica</span>
-            <h4 class="font-bold text-select-blue text-lg mb-2">Select SP 100</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              O mais econômico. Boa rede, mas com menos hospitais premium que os planos acima.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
-              <div class="space-y-2.5">
-                <div class="flex items-center justify-between gap-2 bg-select-light/60 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 428,20</span>
+        <!-- Select SP -->
+        <p class="text-center text-xs font-bold uppercase tracking-widest text-select-purple mb-3">Select SP</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 items-start">
+
+          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-gray-300 overflow-hidden group">
+            <summary class="list-none cursor-pointer p-5 hover:bg-gray-50/50 transition-colors">
+              <div class="flex justify-between items-start gap-3 w-full">
+                <div class="min-w-0 flex-1 text-left">
+                  <span class="text-[10px] font-bold uppercase tracking-wide text-gray-400 mb-1 block">Entrada básica · Enfermaria</span>
+                  <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-2 leading-tight">Select SP 100</h4>
+                  <p class="text-gray-500 text-xs leading-relaxed">
+                    O mais econômico. Boa rede, mas com menos hospitais premium que os planos acima.
+                  </p>
                 </div>
-                <div class="flex items-center justify-between gap-2 bg-select-light/60 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
-                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 516,03</span>
+                <svg class="plano-accordion-chevron w-5 h-5 text-select-purple shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+              </div>
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-purple/70 mt-3 text-left">Ver preços</p>
+            </summary>
+            <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-purple mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação Total</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select SP 100</p>
+                <p class="font-bold text-select-blue text-lg tabular-nums text-right">R$ 389,27<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-purple mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação Parcial</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select SP 100</p>
+                <p class="font-bold text-select-blue text-lg tabular-nums text-right">R$ 428,20<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+            </div>
+          </details>
+
+          <div class="relative w-full self-start">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-select-green text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap z-20">⭐ Melhor custo-benefício</span>
+            <details class="plano-accordion plano-accordion-featured bg-gradient-to-br from-select-purple to-select-blue rounded-2xl pt-8 shadow-xl border-l-4 border-select-green text-white ring-2 ring-select-green/50 relative z-10 overflow-hidden">
+              <summary class="list-none cursor-pointer p-5 pt-2 hover:bg-white/5 transition-colors">
+                <div class="flex justify-between items-start gap-3 w-full">
+                  <div class="min-w-0 flex-1 text-left">
+                    <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">Quarto</span>
+                    <h4 class="font-display font-extrabold text-xl md:text-2xl mb-2 leading-tight">Select SP 200</h4>
+                    <p class="text-white/80 text-xs leading-relaxed">
+                      O que mais indico. Equilibra preço e rede — inclui hospitais importantes como <strong class="text-white">Dom Alvarenga</strong>, <strong class="text-white">Sta Rita</strong> e <strong class="text-white">São Miguel</strong>.
+                    </p>
+                  </div>
+                  <svg class="plano-accordion-chevron w-5 h-5 text-select-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                </div>
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-white/60 mt-3 text-left">Ver preços</p>
+              </summary>
+              <div class="px-5 pb-5 border-t border-white/20 pt-4 space-y-2">
+                <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
+                  <p class="text-[10px] font-bold uppercase text-select-green mb-1">Quarto · <span class="normal-case font-medium text-white/70">Coparticipação Total</span></p>
+                  <p class="text-sm font-bold text-white mb-1">Select SP 200</p>
+                  <p class="font-bold text-white text-lg tabular-nums text-right">R$ 482,69<span class="text-xs font-normal text-white/60">/mês</span></p>
+                </div>
+                <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
+                  <p class="text-[10px] font-bold uppercase text-select-green mb-1">Quarto · <span class="normal-case font-medium text-white/70">Coparticipação Parcial</span></p>
+                  <p class="text-sm font-bold text-white mb-1">Select SP 200</p>
+                  <p class="font-bold text-white text-lg tabular-nums text-right">R$ 530,96<span class="text-xs font-normal text-white/60">/mês</span></p>
                 </div>
               </div>
-              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
-            </div>
-          </article>
+            </details>
+          </div>
 
-          <article class="plan-card-featured bg-gradient-to-br from-select-purple to-select-blue rounded-2xl p-5 pt-8 shadow-xl border-l-4 border-select-green text-white flex flex-col ring-2 ring-select-green/50 relative z-10">
-            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-select-green text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap">⭐ Melhor custo-benefício</span>
-            <h4 class="font-display font-bold text-xl mb-2">Select SP 200</h4>
-            <p class="text-white/90 text-sm leading-relaxed">
-              O que mais indico. Equilibra preço e rede — inclui hospitais importantes como Dom Alvarenga, Sta Rita e São Miguel.
-            </p>
-            <div class="mt-4 pt-4 border-t border-white/20 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-white/80 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
-              <div class="space-y-2.5">
-                <div class="flex items-center justify-between gap-2 bg-white/15 rounded-lg px-3 py-2.5">
-                  <span class="text-sm text-white/90 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 531,03</span>
+        </div>
+
+        <!-- Select Premium SP -->
+        <p class="text-center text-xs font-bold uppercase tracking-widest text-select-green mb-3">Select Premium SP</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 items-start">
+
+          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-select-purple overflow-hidden group">
+            <summary class="list-none cursor-pointer p-5 hover:bg-select-light/30 transition-colors">
+              <div class="flex justify-between items-start gap-3 w-full">
+                <div class="min-w-0 flex-1 text-left">
+                  <span class="text-[10px] font-bold uppercase tracking-wide text-select-purple mb-1 block">Rede ampliada · Enfermaria</span>
+                  <h4 class="font-display font-extrabold text-select-purple text-xl md:text-2xl mb-2 leading-tight">Select Premium SP 110</h4>
+                  <p class="text-gray-500 text-xs leading-relaxed">
+                    Rede maior que o SP 200. Inclui <strong>Sta Catarina</strong>, <strong>Edmundo Vasconcelos</strong> e mais opções de internação.
+                  </p>
                 </div>
-                <div class="flex items-center justify-between gap-2 bg-white/15 rounded-lg px-3 py-2.5">
-                  <span class="text-sm text-white/90 shrink-0">Quarto</span>
-                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 581,70</span>
-                </div>
+                <svg class="plano-accordion-chevron w-5 h-5 text-select-purple shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
               </div>
-              <p class="text-xs text-white/70 mt-2 text-right">/mês · preço fechado</p>
-            </div>
-          </article>
-
-          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-select-purple flex flex-col card-lift">
-            <span class="text-xs font-bold uppercase tracking-wide text-select-purple mb-1">Rede ampliada</span>
-            <h4 class="font-bold text-select-purple text-lg mb-2">Select Premium SP 110</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Rede maior que o SP 200. Inclui Sta Catarina, Edmundo Vasconcelos e mais opções de internação.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
-              <div class="space-y-2.5">
-                <div class="flex items-center justify-between gap-2 bg-select-purple/5 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-select-purple text-xl tabular-nums whitespace-nowrap shrink-0">R$ 468,48</span>
-                </div>
-                <div class="flex items-center justify-between gap-2 bg-select-purple/5 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
-                  <span class="font-bold text-select-purple text-xl tabular-nums whitespace-nowrap shrink-0">R$ 563,49</span>
-                </div>
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-purple/70 mt-3 text-left">Ver preços</p>
+            </summary>
+            <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-purple mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação Total</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select Premium SP 110</p>
+                <p class="font-bold text-select-purple text-lg tabular-nums text-right">R$ 425,89<span class="text-xs font-normal text-gray-400">/mês</span></p>
               </div>
-              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
-            </div>
-          </article>
-
-          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-select-green flex flex-col card-lift">
-            <span class="text-xs font-bold uppercase tracking-wide text-select-green mb-1">O mais completo</span>
-            <h4 class="font-bold text-select-blue text-lg mb-2">Select Premium SP 120</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Melhor rede e cobertura mais ampla. Inclui Cruz Azul, FMUSP, Nove de Julho, Samaritano e outros hospitais premium.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
-              <div class="space-y-2.5">
-                <div class="flex items-center justify-between gap-2 bg-select-green/5 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 580,92</span>
-                </div>
-                <div class="flex items-center justify-between gap-2 bg-select-green/5 rounded-lg px-3 py-2">
-                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
-                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 636,43</span>
-                </div>
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-purple mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação Parcial</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select Premium SP 110</p>
+                <p class="font-bold text-select-purple text-lg tabular-nums text-right">R$ 468,48<span class="text-xs font-normal text-gray-400">/mês</span></p>
               </div>
-              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
             </div>
-          </article>
+          </details>
 
+          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-select-green overflow-hidden group">
+            <summary class="list-none cursor-pointer p-5 hover:bg-select-light/30 transition-colors">
+              <div class="flex justify-between items-start gap-3 w-full">
+                <div class="min-w-0 flex-1 text-left">
+                  <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">O mais completo · Quarto</span>
+                  <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-2 leading-tight">Select Premium SP 120</h4>
+                  <p class="text-gray-500 text-xs leading-relaxed">
+                    Melhor rede e cobertura mais ampla. Inclui <strong>Cruz Azul</strong>, <strong>FMUSP</strong>, <strong>Nove de Julho</strong>, <strong>Samaritano</strong> e outros hospitais premium.
+                  </p>
+                </div>
+                <svg class="plano-accordion-chevron w-5 h-5 text-select-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+              </div>
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-green/80 mt-3 text-left">Ver preços</p>
+            </summary>
+            <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-green mb-1">Quarto · <span class="normal-case font-medium text-gray-500">Coparticipação Total</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select Premium SP 120</p>
+                <p class="font-bold text-select-blue text-lg tabular-nums text-right">R$ 528,11<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-select-green mb-1">Quarto · <span class="normal-case font-medium text-gray-500">Coparticipação Parcial</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Select Premium SP 120</p>
+                <p class="font-bold text-select-blue text-lg tabular-nums text-right">R$ 580,92<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+            </div>
+          </details>
+
+        </div>
+
+        <div class="bg-select-purple/10 border border-select-purple/20 rounded-lg px-4 py-2.5 mb-6 max-w-lg mx-auto text-center">
+          <p class="text-xs text-select-purple leading-snug"><strong>Plano familiar:</strong> há desconto por vida ao incluir mais beneficiários na mesma proposta.</p>
         </div>
 
         <!-- CTA WhatsApp — único botão da seção de planos -->
@@ -433,7 +490,7 @@
             </p>
           </div>
           <div class="bg-select-green/5 rounded-xl border border-select-green/30 p-4 md:p-5">
-            <h4 class="font-bold text-select-green mb-2">Coparticipação Completa</h4>
+            <h4 class="font-bold text-select-green mb-2">Coparticipação Total</h4>
             <p class="text-gray-600 text-sm leading-relaxed">
               Mensalidade um pouco maior, mas sem coparticipação em consultas e exames eletivos. Ideal se você prefere previsibilidade no bolso.
             </p>
@@ -543,10 +600,11 @@
           <span class="inline-block bg-hapvida-orange text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3">
             A partir de 1 dia de vida
           </span>
-          <h2 id="hapvida-title" class="font-display text-2xl md:text-4xl font-extrabold text-hapvida-blue mb-4 tracking-tight">
-            Outra boa opção: Hapvida
+          <h2 id="hapvida-title" class="font-display mb-4 tracking-tight">
+            <span class="block text-lg md:text-xl font-semibold text-hapvida-blue/70 mb-1">Outra boa opção:</span>
+            <span class="block text-3xl md:text-5xl font-extrabold text-hapvida-blue">Hapvida</span>
           </h2>
-          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
+          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-sm md:text-base">
             Plano com <strong class="text-hapvida-blue">rede própria</strong> — clínicas e hospitais da própria operadora —
             com <strong>ótimo custo-benefício</strong> e mensalidade mais acessível para crianças.
           </p>
@@ -562,62 +620,98 @@
         </div>
 
         <!-- Principais planos Hapvida -->
-        <h3 class="text-lg font-bold text-hapvida-blue mb-4 text-center">Principais planos Hapvida</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <h3 class="text-lg font-bold text-hapvida-blue mb-2 text-center">Principais planos Hapvida</h3>
+        <p class="text-center text-sm text-gray-500 mb-3">Saúde PF · Criança 0–18 anos · Individual · Enfermaria</p>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-5 max-w-2xl mx-auto text-center">
+          <p class="text-sm text-amber-900"><strong>Preços válidos até 31 de agosto.</strong> Valores de tabela; a operadora pode alterar após essa data.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 items-start">
 
-          <article class="plan-card-featured bg-gradient-to-br from-hapvida-blue to-hapvida-green rounded-2xl p-5 pt-8 shadow-xl border-l-4 border-hapvida-orange text-white flex flex-col ring-2 ring-hapvida-orange/50 relative z-10">
-            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-hapvida-orange text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap">⭐ Melhor custo-benefício</span>
-            <h4 class="font-display font-bold text-xl mb-2">Nosso Médico RMSP</h4>
-            <p class="text-white/90 text-sm leading-relaxed">
-              Ambulatorial + hospitalar com obstetrícia. Rede própria forte na Grande SP, ABC e capital.
-            </p>
-            <div class="mt-4 pt-4 border-t border-white/20 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-white/80 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
-              <div class="bg-white/15 rounded-lg px-3 py-2.5">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="text-sm text-white/90 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 229,88</span>
+          <div class="relative w-full self-start">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-hapvida-orange text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap z-20">⭐ Melhor custo-benefício</span>
+            <details class="plano-accordion bg-gradient-to-br from-hapvida-blue to-hapvida-green rounded-2xl pt-8 shadow-xl border-l-4 border-hapvida-orange text-white ring-2 ring-hapvida-orange/50 relative z-10 overflow-hidden">
+              <summary class="list-none cursor-pointer p-5 pt-2 hover:bg-white/5 transition-colors">
+                <div class="flex justify-between items-start gap-3 w-full">
+                  <div class="min-w-0 flex-1 text-left">
+                    <h4 class="font-display font-extrabold text-xl md:text-2xl mb-2 leading-tight">Nosso Médico RMSP</h4>
+                    <p class="text-white/80 text-xs leading-relaxed">
+                      Ambulatorial + hospitalar com obstetrícia. Rede própria forte na Grande SP, ABC e capital.
+                    </p>
+                  </div>
+                  <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-orange shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                </div>
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-white/60 mt-3 text-left">Ver preços</p>
+              </summary>
+              <div class="px-5 pb-5 border-t border-white/20 pt-4 space-y-2">
+                <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
+                  <p class="text-[10px] font-bold uppercase text-hapvida-orange mb-1">Enfermaria · <span class="normal-case font-medium text-white/70">Coparticipação</span></p>
+                  <p class="text-sm font-bold text-white mb-1">Nosso Médico RMSP</p>
+                  <p class="font-bold text-white text-lg tabular-nums text-right">R$ 172,83<span class="text-xs font-normal text-white/60">/mês</span></p>
+                </div>
+                <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
+                  <p class="text-[10px] font-bold uppercase text-hapvida-orange mb-1">Enfermaria · <span class="normal-case font-medium text-white/70">Coparticipação Parcial</span></p>
+                  <p class="text-sm font-bold text-white mb-1">Nosso Médico RMSP</p>
+                  <p class="font-bold text-white text-lg tabular-nums text-right">R$ 229,88<span class="text-xs font-normal text-white/60">/mês</span></p>
                 </div>
               </div>
-              <p class="text-xs text-white/70 mt-2 text-right">/mês · preço fechado</p>
-            </div>
-          </article>
+            </details>
+          </div>
 
-          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-hapvida-orange flex flex-col card-lift">
-            <span class="text-xs font-bold uppercase tracking-wide text-hapvida-orange mb-1">Ambulatorial</span>
-            <h4 class="font-bold text-hapvida-blue text-lg mb-2">Smart UP Ambulatorial</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Consultas, exames e urgência por até 12 horas. Opção mais econômica para quem não precisa de internação.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
-              <div class="bg-hapvida-orange/5 rounded-lg px-3 py-2">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="text-sm text-gray-600 shrink-0">Mensalidade</span>
-                  <span class="font-bold text-hapvida-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 287,52</span>
+          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-orange overflow-hidden group">
+            <summary class="list-none cursor-pointer p-5 hover:bg-hapvida-light/30 transition-colors">
+              <div class="flex justify-between items-start gap-3 w-full">
+                <div class="min-w-0 flex-1 text-left">
+                  <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-orange mb-2 block">Ambulatorial</span>
+                  <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-2 leading-tight">Smart UP Ambulatorial</h4>
+                  <p class="text-gray-500 text-xs leading-relaxed">
+                    Consultas, exames e urgência por até 12 horas. Opção mais econômica para quem não precisa de internação.
+                  </p>
                 </div>
+                <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-orange shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
               </div>
-              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-hapvida-orange/70 mt-3 text-left">Ver preços</p>
+            </summary>
+            <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-hapvida-orange mb-1">Ambulatorial · <span class="normal-case font-medium text-gray-500">Coparticipação</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Smart UP Ambulatorial</p>
+                <p class="font-bold text-hapvida-blue text-lg tabular-nums text-right">R$ 216,80<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-hapvida-orange mb-1">Ambulatorial · <span class="normal-case font-medium text-gray-500">Coparticipação Parcial</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Smart UP Ambulatorial</p>
+                <p class="font-bold text-hapvida-blue text-lg tabular-nums text-right">R$ 287,52<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
             </div>
-          </article>
+          </details>
 
-          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-hapvida-green flex flex-col card-lift">
-            <span class="text-xs font-bold uppercase tracking-wide text-hapvida-green mb-1">Hospitalar</span>
-            <h4 class="font-bold text-hapvida-blue text-lg mb-2">Smart UP Enfermaria</h4>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Cobertura ambulatorial + hospitalar em enfermaria. Boa opção para quem quer internação com preço acessível.
-            </p>
-            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
-              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
-              <div class="bg-hapvida-green/5 rounded-lg px-3 py-2">
-                <div class="flex items-center justify-between gap-2">
-                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
-                  <span class="font-bold text-hapvida-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 318,47</span>
+          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-green overflow-hidden group">
+            <summary class="list-none cursor-pointer p-5 hover:bg-hapvida-light/30 transition-colors">
+              <div class="flex justify-between items-start gap-3 w-full">
+                <div class="min-w-0 flex-1 text-left">
+                  <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-green mb-2 block">Hospitalar</span>
+                  <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-2 leading-tight">Smart UP Enfermaria</h4>
+                  <p class="text-gray-500 text-xs leading-relaxed">
+                    Cobertura ambulatorial + hospitalar em enfermaria. Boa opção para quem quer internação com preço acessível.
+                  </p>
                 </div>
+                <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
               </div>
-              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+              <p class="text-[10px] font-semibold uppercase tracking-wide text-hapvida-green/80 mt-3 text-left">Ver preços</p>
+            </summary>
+            <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-hapvida-green mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Smart UP Enfermaria</p>
+                <p class="font-bold text-hapvida-blue text-lg tabular-nums text-right">R$ 252,04<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
+              <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
+                <p class="text-[10px] font-bold uppercase text-hapvida-green mb-1">Enfermaria · <span class="normal-case font-medium text-gray-500">Coparticipação Parcial</span></p>
+                <p class="text-sm font-bold text-gray-900 mb-1">Smart UP Enfermaria</p>
+                <p class="font-bold text-hapvida-blue text-lg tabular-nums text-right">R$ 318,47<span class="text-xs font-normal text-gray-400">/mês</span></p>
+              </div>
             </div>
-          </article>
+          </details>
 
         </div>
 
@@ -738,6 +832,72 @@
       </div>
     </section>
 
+    <!-- ========== MAPA DE HOSPITAIS ========== -->
+    <section class="px-4 py-10 md:py-14 bg-brand-light" aria-labelledby="mapa-title" id="hospitais">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-6">
+          <h2 id="mapa-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Hospitais mais próximos da sua casa</h2>
+          <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
+            Digite seu CEP e veja no mapa hospitais perto da sua casa.
+          </p>
+        </div>
+
+        <!-- Busca por CEP -->
+        <form id="cep-form" class="max-w-lg mx-auto mb-6 flex flex-col sm:flex-row gap-3" novalidate>
+          <div class="flex-1">
+            <label for="cep-input" class="sr-only">CEP</label>
+            <input
+              type="text"
+              id="cep-input"
+              inputmode="numeric"
+              maxlength="9"
+              placeholder="Digite seu CEP (ex: 01310-100)"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none"
+            >
+          </div>
+          <button
+            type="submit"
+            id="cep-buscar"
+            class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors shrink-0"
+          >
+            Buscar
+          </button>
+        </form>
+
+        <p id="cep-endereco" class="text-sm text-gray-600 text-center mb-4 min-h-[1.25rem]" aria-live="polite"></p>
+
+        <!-- Legenda -->
+        <div class="flex flex-wrap justify-center gap-3 mb-4 text-xs md:text-sm">
+          <span class="inline-flex items-center gap-2 bg-select-light rounded-full px-3 py-1.5 font-medium text-select-purple">
+            <span class="w-4 h-4 rounded-full bg-select-purple shrink-0" aria-hidden="true"></span>
+            Select
+          </span>
+          <span class="inline-flex items-center gap-2 bg-hapvida-light rounded-full px-3 py-1.5 font-medium text-hapvida-blue">
+            <span class="w-4 h-4 rounded-full bg-hapvida-orange shrink-0" aria-hidden="true"></span>
+            Hapvida
+          </span>
+          <span class="inline-flex items-center gap-2 bg-blue-50 rounded-full px-3 py-1.5 font-medium text-brand-blue">
+            <svg class="w-4 h-5 shrink-0" viewBox="0 0 34 44" aria-hidden="true"><path d="M17 0C8.2 0 1 7.2 1 16c0 11.5 16 27 16 27s16-15.5 16-27C33 7.2 25.8 0 17 0z" fill="#1e40af" stroke="#fff" stroke-width="2"/></svg>
+            Sua casa
+          </span>
+        </div>
+
+        <!-- Aviso: hospitais de referência -->
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 max-w-2xl mx-auto text-center">
+          <p class="text-gray-700 text-sm leading-relaxed">
+            <strong class="text-gray-900">Importante:</strong> pinos <span class="text-select-purple font-medium">roxos</span> = rede Select · pinos <span class="text-hapvida-orange font-medium">laranja</span> = rede Hapvida (SP e RMSP). Na cotação, eu te passo a lista completa do seu plano.
+          </p>
+        </div>
+
+        <!-- Mapa Leaflet -->
+        <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais de referência Select e Hapvida"></div>
+
+        <p class="text-xs text-gray-500 text-center mt-3">
+          Mapa ilustrativo para você ter uma ideia da rede na sua região.
+        </p>
+      </div>
+    </section>
+
     <!-- ========== FAQ ========== -->
     <section class="px-4 py-12 md:py-16 bg-white" aria-labelledby="faq-title" id="faq">
       <div class="max-w-3xl mx-auto">
@@ -749,7 +909,7 @@
         <div class="space-y-3">
 
           <!-- Accordion principal -->
-          <details class="faq-item group bg-brand-light rounded-xl border-2 border-brand-blue/20 overflow-hidden" open>
+          <details class="faq-item group bg-brand-light rounded-xl border-2 border-brand-blue/20 overflow-hidden">
             <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
               Tem coparticipação?
               <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
@@ -1030,72 +1190,6 @@
           </details>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ========== MAPA DE HOSPITAIS ========== -->
-    <section class="px-4 py-10 md:py-14 bg-brand-light" aria-labelledby="mapa-title" id="hospitais">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center mb-6">
-          <h2 id="mapa-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Hospitais mais próximos da sua casa</h2>
-          <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
-            Digite seu CEP e veja no mapa hospitais perto da sua casa.
-          </p>
-        </div>
-
-        <!-- Busca por CEP -->
-        <form id="cep-form" class="max-w-lg mx-auto mb-6 flex flex-col sm:flex-row gap-3" novalidate>
-          <div class="flex-1">
-            <label for="cep-input" class="sr-only">CEP</label>
-            <input
-              type="text"
-              id="cep-input"
-              inputmode="numeric"
-              maxlength="9"
-              placeholder="Digite seu CEP (ex: 01310-100)"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none"
-            >
-          </div>
-          <button
-            type="submit"
-            id="cep-buscar"
-            class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors shrink-0"
-          >
-            Buscar
-          </button>
-        </form>
-
-        <p id="cep-endereco" class="text-sm text-gray-600 text-center mb-4 min-h-[1.25rem]" aria-live="polite"></p>
-
-        <!-- Legenda -->
-        <div class="flex flex-wrap justify-center gap-3 mb-4 text-xs md:text-sm">
-          <span class="inline-flex items-center gap-2 bg-select-light rounded-full px-3 py-1.5 font-medium text-select-purple">
-            <span class="w-4 h-4 rounded-full bg-select-purple shrink-0" aria-hidden="true"></span>
-            Select
-          </span>
-          <span class="inline-flex items-center gap-2 bg-hapvida-light rounded-full px-3 py-1.5 font-medium text-hapvida-blue">
-            <span class="w-4 h-4 rounded-full bg-hapvida-orange shrink-0" aria-hidden="true"></span>
-            Hapvida
-          </span>
-          <span class="inline-flex items-center gap-2 bg-blue-50 rounded-full px-3 py-1.5 font-medium text-brand-blue">
-            <svg class="w-4 h-5 shrink-0" viewBox="0 0 34 44" aria-hidden="true"><path d="M17 0C8.2 0 1 7.2 1 16c0 11.5 16 27 16 27s16-15.5 16-27C33 7.2 25.8 0 17 0z" fill="#1e40af" stroke="#fff" stroke-width="2"/></svg>
-            Sua casa
-          </span>
-        </div>
-
-        <!-- Aviso: hospitais de referência -->
-        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 max-w-2xl mx-auto text-center">
-          <p class="text-gray-700 text-sm leading-relaxed">
-            <strong class="text-gray-900">Importante:</strong> pinos <span class="text-select-purple font-medium">roxos</span> = rede Select · pinos <span class="text-hapvida-orange font-medium">laranja</span> = rede Hapvida (SP e RMSP). Na cotação, eu te passo a lista completa do seu plano.
-          </p>
-        </div>
-
-        <!-- Mapa Leaflet -->
-        <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais de referência Select e Hapvida"></div>
-
-        <p class="text-xs text-gray-500 text-center mt-3">
-          Mapa ilustrativo para você ter uma ideia da rede na sua região.
-        </p>
       </div>
     </section>
 
