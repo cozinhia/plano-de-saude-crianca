@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Plano de Saúde para Seu Filho a Partir de 2 Anos | Ricardo Rossi</title>
+  <meta name="description" content="Plano de saúde só para seu filho, a partir de 2 anos no CPF. Ricardo Rossi, corretor com opções Select e Hapvida. Cotação grátis pelo WhatsApp.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Plano de Saúde para Seu Filho | Ricardo Rossi">
+  <meta property="og:description" content="Plano de saúde só para seu filho, com parcelas que cabem no bolso. Cotação grátis pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              blue: '#1e40af',
+              light: '#f8fafc',
+            },
+            select: {
+              purple: '#5B2D8E',
+              blue: '#2B3990',
+              green: '#00A859',
+              light: '#EDE9F5',
+            },
+            hapvida: {
+              orange: '#F7941D',
+              blue: '#003366',
+              green: '#00A88F',
+              light: '#E8F5F3',
+            },
+            whatsapp: '#25D366',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    .font-display { font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif; }
+
+    /* Navbar scroll */
+    #site-header { transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; }
+    #site-header.is-scrolled {
+      background-color: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+      border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    }
+
+    /* WhatsApp pulse */
+    @keyframes wa-pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+      50% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+    }
+    .btn-whatsapp-pulse { animation: wa-pulse 2.2s ease-in-out infinite; }
+
+    /* Hero blobs */
+    @keyframes float-blob {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(12px, -18px) scale(1.05); }
+    }
+    .hero-blob { animation: float-blob 9s ease-in-out infinite; }
+    .hero-blob-delay { animation-delay: -4s; }
+
+    /* Plan card featured */
+    .plan-card-featured { position: relative; }
+    @media (min-width: 1024px) {
+      .plan-card-featured { transform: translateY(-4px) scale(1.02); }
+    }
+
+    /* FAQ accordions */
+    .faq-item { transition: box-shadow 0.25s, background-color 0.25s; }
+    .faq-item[open] {
+      background-color: #fff;
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+    }
+    .faq-chevron { transition: transform 0.3s ease; }
+    .faq-item[open] .faq-chevron { transform: rotate(180deg); }
+
+    /* Rede hospital accordions — destaque */
+    .rede-accordion-main {
+      box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
+    }
+    .rede-accordion-main[open] {
+      box-shadow: 0 16px 48px rgba(15, 23, 42, 0.14);
+    }
+    .rede-accordion-main summary {
+      background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.98) 100%);
+    }
+    .rede-accordion-main[open] summary {
+      border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+    }
+    .rede-regiao-item {
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .rede-regiao-item[open] {
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    }
+    .rede-accordion-main[open] > summary .rede-regiao-chevron { transform: rotate(180deg); }
+    .rede-regiao-item[open] .rede-regiao-chevron { transform: rotate(180deg); }
+    .rede-regiao-chevron { transition: transform 0.3s ease; }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::marker { content: ''; }
+
+    /* Footer pattern */
+    .footer-pattern {
+      background-color: #1e40af;
+      background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* Glass badge */
+    .glass-badge {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    /* Card hover lift */
+    .card-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .card-lift:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(15, 23, 42, 0.1);
+    }
+
+    /* Section wave */
+    .section-wave { display: block; width: 100%; line-height: 0; }
+
+    /* Pin da casa no mapa */
+    .pin-casa-leaflet { background: transparent !important; border: none !important; }
+  </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-brand-light antialiased">
+
+  <!-- ========== CONFIG: altere o número do WhatsApp aqui ========== -->
+  <!-- Formato: 55 + DDD + número (sem espaços ou símbolos) -->
+  <script>
+    const WHATSAPP_NUMBER = '5511999999999';
+    const WHATSAPP_DISPLAY = '(11) 99999-9999';
+    const WHATSAPP_MSG_DEFAULT = 'Olá Ricardo! Quero cotar um plano de saúde para meu filho.';
+  </script>
+
+  <!-- ========== NAVBAR ========== -->
+  <header id="site-header" class="sticky top-0 z-50 bg-white/95 border-b border-transparent">
+    <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4" aria-label="Navegação principal">
+      <a href="#" class="flex flex-col leading-tight group">
+        <span class="font-display text-lg font-extrabold tracking-tight">
+          <span class="text-select-purple">R</span><span class="text-gray-900">icardo Rossi</span>
+        </span>
+        <span class="text-xs text-gray-500 group-hover:text-gray-600 transition-colors">Corretor de Planos de Saúde</span>
+      </a>
+      <a
+        href="#"
+        id="nav-whatsapp"
+        class="btn-whatsapp-pulse inline-flex items-center gap-2 bg-whatsapp hover:bg-green-600 text-white text-sm font-semibold px-4 py-2.5 rounded-full transition-colors shrink-0"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar com Ricardo no WhatsApp"
+      >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-[#1a1040] to-select-purple px-4 py-16 md:py-24" aria-labelledby="hero-title">
+      <!-- Decorative blobs -->
+      <div class="hero-blob absolute -top-24 -right-24 w-80 h-80 rounded-full bg-select-purple/30 blur-3xl pointer-events-none" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-delay absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-select-green/20 blur-3xl pointer-events-none" aria-hidden="true"></div>
+
+      <div class="relative max-w-3xl mx-auto text-center">
+        <p class="inline-flex items-center gap-2 glass-badge text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+          <svg class="w-4 h-4 text-select-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Plano só para seu filho · Pessoa física
+        </p>
+        <h1 id="hero-title" class="font-display text-[clamp(2rem,5.5vw,3.5rem)] font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+          É difícil achar um bom plano de saúde só para seu filho?
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 mb-4 leading-relaxed max-w-2xl mx-auto">
+          Nos preocupamos com nossos filhos e queremos o melhor para eles, inclusive na saúde.
+        </p>
+        <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto">
+          Depender apenas do SUS é arriscado — crianças precisam de cuidados com mais frequência. Aqui você encontra planos para contratar <strong class="text-white font-semibold">só o seu filho</strong>, no CPF dele, sem incluir a família inteira.
+        </p>
+
+        <ul class="flex flex-wrap justify-center gap-2 mb-10 text-sm font-medium">
+          <li class="glass-badge rounded-full px-4 py-2 text-white/95 flex items-center gap-2">
+            <svg class="w-4 h-4 text-select-green shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Sem empresa
+          </li>
+          <li class="glass-badge rounded-full px-4 py-2 text-white/95 flex items-center gap-2">
+            <svg class="w-4 h-4 text-select-green shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Sem burocracia
+          </li>
+          <li class="glass-badge rounded-full px-4 py-2 text-white/95 flex items-center gap-2">
+            <svg class="w-4 h-4 text-select-green shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Suporte pós-venda
+          </li>
+        </ul>
+
+        <a
+          href="#"
+          id="hero-whatsapp"
+          class="btn-whatsapp-pulse inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-whatsapp hover:bg-green-500 text-white font-bold text-lg px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Quero saber o valor — é grátis
+        </a>
+      </div>
+
+      <!-- Wave para próxima seção -->
+      <svg class="section-wave absolute bottom-0 left-0 text-white" viewBox="0 0 1440 48" fill="currentColor" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C360,64 720,0 1080,32 C1260,48 1380,40 1440,32 L1440,48 L0,48 Z"/></svg>
+    </section>
+
+    <!-- ========== BOX RICARDO ========== -->
+    <section class="px-4 py-10 md:py-14 bg-white" aria-labelledby="ricardo-title">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-gradient-to-br from-select-light/80 via-white to-brand-light rounded-2xl p-6 md:p-8 md:flex md:gap-8 md:items-center shadow-md border border-gray-100 card-lift">
+          <figure class="shrink-0 mb-5 md:mb-0 mx-auto md:mx-0 w-36 md:w-44">
+            <img
+              src="https://placehold.co/400x400/5B2D8E/ffffff?text=Ricardo+Rossi"
+              alt="Ricardo Rossi, corretor de planos de saúde"
+              class="rounded-2xl shadow-lg w-full aspect-square object-cover ring-4 ring-select-purple/20 ring-offset-2"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
+            <figcaption class="text-center mt-2 text-sm font-bold text-select-purple font-display">Ricardo Rossi</figcaption>
+          </figure>
+          <div>
+            <h2 id="ricardo-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Oi, eu sou o Ricardo</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Escolhi duas opções que cabem no bolso: <strong class="text-select-purple">Select</strong> e <strong class="text-hapvida-blue">Hapvida</strong>. Explico tudo simples, sem enrolação.
+            </p>
+            <div class="bg-white rounded-xl border-l-4 border-green-500 p-4 mb-4 shadow-sm">
+              <p class="text-gray-900 font-bold leading-snug">
+                Se você contratar comigo, eu não te deixo na mão depois da venda.
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Qualquer dúvida com o plano, é comigo que você fala.
+              </p>
+            </div>
+            <p class="text-gray-800 font-semibold">
+              Me chama no WhatsApp — eu mesmo que respondo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SEÇÃO SELECT ========== -->
+    <div class="h-1 bg-gradient-to-r from-select-purple via-select-blue to-select-green" aria-hidden="true"></div>
+    <section id="select" class="px-4 py-10 md:py-16 bg-gradient-to-b from-select-light/90 to-white" aria-labelledby="select-title">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Cabeçalho comercial -->
+        <div class="text-center mb-8">
+          <span class="inline-block bg-select-purple text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3">
+            A partir de 2 anos no CPF da criança
+          </span>
+          <h2 id="select-title" class="font-display text-2xl md:text-4xl font-extrabold text-select-blue mb-4 tracking-tight">
+            Minha principal indicação: Select
+          </h2>
+          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg mb-4">
+            O Select é um dos poucos planos <strong class="text-select-purple">pessoa física</strong> que permite contratar apenas o seu filho no CPF, com acesso a uma rede de hospitais de alto nível, como Beneficência Portuguesa, Hospital Santa Catarina, Leforte, Nove de Julho, Samaritano e São Camilo.
+          </p>
+          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
+            É uma boa opção quando você busca qualidade de atendimento sem precisar fazer um plano familiar completo.
+          </p>
+        </div>
+
+        <!-- Box comercial Select -->
+        <div class="bg-white rounded-2xl border-2 border-select-purple/25 shadow-sm p-5 md:p-6 mb-8">
+          <p class="text-gray-700 leading-relaxed">
+            Se você quer um plano com <strong class="text-select-purple">hospitais de nível superior</strong> e pode esperar o filho completar 2 anos,
+            o Select costuma ser minha primeira indicação. Tem concierge, telemedicina 24h, app no celular e
+            <strong>abrangência nacional em urgência e emergência</strong> — ou seja, se a criança precisar de atendimento urgente fora de São Paulo, o plano cobre conforme as regras da operadora.
+          </p>
+        </div>
+
+        <!-- Tipos de plano Select -->
+        <h3 class="text-lg font-bold text-select-blue mb-4 text-center">Qual plano Select escolher?</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+
+          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-gray-300 flex flex-col card-lift">
+            <span class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Entrada básica</span>
+            <h4 class="font-bold text-select-blue text-lg mb-2">Select SP 100</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              O mais econômico. Boa rede, mas com menos hospitais premium que os planos acima.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2 bg-select-light/60 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 428,20</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-select-light/60 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
+                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 516,03</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+          <article class="plan-card-featured bg-gradient-to-br from-select-purple to-select-blue rounded-2xl p-5 pt-8 shadow-xl border-l-4 border-select-green text-white flex flex-col ring-2 ring-select-green/50 relative z-10">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-select-green text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap">⭐ Melhor custo-benefício</span>
+            <h4 class="font-display font-bold text-xl mb-2">Select SP 200</h4>
+            <p class="text-white/90 text-sm leading-relaxed">
+              O que mais indico. Equilibra preço e rede — inclui hospitais importantes como Dom Alvarenga, Sta Rita e São Miguel.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/20 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-white/80 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2 bg-white/15 rounded-lg px-3 py-2.5">
+                  <span class="text-sm text-white/90 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 531,03</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-white/15 rounded-lg px-3 py-2.5">
+                  <span class="text-sm text-white/90 shrink-0">Quarto</span>
+                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 581,70</span>
+                </div>
+              </div>
+              <p class="text-xs text-white/70 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-select-purple flex flex-col card-lift">
+            <span class="text-xs font-bold uppercase tracking-wide text-select-purple mb-1">Rede ampliada</span>
+            <h4 class="font-bold text-select-purple text-lg mb-2">Select Premium SP 110</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Rede maior que o SP 200. Inclui Sta Catarina, Edmundo Vasconcelos e mais opções de internação.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2 bg-select-purple/5 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-select-purple text-xl tabular-nums whitespace-nowrap shrink-0">R$ 468,48</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-select-purple/5 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
+                  <span class="font-bold text-select-purple text-xl tabular-nums whitespace-nowrap shrink-0">R$ 563,49</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-select-green flex flex-col card-lift">
+            <span class="text-xs font-bold uppercase tracking-wide text-select-green mb-1">O mais completo</span>
+            <h4 class="font-bold text-select-blue text-lg mb-2">Select Premium SP 120</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Melhor rede e cobertura mais ampla. Inclui Cruz Azul, FMUSP, Nove de Julho, Samaritano e outros hospitais premium.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual</p>
+              <div class="space-y-2.5">
+                <div class="flex items-center justify-between gap-2 bg-select-green/5 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 580,92</span>
+                </div>
+                <div class="flex items-center justify-between gap-2 bg-select-green/5 rounded-lg px-3 py-2">
+                  <span class="text-sm text-gray-600 shrink-0">Quarto</span>
+                  <span class="font-bold text-select-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 636,43</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- CTA WhatsApp — único botão da seção de planos -->
+        <div class="text-center mb-8">
+          <a
+            href="#"
+            class="whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-select-purple hover:bg-select-blue text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-md"
+            data-msg="Olá Ricardo! Quero fechar o plano Select para meu filho."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Quero fechar
+          </a>
+        </div>
+
+        <!-- Parcial vs Completa -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div class="bg-select-purple/5 rounded-xl border border-select-purple/20 p-4 md:p-5">
+            <h4 class="font-bold text-select-purple mb-2">Coparticipação Parcial</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mensalidade menor. Você paga uma parte em consultas de urgência (R$ 45), exames e terapias. Tem limitador mensal de R$ 350 por beneficiário.
+            </p>
+          </div>
+          <div class="bg-select-green/5 rounded-xl border border-select-green/30 p-4 md:p-5">
+            <h4 class="font-bold text-select-green mb-2">Coparticipação Completa</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mensalidade um pouco maior, mas sem coparticipação em consultas e exames eletivos. Ideal se você prefere previsibilidade no bolso.
+            </p>
+          </div>
+        </div>
+
+        <!-- Diferenciais rápidos -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-select-purple/10 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-select-purple/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-select-purple">Concierge</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-select-purple/10 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-select-purple/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-select-purple">Telemedicina 24h</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-select-purple/10 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-select-purple/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-select-purple">Urgência nacional</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-select-purple/10 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-select-purple/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-select-purple">App no celular</p>
+          </div>
+        </div>
+
+        <!-- Accordion: Rede credenciada Select -->
+        <div class="rounded-3xl bg-gradient-to-br from-select-light/70 via-white to-select-light/30 p-5 md:p-8 border-2 border-select-purple/25 shadow-lg mb-8">
+        <div class="mb-4">
+          <p class="text-center text-xs font-bold uppercase tracking-widest text-select-purple mb-2">Rede credenciada</p>
+          <h3 class="font-display text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">Hospitais e clínicas do Select</h3>
+          <p class="text-center text-gray-500 text-sm mb-5 max-w-xl mx-auto">Clique para ver a lista completa por região — hospitais, laboratórios e pronto-socorro.</p>
+        </div>
+        <details class="rede-accordion-main group rounded-2xl border-2 border-select-purple/50 ring-4 ring-select-purple/10 overflow-hidden bg-white">
+          <summary class="font-display font-bold text-select-blue list-none flex justify-between items-center gap-4 p-5 md:p-6 cursor-pointer hover:bg-select-light/40 transition-colors">
+            <span class="flex items-center gap-3 text-left">
+              <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-select-purple/10 shrink-0">
+                <svg class="w-6 h-6 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+              </span>
+              <span>
+                <span class="block text-base md:text-lg">Ver rede por região</span>
+                <span class="block text-xs font-normal text-gray-500 mt-0.5">São Paulo e Grande SP · tabela oficial Select</span>
+              </span>
+            </span>
+            <svg class="rede-regiao-chevron w-5 h-5 text-select-purple shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </summary>
+          <div class="px-4 md:px-6 pb-5 md:pb-6 border-t border-select-purple/15 bg-slate-50/50">
+            <p class="text-gray-600 text-sm mt-4 mb-4 leading-relaxed bg-white rounded-lg border border-gray-100 p-3">
+              <strong class="text-gray-800">Legenda:</strong>
+              <strong class="text-gray-700"> H</strong> = Internação · <strong class="text-gray-700">M</strong> = Maternidade ·
+              <strong class="text-gray-700">PSA</strong> = PS Adulto · <strong class="text-gray-700">PSP</strong> = PS Infantil ·
+              <strong class="text-gray-700">LAB</strong> = Laboratório
+            </p>
+            <div id="rede-select-accordions" class="space-y-3"></div>
+          </div>
+        </details>
+        </div>
+
+        <!-- Card suporte Select -->
+        <div class="bg-gradient-to-r from-select-purple/10 to-select-green/10 rounded-2xl border-2 border-select-purple/25 p-5 md:p-6 flex gap-4 items-start shadow-sm">
+          <span class="flex items-center justify-center w-12 h-12 rounded-xl bg-select-purple/15 shrink-0" aria-hidden="true">
+            <svg class="w-6 h-6 text-select-purple" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+          </span>
+          <div>
+            <p class="font-bold text-select-purple text-base md:text-lg">Contratou o Select comigo? Pode contar comigo depois também.</p>
+            <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+              Carteirinha, consulta, dúvida com o plano — eu não sumo depois da venda. É só me chamar no WhatsApp.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tarja promo Hapvida -->
+    <div class="bg-gradient-to-r from-hapvida-blue to-hapvida-green text-white px-4 py-4 md:py-5 shadow-lg" role="note" aria-label="Promoção Hapvida: isenção de carência">
+      <div class="max-w-5xl mx-auto flex items-center gap-4">
+        <span class="flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/15 shrink-0" aria-hidden="true">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+        </span>
+        <div>
+          <p class="font-bold text-base md:text-lg leading-snug">
+            Isenção de Carência no Hapvida até 30/06/2026
+          </p>
+          <p class="text-white/95 text-sm md:text-base mt-0.5">
+            Consulte e faça exames simples sem carência.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SEÇÃO HAPVIDA ========== -->
+    <div class="h-1 bg-gradient-to-r from-hapvida-blue via-hapvida-green to-hapvida-orange" aria-hidden="true"></div>
+    <section id="hapvida" class="px-4 py-10 md:py-16 bg-gradient-to-b from-[#f0faf7] to-white" aria-labelledby="hapvida-title">
+      <div class="max-w-5xl mx-auto">
+
+        <!-- Cabeçalho comercial -->
+        <div class="text-center mb-8">
+          <span class="inline-block bg-hapvida-orange text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3">
+            A partir de 1 dia de vida
+          </span>
+          <h2 id="hapvida-title" class="font-display text-2xl md:text-4xl font-extrabold text-hapvida-blue mb-4 tracking-tight">
+            Outra boa opção: Hapvida
+          </h2>
+          <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
+            Plano com <strong class="text-hapvida-blue">rede própria</strong> — clínicas e hospitais da própria operadora —
+            com <strong>ótimo custo-benefício</strong> e mensalidade mais acessível para crianças.
+          </p>
+        </div>
+
+        <!-- Box comercial Hapvida -->
+        <div class="bg-white rounded-2xl border-2 border-hapvida-green/30 shadow-sm p-5 md:p-6 mb-8">
+          <p class="text-gray-700 leading-relaxed">
+            Se o seu filho ainda não tem 2 anos, ou você quer uma mensalidade menor, a Hapvida é uma excelente alternativa.
+            A rede própria (CC NDI, CM NDI, hospitais H e Mat) facilita marcar consulta e pronto atendimento.
+            <strong class="text-hapvida-blue">Todos os planos incluem atendimento de urgência e emergência em toda a rede própria da operadora</strong> — e ainda vem com plano odontológico sem custo extra.
+          </p>
+        </div>
+
+        <!-- Principais planos Hapvida -->
+        <h3 class="text-lg font-bold text-hapvida-blue mb-4 text-center">Principais planos Hapvida</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+
+          <article class="plan-card-featured bg-gradient-to-br from-hapvida-blue to-hapvida-green rounded-2xl p-5 pt-8 shadow-xl border-l-4 border-hapvida-orange text-white flex flex-col ring-2 ring-hapvida-orange/50 relative z-10">
+            <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-hapvida-orange text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap">⭐ Melhor custo-benefício</span>
+            <h4 class="font-display font-bold text-xl mb-2">Nosso Médico RMSP</h4>
+            <p class="text-white/90 text-sm leading-relaxed">
+              Ambulatorial + hospitalar com obstetrícia. Rede própria forte na Grande SP, ABC e capital.
+            </p>
+            <div class="mt-4 pt-4 border-t border-white/20 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-white/80 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
+              <div class="bg-white/15 rounded-lg px-3 py-2.5">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-sm text-white/90 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-white text-xl tabular-nums whitespace-nowrap shrink-0">R$ 229,88</span>
+                </div>
+              </div>
+              <p class="text-xs text-white/70 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-hapvida-orange flex flex-col card-lift">
+            <span class="text-xs font-bold uppercase tracking-wide text-hapvida-orange mb-1">Ambulatorial</span>
+            <h4 class="font-bold text-hapvida-blue text-lg mb-2">Smart UP Ambulatorial</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Consultas, exames e urgência por até 12 horas. Opção mais econômica para quem não precisa de internação.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
+              <div class="bg-hapvida-orange/5 rounded-lg px-3 py-2">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-sm text-gray-600 shrink-0">Mensalidade</span>
+                  <span class="font-bold text-hapvida-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 287,52</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-5 shadow-sm border-l-4 border-hapvida-green flex flex-col card-lift">
+            <span class="text-xs font-bold uppercase tracking-wide text-hapvida-green mb-1">Hospitalar</span>
+            <h4 class="font-bold text-hapvida-blue text-lg mb-2">Smart UP Enfermaria</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Cobertura ambulatorial + hospitalar em enfermaria. Boa opção para quem quer internação com preço acessível.
+            </p>
+            <div class="mt-4 pt-4 border-t border-gray-100 flex-1 flex flex-col justify-end">
+              <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">Criança 0–18 anos · Individual · Parcial</p>
+              <div class="bg-hapvida-green/5 rounded-lg px-3 py-2">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="text-sm text-gray-600 shrink-0">Enfermaria</span>
+                  <span class="font-bold text-hapvida-blue text-xl tabular-nums whitespace-nowrap shrink-0">R$ 318,47</span>
+                </div>
+              </div>
+              <p class="text-xs text-gray-400 mt-2 text-right">/mês · preço fechado</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Destaque 1 dia de vida -->
+        <div class="bg-hapvida-blue text-white rounded-2xl p-5 md:p-6 mb-8 text-center shadow-md flex flex-col items-center gap-2">
+          <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/15" aria-hidden="true">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+          </span>
+          <p class="text-xl md:text-2xl font-bold">Aceita criança a partir de 1 dia de vida</p>
+          <p class="text-white/80 text-sm">Ideal para recém-nascidos — não precisa esperar completar 2 anos no CPF.</p>
+        </div>
+
+        <!-- CTA WhatsApp — único botão da seção de planos -->
+        <div class="text-center mb-8">
+          <a
+            href="#"
+            class="whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-hapvida-blue hover:bg-hapvida-green text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-md"
+            data-msg="Olá Ricardo! Quero fechar o plano Hapvida para meu filho."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Quero fechar
+          </a>
+        </div>
+
+        <!-- Parcial vs Completa Hapvida -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+          <div class="bg-hapvida-orange/10 rounded-xl border border-hapvida-orange/30 p-4 md:p-5">
+            <h4 class="font-bold text-hapvida-blue mb-2">Coparticipação Parcial</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mensalidade mais em conta. Você paga parte em consultas eletivas (R$ 43,63), urgência (R$ 61,82) e exames (40% com limites). Internação sem coparticipação.
+            </p>
+          </div>
+          <div class="bg-hapvida-green/10 rounded-xl border border-hapvida-green/40 p-4 md:p-5">
+            <h4 class="font-bold text-hapvida-green mb-2">Coparticipação Completa</h4>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              Mensalidade maior, mas sem coparticipação em consultas eletivas e exames. Só paga em terapias. Mais previsível no dia a dia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Diferenciais rápidos -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-hapvida-green/20 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-hapvida-green/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-hapvida-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-hapvida-blue">Rede própria</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-hapvida-green/20 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-hapvida-orange/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-hapvida-orange" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-hapvida-blue">Odonto grátis</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-hapvida-green/20 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-hapvida-blue/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-hapvida-blue" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-hapvida-blue">Urgência na rede</p>
+          </div>
+          <div class="bg-white rounded-xl p-3 text-center shadow-sm border border-hapvida-green/20 card-lift">
+            <div class="w-10 h-10 mx-auto mb-2 rounded-lg bg-hapvida-green/10 flex items-center justify-center" aria-hidden="true">
+              <svg class="w-5 h-5 text-hapvida-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/></svg>
+            </div>
+            <p class="text-xs font-semibold text-hapvida-blue">Telemedicina</p>
+          </div>
+        </div>
+
+        <!-- Accordion: Rede credenciada Hapvida -->
+        <div class="rounded-3xl bg-gradient-to-br from-hapvida-light/80 via-white to-hapvida-light/40 p-5 md:p-8 border-2 border-hapvida-green/30 shadow-lg mb-8">
+        <div class="mb-4">
+          <p class="text-center text-xs font-bold uppercase tracking-widest text-hapvida-green mb-2">Rede própria</p>
+          <h3 class="font-display text-xl md:text-2xl font-bold text-gray-900 text-center mb-2">Hospitais e clínicas da Hapvida</h3>
+          <p class="text-center text-gray-500 text-sm mb-5 max-w-xl mx-auto">Clique para ver unidades por região — CC NDI, CM NDI e hospitais da operadora.</p>
+        </div>
+        <details class="rede-accordion-main group rounded-2xl border-2 border-hapvida-green/60 ring-4 ring-hapvida-green/10 overflow-hidden bg-white">
+          <summary class="font-display font-bold text-hapvida-blue list-none flex justify-between items-center gap-4 p-5 md:p-6 cursor-pointer hover:bg-hapvida-light/50 transition-colors">
+            <span class="flex items-center gap-3 text-left">
+              <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-hapvida-green/15 shrink-0">
+                <svg class="w-6 h-6 text-hapvida-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg>
+              </span>
+              <span>
+                <span class="block text-base md:text-lg">Ver rede por região</span>
+                <span class="block text-xs font-normal text-gray-500 mt-0.5">Grande SP · tabela oficial Hapvida</span>
+              </span>
+            </span>
+            <svg class="rede-regiao-chevron w-5 h-5 text-hapvida-green shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </summary>
+          <div class="px-4 md:px-6 pb-5 md:pb-6 border-t border-hapvida-green/20 bg-slate-50/50">
+            <p class="text-gray-600 text-sm mt-4 mb-4 leading-relaxed bg-white rounded-lg border border-gray-100 p-3">
+              <strong class="text-gray-800">Legenda:</strong>
+              <strong class="text-gray-700"> AMB</strong> = Ambulatório · <strong class="text-gray-700">PA</strong> = Pronto Atendimento ·
+              <strong class="text-gray-700">H</strong> = Internação · <strong class="text-gray-700">PS/PSA/PSP</strong> = Pronto-socorro ·
+              <strong class="text-gray-700">LAB</strong> = Laboratório
+            </p>
+            <div id="rede-hapvida-accordions" class="space-y-3"></div>
+          </div>
+        </details>
+        </div>
+
+        <!-- Card suporte Hapvida -->
+        <div class="bg-gradient-to-r from-hapvida-blue/10 to-hapvida-orange/10 rounded-2xl border-2 border-hapvida-green/35 p-5 md:p-6 flex gap-4 items-start shadow-sm">
+          <span class="flex items-center justify-center w-12 h-12 rounded-xl bg-hapvida-green/15 shrink-0" aria-hidden="true">
+            <svg class="w-6 h-6 text-hapvida-green" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+          </span>
+          <div>
+            <p class="font-bold text-hapvida-blue text-base md:text-lg">Contratou a Hapvida comigo? Pode contar comigo depois também.</p>
+            <p class="text-gray-600 text-sm mt-2 leading-relaxed">
+              Dúvida com consulta, carteirinha ou plano? Eu continuo aqui pra te ajudar. Não some depois da venda — pode confiar.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="px-4 py-12 md:py-16 bg-white" aria-labelledby="faq-title" id="faq">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 id="faq-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Dúvidas frequentes</h2>
+          <p class="text-gray-600">Respostas diretas, sem enrolação. Ainda com dúvida? Me chama no WhatsApp.</p>
+        </div>
+
+        <div class="space-y-3">
+
+          <!-- Accordion principal -->
+          <details class="faq-item group bg-brand-light rounded-xl border-2 border-brand-blue/20 overflow-hidden" open>
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Tem coparticipação?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 space-y-5">
+              <p>
+                Quase todos os planos de saúde pessoa física hoje têm coparticipação. Abaixo mostro como funciona no Select e na Hapvida.
+              </p>
+
+              <!-- Tabela Hapvida -->
+              <div>
+                <h3 class="font-semibold text-hapvida-blue text-sm mb-2">Hapvida — Regras de Coparticipação</h3>
+                <div class="overflow-x-auto rounded-xl border border-hapvida-green/25 bg-white shadow-sm">
+                  <table class="w-full min-w-[560px] text-sm text-left">
+                    <thead>
+                      <tr class="bg-hapvida-light/80 border-b border-hapvida-green/20">
+                        <th scope="col" class="px-4 py-3 font-semibold text-gray-900">Procedimento</th>
+                        <th scope="col" class="px-4 py-3 font-semibold text-hapvida-blue whitespace-nowrap">Coparticipação Parcial</th>
+                        <th scope="col" class="px-4 py-3 font-semibold text-hapvida-blue whitespace-nowrap">Coparticipação Total</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Consultas Eletivas</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 43,63</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Consultas de urgência</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 61,82</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames Simples</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900">40% limitado a R$ 51,52</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames complexos</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900">40% limitado a R$ 125,93</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Terapias Especiais</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 78,87</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 78,87</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Demais Terapias</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 42,47</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 42,47</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Internações</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- Tabela Select -->
+              <div>
+                <h3 class="font-semibold text-select-purple text-sm mb-2">Select — Regras de Coparticipação</h3>
+                <div class="overflow-x-auto rounded-xl border border-select-purple/20 bg-white shadow-sm">
+                  <table class="w-full min-w-[560px] text-sm text-left">
+                    <thead>
+                      <tr class="bg-select-light/80 border-b border-select-purple/15">
+                        <th scope="col" class="px-4 py-3 font-semibold text-gray-900">Procedimento</th>
+                        <th scope="col" class="px-4 py-3 font-semibold text-select-purple whitespace-nowrap">Parcial</th>
+                        <th scope="col" class="px-4 py-3 font-semibold text-select-purple whitespace-nowrap">Completa</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Consultas Eletivas (agendadas)</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Consultas de Urgência e Emergência</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 45,00</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames Simples Eletivos (agendados)</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames Simples Urgência e Emergência</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">R$ 5,00</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames de Alta Complexidade Eletivos (agendados)</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900">30% limitado a R$ 70,00</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Exames de Alta Complexidade Urgência e Emergência</td>
+                        <td class="px-4 py-3 text-gray-400">—</td>
+                        <td class="px-4 py-3 font-medium text-gray-900">30% limitado a R$ 70,00</td>
+                      </tr>
+                      <tr class="hover:bg-gray-50/50">
+                        <td class="px-4 py-3 text-gray-800">Terapias <span class="text-gray-500 font-normal">(não contempla limitador mensal)</span></td>
+                        <td class="px-4 py-3 font-medium text-gray-900">30% limitado a R$ 45,00</td>
+                        <td class="px-4 py-3 font-medium text-gray-900">30% limitado a R$ 45,00</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr class="bg-select-light/40 border-t border-select-purple/10">
+                        <td class="px-4 py-3 text-gray-800 font-medium" colspan="3">
+                          Limitador mensal de coparticipação por beneficiário: <strong class="text-select-purple">R$ 350,00</strong>
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+              </div>
+
+              <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 text-gray-800 text-sm leading-relaxed">
+                <strong>Importante:</strong> Nas duas operadoras (Select e Hapvida), <strong>não existe coparticipação em internações hospitalares</strong>.
+              </div>
+
+              <p class="text-sm">
+                Planos sem coparticipação praticamente só existem em Pessoa Jurídica, e geralmente exigem empresa + mais vidas.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Há carências nos planos Select e Hapvida?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 space-y-4">
+              <p>
+                Sim, todos os planos de saúde têm carências. Abaixo estão as <strong class="text-gray-800">carências contratuais (padrão)</strong> do Select e da Hapvida — válidas para quem contrata sem plano anterior ou sem redução de carência.
+              </p>
+              <div class="overflow-x-auto rounded-xl border border-gray-200 bg-white shadow-sm">
+                <table class="w-full min-w-[520px] text-sm text-left">
+                  <thead>
+                    <tr class="bg-gray-50 border-b border-gray-200">
+                      <th scope="col" class="px-4 py-3 font-semibold text-gray-900">Procedimento</th>
+                      <th scope="col" class="px-4 py-3 font-semibold text-select-purple whitespace-nowrap">Select<br><span class="text-xs font-normal text-gray-500">Carência contratual</span></th>
+                      <th scope="col" class="px-4 py-3 font-semibold text-hapvida-blue whitespace-nowrap">Hapvida<br><span class="text-xs font-normal text-gray-500">Carência contratual</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-100">
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Urgência e Emergência</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">24 horas</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">24 horas</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Consultas e exames simples</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">15 dias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">30 dias</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Exames e procedimentos especiais</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">180 dias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">180 dias</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Terapias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">180 dias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">180 dias</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Partos a termo</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">300 dias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">300 dias</td>
+                    </tr>
+                    <tr class="hover:bg-gray-50/50">
+                      <td class="px-4 py-3 text-gray-800">Doenças ou lesões preexistentes</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">720 dias</td>
+                      <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap">730 dias</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="text-xs text-gray-500">
+                Prazos contados a partir do início da vigência do plano, conforme tabelas oficiais Select e Hapvida. Se você já tinha plano de saúde, pode haver redução ou aproveitamento de carência — veja o accordion abaixo.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Consigo aproveitar carência de outro plano?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 space-y-4">
+              <p>
+                Sim, é possível reduzir as carências quando você vem de outro plano de saúde.
+              </p>
+              <p>
+                Para isso, é necessário que o plano anterior seja de operadora similar e que você não tenha ficado mais de <strong class="text-gray-800">30 dias</strong> sem plano após o cancelamento do anterior.
+              </p>
+              <p>
+                A redução exata depende do tempo que você ficou no plano anterior e das regras de cada operadora.
+              </p>
+              <p>
+                No momento do fechamento, eu analiso o seu caso e te passo exatamente quanto de carência você consegue aproveitar.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Tem reembolso?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4 space-y-3">
+              <p>
+                Nos planos <strong class="text-gray-800">pessoa física</strong> que mostro nesta página — Select e Hapvida para o seu filho — <strong>não há reembolso</strong>. O atendimento é feito na rede credenciada da operadora.
+              </p>
+              <p>
+                Reembolso (quando você paga o médico ou hospital e pede o valor de volta) praticamente só existe em planos <strong class="text-gray-800">Pessoa Jurídica (empresarial)</strong>. Para ter, em geral você precisa de <strong>empresa com CNPJ ativo</strong> e um <strong>número mínimo de vidas</strong> no contrato.
+              </p>
+              <p class="text-sm">
+                Se reembolso é importante para você, me chama no WhatsApp que explico as opções empresariais — mas para contratar só a criança no CPF, o caminho é plano pessoa física mesmo.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Posso fazer plano só para meu filho?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              Sim. Você não precisa colocar a família inteira. Dá para contratar só a criança, no CPF dela, e pagar menos.
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Qual a idade mínima? Select ou Hapvida?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              A <strong class="text-select-purple">Select</strong> aceita a partir de <strong>2 anos</strong> no CPF da criança. A <strong class="text-hapvida-blue">Hapvida</strong> aceita desde <strong>1 dia de vida</strong>. Eu te ajudo a escolher conforme a idade do seu filho.
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Preciso de empresa ou CNPJ?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              Não. Plano pessoa física é para quem não tem plano pela empresa. Você contrata direto, como pessoa física.
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Quais documentos preciso?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              Na maioria dos casos: RG, CPF, comprovante de residência e certidão de nascimento do filho. Eu te mando a lista certa para o plano que você escolher.
+            </div>
+          </details>
+
+          <details class="faq-item group bg-brand-light rounded-xl border border-gray-200 overflow-hidden">
+            <summary class="font-semibold text-gray-900 list-none flex justify-between items-center gap-4 p-5 cursor-pointer hover:bg-blue-50/50 transition-colors">
+              Você me ajuda depois que eu contratar?
+              <svg class="faq-chevron w-5 h-5 text-brand-blue shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </summary>
+            <div class="px-5 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              Sim. <strong>Se você fechar comigo, eu não te deixo na mão.</strong> Dúvida com consulta, carteirinha ou plano? Me chama.
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MAPA DE HOSPITAIS ========== -->
+    <section class="px-4 py-10 md:py-14 bg-brand-light" aria-labelledby="mapa-title" id="hospitais">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-6">
+          <h2 id="mapa-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Hospitais mais próximos da sua casa</h2>
+          <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
+            Digite seu CEP e veja no mapa hospitais perto da sua casa.
+          </p>
+        </div>
+
+        <!-- Busca por CEP -->
+        <form id="cep-form" class="max-w-lg mx-auto mb-6 flex flex-col sm:flex-row gap-3" novalidate>
+          <div class="flex-1">
+            <label for="cep-input" class="sr-only">CEP</label>
+            <input
+              type="text"
+              id="cep-input"
+              inputmode="numeric"
+              maxlength="9"
+              placeholder="Digite seu CEP (ex: 01310-100)"
+              class="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none"
+            >
+          </div>
+          <button
+            type="submit"
+            id="cep-buscar"
+            class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors shrink-0"
+          >
+            Buscar
+          </button>
+        </form>
+
+        <p id="cep-endereco" class="text-sm text-gray-600 text-center mb-4 min-h-[1.25rem]" aria-live="polite"></p>
+
+        <!-- Legenda -->
+        <div class="flex flex-wrap justify-center gap-3 mb-4 text-xs md:text-sm">
+          <span class="inline-flex items-center gap-2 bg-select-light rounded-full px-3 py-1.5 font-medium text-select-purple">
+            <span class="w-4 h-4 rounded-full bg-select-purple shrink-0" aria-hidden="true"></span>
+            Select
+          </span>
+          <span class="inline-flex items-center gap-2 bg-hapvida-light rounded-full px-3 py-1.5 font-medium text-hapvida-blue">
+            <span class="w-4 h-4 rounded-full bg-hapvida-orange shrink-0" aria-hidden="true"></span>
+            Hapvida
+          </span>
+          <span class="inline-flex items-center gap-2 bg-blue-50 rounded-full px-3 py-1.5 font-medium text-brand-blue">
+            <svg class="w-4 h-5 shrink-0" viewBox="0 0 34 44" aria-hidden="true"><path d="M17 0C8.2 0 1 7.2 1 16c0 11.5 16 27 16 27s16-15.5 16-27C33 7.2 25.8 0 17 0z" fill="#1e40af" stroke="#fff" stroke-width="2"/></svg>
+            Sua casa
+          </span>
+        </div>
+
+        <!-- Aviso: hospitais de referência -->
+        <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-4 max-w-2xl mx-auto text-center">
+          <p class="text-gray-700 text-sm leading-relaxed">
+            <strong class="text-gray-900">Importante:</strong> pinos <span class="text-select-purple font-medium">roxos</span> = rede Select · pinos <span class="text-hapvida-orange font-medium">laranja</span> = rede Hapvida (SP e RMSP). Na cotação, eu te passo a lista completa do seu plano.
+          </p>
+        </div>
+
+        <!-- Mapa Leaflet -->
+        <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais de referência Select e Hapvida"></div>
+
+        <p class="text-xs text-gray-500 text-center mt-3">
+          Mapa ilustrativo para você ter uma ideia da rede na sua região.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== POR QUE PLANO PESSOA FÍSICA? ========== -->
+    <section class="px-4 py-10 md:py-14 bg-gradient-to-b from-blue-50 to-brand-light" aria-labelledby="pf-title">
+      <div class="max-w-4xl mx-auto">
+        <h2 id="pf-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 text-center mb-6">
+          Por que eu recomendo Plano Pessoa Física?
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
+
+          <article class="bg-white rounded-2xl p-4 md:p-5 shadow-sm flex gap-4 items-start card-lift border border-blue-100/80">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-gray-900 text-sm md:text-base">CPF da criança</h3>
+              <p class="text-gray-600 text-sm mt-1 leading-snug">Contrata direto no CPF do seu filho. Só ele no plano.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 md:p-5 shadow-sm flex gap-4 items-start card-lift border border-blue-100/80">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-gray-900 text-sm md:text-base">Reajuste pela ANS</h3>
+              <p class="text-gray-600 text-sm mt-1 leading-snug">O aumento do plano segue regras da ANS. Mais previsível pro seu bolso.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 md:p-5 shadow-sm flex gap-4 items-start card-lift border border-blue-100/80">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-gray-900 text-sm md:text-base">Sem empresa</h3>
+              <p class="text-gray-600 text-sm mt-1 leading-snug">Não precisa ter empresa nem ser de sindicato. Qualquer mãe pode contratar.</p>
+            </div>
+          </article>
+
+          <article class="bg-white rounded-2xl p-4 md:p-5 shadow-sm flex gap-4 items-start card-lift border border-blue-100/80">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center shrink-0" aria-hidden="true">
+              <svg class="w-6 h-6 text-brand-blue" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div class="text-left">
+              <h3 class="font-bold text-gray-900 text-sm md:text-base">Mais estabilidade</h3>
+              <p class="text-gray-600 text-sm mt-1 leading-snug">Não tiram seu filho do plano facilmente. Mais segurança pra você.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-pattern text-white">
+    <div class="max-w-5xl mx-auto px-4 py-14 md:py-16">
+
+      <!-- CTA principal -->
+      <div class="text-center mb-12">
+        <h2 class="font-display text-2xl md:text-4xl font-extrabold mb-4">Pronta para proteger seu filho?</h2>
+        <p class="text-blue-100 mb-3 max-w-lg mx-auto text-lg leading-relaxed">
+          Me chama no WhatsApp. Cotação grátis e sem compromisso.
+        </p>
+        <p class="text-green-300 font-semibold mb-8 text-sm md:text-base inline-flex items-center justify-center gap-2">
+          <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"/></svg>
+          Se você fechar comigo, eu não te deixo na mão.
+        </p>
+        <a
+          href="#"
+          id="footer-whatsapp"
+          class="btn-whatsapp-pulse inline-flex items-center justify-center gap-3 w-full sm:w-auto bg-whatsapp hover:bg-green-500 text-white font-extrabold text-xl px-10 py-5 rounded-full transition-all shadow-lg hover:shadow-xl hover:scale-[1.02]"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Chamar Ricardo no WhatsApp
+        </a>
+      </div>
+
+      <!-- Informações de contato -->
+      <div class="border-t border-blue-400/30 pt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left text-sm">
+        <div>
+          <h3 class="font-bold text-white text-base mb-2">Ricardo Rossi</h3>
+          <p class="text-blue-100">Corretor de Planos de Saúde</p>
+          <p class="text-blue-200/80 mt-1">Select · Hapvida</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-base mb-2">Atendimento</h3>
+          <p class="text-blue-100">Segunda a Sábado</p>
+          <p class="text-blue-100">8h às 20h</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-white text-base mb-2">Contato</h3>
+          <p class="text-blue-100">WhatsApp</p>
+          <p class="text-blue-200/80 mt-1" id="footer-telefone">(11) 99999-9999</p>
+        </div>
+      </div>
+
+      <!-- Aviso legal -->
+      <p class="text-xs text-blue-200/70 text-center max-w-2xl mx-auto mt-10 leading-relaxed">
+        Ricardo Rossi é corretor autorizado de planos de saúde. Valores e condições variam conforme operadora, idade e região. Cotação sujeita à análise da operadora.
+      </p>
+      <p class="text-xs text-blue-200/50 text-center mt-4">&copy; 2026 Ricardo Rossi. Todos os direitos reservados.</p>
+
+    </div>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Dados da rede credenciada (PDFs Select e Hapvida) -->
+  <script src="rede-dados.js"></script>
+  <script src="mapa-coordenadas.js"></script>
+
+  <!-- ========== SCRIPTS: WhatsApp, rede e mapa ========== -->
+  <script>
+    function buildWhatsAppUrl(message) {
+      const encoded = encodeURIComponent(message);
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+    }
+
+    function initWhatsAppLinks() {
+      const defaultLinks = [
+        document.getElementById('nav-whatsapp'),
+        document.getElementById('hero-whatsapp'),
+        document.getElementById('footer-whatsapp'),
+      ];
+
+      defaultLinks.forEach((link) => {
+        if (link) link.href = buildWhatsAppUrl(WHATSAPP_MSG_DEFAULT);
+      });
+
+      document.querySelectorAll('.whatsapp-cta').forEach((link) => {
+        const msg = link.dataset.msg || WHATSAPP_MSG_DEFAULT;
+        link.href = buildWhatsAppUrl(msg);
+      });
+    }
+
+    /* ---------- Mapa de hospitais (Leaflet) ---------- */
+    let mapa = null;
+    let marcadoresRede = [];
+    let marcadorCasa = null;
+    let camadaRede = null;
+
+    function criarIcone(cor, tamanho = 22) {
+      const metade = tamanho / 2;
+      const borda = Math.max(2, Math.round(tamanho * 0.12));
+      return L.divIcon({
+        className: '',
+        html: `<span style="display:block;width:${tamanho}px;height:${tamanho}px;background:${cor};border:${borda}px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.4);"></span>`,
+        iconSize: [tamanho, tamanho],
+        iconAnchor: [metade, metade],
+      });
+    }
+
+    const iconeSelect = criarIcone('#5B2D8E');
+    const iconeHapvida = criarIcone('#F7941D');
+
+    function criarIconeCasa() {
+      return L.divIcon({
+        className: 'pin-casa-leaflet',
+        html: `<svg width="34" height="44" viewBox="0 0 34 44" aria-hidden="true" style="display:block;filter:drop-shadow(0 3px 6px rgba(0,0,0,.4));"><path d="M17 0C8.2 0 1 7.2 1 16c0 11.5 16 27 16 27s16-15.5 16-27C33 7.2 25.8 0 17 0z" fill="#1e40af" stroke="#fff" stroke-width="2.5"/><circle cx="17" cy="16" r="7" fill="#fff"/><circle cx="17" cy="16" r="3.5" fill="#1e40af"/></svg>`,
+        iconSize: [34, 44],
+        iconAnchor: [17, 44],
+        popupAnchor: [0, -42],
+      });
+    }
+
+    const iconeCasa = criarIconeCasa();
+
+    function escapeHtmlMapa(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function popupUnidade(unidade) {
+      const label = unidade.operadora === 'select' ? 'Rede Select' : 'Rede Hapvida';
+      return `<strong>${escapeHtmlMapa(unidade.nome)}</strong><br><span style="color:#666;font-size:12px;">${label}</span><br><span style="color:#888;font-size:11px;">${escapeHtmlMapa(unidade.endereco)}</span>`;
+    }
+
+    function iconePorOperadora(operadora) {
+      return operadora === 'select' ? iconeSelect : iconeHapvida;
+    }
+
+    function renderizarRedeNoMapa() {
+      if (!mapa || typeof MAPA_UNIDADES === 'undefined') return;
+
+      if (camadaRede) {
+        mapa.removeLayer(camadaRede);
+      }
+
+      marcadoresRede = [];
+      camadaRede = L.layerGroup();
+
+      MAPA_UNIDADES.forEach((unidade) => {
+        const marker = L.marker([unidade.lat, unidade.lng], {
+          icon: iconePorOperadora(unidade.operadora),
+        });
+        marker.bindPopup(popupUnidade(unidade));
+        camadaRede.addLayer(marker);
+        marcadoresRede.push(marker);
+      });
+
+      camadaRede.addTo(mapa);
+
+      if (marcadoresRede.length > 0) {
+        const bounds = L.latLngBounds(marcadoresRede.map((m) => m.getLatLng()));
+        mapa.fitBounds(bounds, { padding: [32, 32], maxZoom: 11 });
+      }
+    }
+
+    function limparMarcadorCasa() {
+      if (marcadorCasa) {
+        mapa.removeLayer(marcadorCasa);
+        marcadorCasa = null;
+      }
+    }
+
+    function centralizarNoCep(lat, lng, enderecoTexto) {
+      limparMarcadorCasa();
+
+      marcadorCasa = L.marker([lat, lng], {
+        icon: iconeCasa,
+        zIndexOffset: 1000,
+      }).addTo(mapa);
+
+      marcadorCasa.bindPopup(
+        `<strong>Sua casa</strong><br><span style="color:#666;font-size:12px;">${escapeHtmlMapa(enderecoTexto)}</span>`
+      );
+
+      mapa.flyTo([lat, lng], 14, { duration: 0.75 });
+
+      setTimeout(() => {
+        if (marcadorCasa) marcadorCasa.openPopup();
+      }, 800);
+
+      const el = document.getElementById('cep-endereco');
+      if (el && enderecoTexto) el.textContent = enderecoTexto;
+    }
+
+    async function geocodificar(endereco) {
+      const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=br&q=${encodeURIComponent(endereco)}`;
+      const res = await fetch(url, {
+        headers: {
+          'Accept-Language': 'pt-BR',
+          'User-Agent': 'RicardoRossiPlanosSaude/1.0 (landing-page)',
+        },
+      });
+      if (!res.ok) return null;
+      const data = await res.json();
+      if (!data.length) return null;
+      return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+    }
+
+    async function geocodificarPorCep(viaCep) {
+      const cep = String(viaCep.cep || '').replace(/\D/g, '');
+      const cidade = viaCep.localidade || '';
+      const uf = viaCep.uf || '';
+      const bairro = viaCep.bairro || '';
+      const logradouro = viaCep.logradouro || '';
+
+      const tentativas = [];
+
+      if (logradouro && bairro) {
+        tentativas.push(`${logradouro}, ${bairro}, ${cidade}, ${uf}, Brasil`);
+      }
+      if (bairro) {
+        tentativas.push(`${bairro}, ${cidade}, ${uf}, Brasil`);
+      }
+      if (cep && cidade) {
+        tentativas.push(`${cep}, ${cidade}, ${uf}, Brasil`);
+      }
+      tentativas.push(`${cidade}, ${uf}, Brasil`);
+
+      for (const endereco of tentativas) {
+        const coords = await geocodificar(endereco);
+        if (coords) return coords;
+      }
+
+      if (cep) {
+        const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=br&postalcode=${cep}&city=${encodeURIComponent(cidade)}`;
+        const res = await fetch(url, {
+          headers: {
+            'Accept-Language': 'pt-BR',
+            'User-Agent': 'RicardoRossiPlanosSaude/1.0 (landing-page)',
+          },
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.length) {
+            return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon) };
+          }
+        }
+      }
+
+      return null;
+    }
+
+    function formatarCep(valor) {
+      const nums = valor.replace(/\D/g, '').slice(0, 8);
+      if (nums.length > 5) return `${nums.slice(0, 5)}-${nums.slice(5)}`;
+      return nums;
+    }
+
+    function initMapa() {
+      const container = document.getElementById('mapa-hospitais');
+      if (!container || typeof L === 'undefined') return;
+
+      mapa = L.map('mapa-hospitais').setView([-23.5505, -46.6333], 11);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 18,
+      }).addTo(mapa);
+
+      renderizarRedeNoMapa();
+
+      const enderecoEl = document.getElementById('cep-endereco');
+      if (enderecoEl) {
+        enderecoEl.textContent = 'Digite seu CEP para ver sua casa no mapa junto com a rede Select e Hapvida.';
+      }
+
+      const cepInput = document.getElementById('cep-input');
+      const cepForm = document.getElementById('cep-form');
+
+      if (cepInput) {
+        cepInput.addEventListener('input', (e) => {
+          e.target.value = formatarCep(e.target.value);
+        });
+      }
+
+      if (cepForm) {
+        cepForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const cep = cepInput.value.replace(/\D/g, '');
+          const enderecoEl = document.getElementById('cep-endereco');
+          const btn = document.getElementById('cep-buscar');
+
+          if (cep.length !== 8) {
+            if (enderecoEl) enderecoEl.textContent = 'Digite um CEP válido com 8 números.';
+            return;
+          }
+
+          if (btn) { btn.disabled = true; btn.textContent = 'Buscando...'; }
+          if (enderecoEl) enderecoEl.textContent = 'Buscando endereço...';
+
+          try {
+            const viaCep = await fetch(`https://viacep.com.br/ws/${cep}/json/`).then((r) => r.json());
+            if (viaCep.erro) {
+              if (enderecoEl) enderecoEl.textContent = 'CEP não encontrado. Confira e tente de novo.';
+              return;
+            }
+
+            const enderecoTexto = viaCep.logradouro
+              ? `${viaCep.logradouro}, ${viaCep.bairro} — ${viaCep.localidade}/${viaCep.uf}`
+              : `${viaCep.bairro} — ${viaCep.localidade}/${viaCep.uf}`;
+
+            const coords = await geocodificarPorCep(viaCep);
+
+            if (!coords) {
+              if (enderecoEl) enderecoEl.textContent = 'Endereço encontrado, mas não foi possível localizar no mapa.';
+              return;
+            }
+
+            centralizarNoCep(coords.lat, coords.lng, enderecoTexto);
+          } catch {
+            if (enderecoEl) enderecoEl.textContent = 'Erro ao buscar. Verifique sua conexão e tente de novo.';
+          } finally {
+            if (btn) { btn.disabled = false; btn.textContent = 'Buscar'; }
+          }
+        });
+      }
+    }
+
+    function initFooterContato() {
+      const tel = document.getElementById('footer-telefone');
+      if (tel && typeof WHATSAPP_DISPLAY !== 'undefined') tel.textContent = WHATSAPP_DISPLAY;
+    }
+
+    /* ---------- Rede credenciada (accordions por região) ---------- */
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function renderCatBadges(cats, badgeClass) {
+      if (!cats) return '<span class="text-xs text-gray-400 italic">não incluído</span>';
+      return cats.split(',').map((c) => c.trim()).filter(Boolean).map(
+        (c) => `<span class="inline-block text-xs font-semibold px-2 py-0.5 rounded-full ${badgeClass}">${escapeHtml(c)}</span>`
+      ).join(' ');
+    }
+
+    function renderPlanoRow(planoNome, cats, badgeClass) {
+      return `
+        <div class="min-w-0">
+          <span class="block text-[10px] font-bold uppercase tracking-wide text-gray-400 mb-0.5">${escapeHtml(planoNome)}</span>
+          <div class="flex flex-wrap gap-1">${renderCatBadges(cats, badgeClass)}</div>
+        </div>
+      `;
+    }
+
+    function renderHospitalItem(item, rede, theme) {
+      const badgeClass = theme === 'select'
+        ? 'bg-select-purple/10 text-select-purple'
+        : 'bg-hapvida-green/15 text-hapvida-blue';
+      const cols = rede.planos.map((plano, i) => renderPlanoRow(plano, item.planos[i], badgeClass)).join('');
+      const allIguais = item.planos.every((p) => p === item.planos[0]);
+
+      let corpo = '';
+      if (allIguais && item.planos[0]) {
+        corpo = `<div class="flex flex-wrap gap-1 mt-1">${renderCatBadges(item.planos[0], badgeClass)}</div>`;
+      } else {
+        corpo = `<div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-2">${cols}</div>`;
+      }
+
+      return `
+        <li class="py-3 border-b border-gray-100 last:border-0">
+          <p class="font-medium text-gray-900 text-sm leading-snug">${escapeHtml(item.nome)}</p>
+          ${corpo}
+        </li>
+      `;
+    }
+
+    function renderRegiaoAccordion(regiao, rede, theme) {
+      const borderClass = theme === 'select' ? 'border-select-purple/35' : 'border-hapvida-green/40';
+      const hoverClass = theme === 'select' ? 'hover:bg-select-light/80' : 'hover:bg-hapvida-light';
+      const accentClass = theme === 'select' ? 'text-select-purple' : 'text-hapvida-green';
+      const iconBg = theme === 'select' ? 'bg-select-purple/12' : 'bg-hapvida-green/15';
+      const itens = regiao.itens.map((item) => renderHospitalItem(item, rede, theme)).join('');
+
+      return `
+        <details class="rede-regiao-item group rounded-xl border-2 ${borderClass} bg-white overflow-hidden shadow-sm">
+          <summary class="font-semibold text-gray-900 text-sm md:text-base list-none flex justify-between items-center gap-3 p-4 md:px-5 md:py-4 cursor-pointer ${hoverClass} transition-colors">
+            <span class="flex items-center gap-2.5 min-w-0">
+              <span class="flex items-center justify-center w-8 h-8 rounded-lg ${iconBg} shrink-0" aria-hidden="true">
+                <svg class="w-4 h-4 ${accentClass}" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </span>
+              <span class="truncate">${escapeHtml(regiao.nome)} <span class="${accentClass} font-bold">(${regiao.itens.length})</span></span>
+            </span>
+            <svg class="rede-regiao-chevron w-4 h-4 ${accentClass} shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+          </summary>
+          <ul class="px-4 md:px-5 pb-4 border-t border-gray-100 bg-slate-50/90">${itens}</ul>
+        </details>
+      `;
+    }
+
+    function initRedeAccordions() {
+      const selectEl = document.getElementById('rede-select-accordions');
+      const hapvidaEl = document.getElementById('rede-hapvida-accordions');
+
+      if (selectEl && typeof REDE_SELECT !== 'undefined') {
+        selectEl.innerHTML = REDE_SELECT.regioes.map((r) => renderRegiaoAccordion(r, REDE_SELECT, 'select')).join('');
+      }
+      if (hapvidaEl && typeof REDE_HAPVIDA !== 'undefined') {
+        hapvidaEl.innerHTML = REDE_HAPVIDA.regioes.map((r) => renderRegiaoAccordion(r, REDE_HAPVIDA, 'hapvida')).join('');
+      }
+    }
+
+    function initNavbarScroll() {
+      const header = document.getElementById('site-header');
+      if (!header) return;
+
+      const onScroll = () => {
+        header.classList.toggle('is-scrolled', window.scrollY > 12);
+      };
+
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initNavbarScroll();
+      initWhatsAppLinks();
+      initRedeAccordions();
+      initMapa();
+      initFooterContato();
+    });
+  </script>
+
+</body>
+</html>
