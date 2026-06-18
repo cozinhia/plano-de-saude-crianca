@@ -1,0 +1,6 @@
+node_modules/
+_repo_check/
+_ocr_*.txt
+package-lock.json
+package.json
+ocr-rede-pdfs.js

@@ -3,17 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 
   <!-- SEO -->
-  <title>Plano de Saúde para Seu Filho a Partir de 2 Anos | Ricardo Rossi</title>
-  <meta name="description" content="Plano de saúde só para seu filho, a partir de 2 anos no CPF. Ricardo Rossi, corretor com opções Select e Hapvida. Cotação grátis pelo WhatsApp.">
+  <title>Plano de Saúde para Criança SP | Select e Hapvida</title>
+  <meta name="description" content="Plano de saúde só para seu filho em São Paulo. Select e Hapvida no CPF da criança, sem incluir a família. Cotação grátis com Ricardo Rossi.">
   <meta name="robots" content="index, follow">
+  <meta name="author" content="Ricardo Rossi">
+  <meta name="geo.region" content="BR-SP">
+  <meta name="geo.placename" content="São Paulo">
+  <meta name="theme-color" content="#5B2D8E">
+  <link rel="canonical" href="https://planodesaudeparacrianca.com.br/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Plano de Saúde para Seu Filho | Ricardo Rossi">
-  <meta property="og:description" content="Plano de saúde só para seu filho, com parcelas que cabem no bolso. Cotação grátis pelo WhatsApp.">
+  <meta property="og:title" content="Plano de Saúde para Criança | Select e Hapvida em SP">
+  <meta property="og:description" content="Plano infantil só para o seu filho, no CPF dele. Compare Select e Hapvida com cotação grátis pelo WhatsApp.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://planodesaudeparacrianca.com.br/">
+  <meta property="og:site_name" content="Plano de Saúde para Criança">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://planodesaudeparacrianca.com.br/og-image.png">
+  <meta property="og:image:alt" content="Plano de Saúde para Criança — Select e Hapvida em São Paulo">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plano de Saúde para Criança | Select e Hapvida">
+  <meta name="twitter:description" content="Plano de saúde só para filho no CPF da criança. Cotação grátis em São Paulo com Ricardo Rossi.">
+  <meta name="twitter:image" content="https://planodesaudeparacrianca.com.br/og-image.png">
+  <meta name="twitter:image:alt" content="Plano de Saúde para Criança — Select e Hapvida em São Paulo">
+
+  <!--
+    Google tag (gtag.js) — Google Ads
+    ID da conta: AW-7968415381
+    Para trocar de conta, substitua AW-7968415381 nos dois lugares abaixo (src do script e gtag('config')).
+    Conversão WhatsApp: após criar a ação de conversão no Google Ads, substitua GOOGLE_ADS_CONVERSION_LABEL
+    no bloco CONFIG (perto do número do WhatsApp) e o send_to em trackWhatsAppClick().
+    No Google Ads: Ferramentas → Conversões → Nova conversão → Site → evento personalizado ou tag de conversão.
+    Para evento whatsapp_click: configure como conversão secundária em Metas → Conversões → Importar do Google Analytics
+    ou use a tag conversion com o rótulo (label) gerado em AW-7968415381/XXXXXXXXX.
+  -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-7968415381"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-7968415381');
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -224,6 +267,61 @@
       touch-action: pan-y;
     }
 
+    /* Campo CEP — borda animada */
+    .cep-input-wrap {
+      position: relative;
+      padding: 2.5px;
+      border-radius: 0.875rem;
+      background: linear-gradient(90deg, #5B2D8E, #1e40af, #00A859, #0066a1, #5B2D8E);
+      background-size: 300% 100%;
+      animation: cep-border-flow 5s linear infinite;
+      box-shadow: 0 4px 24px rgba(30, 64, 175, 0.22);
+      transition: box-shadow 0.25s ease;
+    }
+    .cep-input-wrap:focus-within {
+      animation-duration: 2.5s;
+      box-shadow: 0 6px 32px rgba(91, 45, 142, 0.35);
+    }
+    .cep-input-wrap input {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 0.7rem;
+      background: #fff;
+      color: #0f172a;
+      font-weight: 600;
+      padding: 0.875rem 1rem 0.875rem 2.75rem;
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      outline: none;
+      box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.06);
+    }
+    .cep-input-wrap input::placeholder {
+      color: #64748b;
+      font-weight: 500;
+    }
+    .cep-input-pin {
+      position: absolute;
+      left: 1.125rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.25rem;
+      height: 1.25rem;
+      color: #1e40af;
+      pointer-events: none;
+      z-index: 2;
+    }
+    @keyframes cep-border-flow {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 300% 50%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cep-input-wrap {
+        animation: none;
+        background: linear-gradient(135deg, #5B2D8E 0%, #1e40af 50%, #00A859 100%);
+      }
+    }
+
     /* Rede hospital accordions — destaque */
     .rede-accordion-main {
       box-shadow: 0 12px 40px rgba(15, 23, 42, 0.1);
@@ -301,12 +399,18 @@
     const WHATSAPP_NUMBER = '5511953284219';
     const WHATSAPP_DISPLAY = '(11) 95328-4219';
     const WHATSAPP_MSG_DEFAULT = 'Olá Ricardo! Quero cotar um plano de saúde para meu filho.';
+
+    /* Google Ads — ID da conta AW-7968415381
+       Após criar a conversão no Google Ads, cole o rótulo (label) abaixo.
+       Ex.: se o send_to for AW-7968415381/AbCdEfGhIj, use 'AbCdEfGhIj' */
+    const GOOGLE_ADS_ID = 'AW-7968415381';
+    const GOOGLE_ADS_CONVERSION_LABEL = 'XXXXXXXXX';
   </script>
 
   <!-- ========== NAVBAR ========== -->
   <header id="site-header" class="sticky top-0 z-50 bg-white/95 border-b border-transparent">
     <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4" aria-label="Navegação principal">
-      <a href="#" class="flex flex-col leading-tight group">
+      <a href="https://planodesaudeparacrianca.com.br/" class="flex flex-col leading-tight group">
         <span class="font-display text-lg font-extrabold tracking-tight">
           <span class="text-select-purple">R</span><span class="text-gray-900">icardo Rossi</span>
         </span>
@@ -339,16 +443,16 @@
       <div class="relative max-w-3xl mx-auto text-center">
         <p class="inline-flex items-center gap-2 glass-badge text-white/90 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-10 md:mb-12">
           <svg class="w-4 h-4 text-select-green" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          Plano só para seu filho · Pessoa física
+          Plano infantil São Paulo · Só para seu filho
         </p>
         <h1 id="hero-title" class="font-display text-[clamp(2rem,5.5vw,3.5rem)] font-extrabold text-white leading-[1.1] tracking-tight mb-6">
-          É difícil achar um bom plano de saúde só para seu filho?
+          Plano de Saúde para Criança em São Paulo
         </h1>
         <p class="text-lg md:text-xl text-slate-300 mb-4 leading-relaxed max-w-2xl mx-auto">
-          Nos preocupamos com nossos filhos e queremos o melhor para eles, inclusive na saúde.
+          Contrate <strong class="text-white font-semibold">plano de saúde só para o seu filho</strong>, no CPF dele — sem incluir a família inteira.
         </p>
         <p class="text-base md:text-lg text-slate-400 mb-8 leading-relaxed max-w-2xl mx-auto">
-          Depender apenas do SUS é arriscado — crianças precisam de cuidados com mais frequência. Aqui você encontra planos para contratar <strong class="text-white font-semibold">só o seu filho</strong>, no CPF dele, sem incluir a família inteira.
+          Crianças precisam de cuidados com mais frequência. Aqui você encontra opções Select e Hapvida para contratar apenas o seu filho, com rede credenciada na capital e Grande SP.
         </p>
 
         <ul class="flex flex-wrap justify-center gap-2 mb-4 text-sm font-medium">
@@ -378,7 +482,7 @@
           <figure class="shrink-0 mb-5 md:mb-0 mx-auto md:mx-0 w-36 md:w-44">
             <img
               src="fotoricardo.jpeg"
-              alt="Ricardo Rossi, corretor de planos de saúde"
+              alt="Ricardo Rossi, corretor de plano de saúde infantil em São Paulo — Select e Hapvida"
               class="rounded-2xl shadow-lg w-full aspect-square object-cover ring-4 ring-select-purple/20 ring-offset-2"
               width="400"
               height="400"
@@ -387,9 +491,9 @@
             <figcaption class="text-center mt-2 text-sm font-bold text-select-purple font-display">Ricardo Rossi</figcaption>
           </figure>
           <div>
-            <h2 id="ricardo-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Oi, eu sou o Ricardo</h2>
+            <h2 id="ricardo-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Seu corretor de plano de saúde infantil</h2>
             <p class="text-gray-600 leading-relaxed mb-4">
-              Escolhi duas opções que cabem no bolso: <strong class="text-select-purple">Select</strong> e <strong class="text-hapvida-blue">Hapvida</strong>. Explico tudo simples, sem enrolação.
+              Sou o Ricardo Rossi e ajudo mães a encontrar <strong class="text-select-purple">plano de saúde para criança</strong> em São Paulo. Trabalho com <strong class="text-select-purple">Select</strong> e <strong class="text-hapvida-blue">Hapvida</strong> — explico tudo simples, sem enrolação.
             </p>
             <div class="bg-white rounded-xl border-l-4 border-green-500 p-4 mb-4 shadow-sm">
               <p class="text-gray-900 font-bold leading-snug">
@@ -418,11 +522,11 @@
             A partir de 2 anos no CPF da criança
           </span>
           <h2 id="select-title" class="font-display mb-4 tracking-tight">
-            <span class="block text-lg md:text-xl font-semibold text-select-blue/70 mb-1">Minha principal indicação:</span>
+            <span class="block text-lg md:text-xl font-semibold text-select-blue/70 mb-1">Plano infantil São Paulo · a partir de 2 anos no CPF</span>
             <span class="block text-3xl md:text-5xl font-extrabold text-select-blue">Select</span>
           </h2>
           <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-sm md:text-base mb-4">
-            O Select é um dos poucos planos <strong class="text-select-purple">pessoa física</strong> que permite contratar apenas o seu filho no CPF, com acesso a uma rede de hospitais de alto nível, como <strong>Beneficência Portuguesa</strong>, <strong>Hospital Santa Catarina</strong>, <strong>Leforte</strong>, <strong>Nove de Julho</strong>, <strong>Samaritano</strong> e <strong>São Camilo</strong>.
+            O Select é um dos poucos planos <strong class="text-select-purple">pessoa física</strong> que permite contratar <strong class="text-select-purple">plano de saúde criança CPF</strong> — só o seu filho, com rede de hospitais de alto nível em São Paulo, como <strong>Beneficência Portuguesa</strong>, <strong>Hospital Santa Catarina</strong>, <strong>Leforte</strong>, <strong>Nove de Julho</strong>, <strong>Samaritano</strong> e <strong>São Camilo</strong>.
           </p>
           <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
             É uma boa opção quando você busca qualidade de atendimento sem precisar fazer um plano familiar completo.
@@ -704,11 +808,11 @@
             A partir de 1 dia de vida
           </span>
           <h2 id="hapvida-title" class="font-display mb-4 tracking-tight">
-            <span class="block text-lg md:text-xl font-semibold text-hapvida-blue/70 mb-1">Outra boa opção:</span>
+            <span class="block text-lg md:text-xl font-semibold text-hapvida-blue/70 mb-1">Plano de saúde só para filho · desde o nascimento</span>
             <span class="block text-3xl md:text-5xl font-extrabold text-hapvida-blue">Hapvida</span>
           </h2>
           <p class="text-gray-600 leading-relaxed max-w-3xl mx-auto text-sm md:text-base">
-            Plano com <strong class="text-hapvida-blue">rede própria</strong> — clínicas e hospitais da própria operadora —
+            <strong class="text-hapvida-blue">Plano infantil São Paulo</strong> com <strong class="text-hapvida-blue">rede própria</strong> — clínicas e hospitais da operadora —
             com <strong>ótimo custo-benefício</strong> e mensalidade mais acessível para crianças.
           </p>
         </div>
@@ -929,29 +1033,36 @@
     <section class="px-4 py-10 md:py-14 bg-brand-light" aria-labelledby="mapa-title" id="hospitais">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-6">
-          <h2 id="mapa-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Hospitais mais próximos da sua casa</h2>
+          <h2 id="mapa-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Rede do plano infantil perto da sua casa</h2>
           <p class="text-gray-600 max-w-xl mx-auto text-sm md:text-base">
-            Digite seu CEP e veja no mapa hospitais perto da sua casa.
+            Digite seu CEP e veja no mapa hospitais da rede Select e Hapvida em São Paulo e região.
           </p>
         </div>
 
         <!-- Busca por CEP -->
-        <form id="cep-form" class="max-w-lg mx-auto mb-6 flex flex-col sm:flex-row gap-3" novalidate>
+        <form id="cep-form" class="max-w-lg mx-auto mb-6 flex flex-col sm:flex-row gap-3 items-stretch sm:items-end" novalidate>
           <div class="flex-1">
-            <label for="cep-input" class="sr-only">CEP</label>
-            <input
-              type="text"
-              id="cep-input"
-              inputmode="numeric"
-              maxlength="9"
-              placeholder="Digite seu CEP (ex: 01310-100)"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 text-base focus:ring-2 focus:ring-brand-blue focus:border-brand-blue outline-none"
-            >
+            <label for="cep-input" class="block text-sm font-bold text-gray-800 mb-2 text-center sm:text-left">
+              Digite seu CEP
+            </label>
+            <div class="cep-input-wrap">
+              <svg class="cep-input-pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
+              </svg>
+              <input
+                type="text"
+                id="cep-input"
+                inputmode="numeric"
+                maxlength="9"
+                placeholder="01310-100"
+                autocomplete="postal-code"
+              >
+            </div>
           </div>
           <button
             type="submit"
             id="cep-buscar"
-            class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors shrink-0"
+            class="bg-brand-blue hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors shrink-0 shadow-md hover:shadow-lg sm:mb-0"
           >
             Buscar
           </button>
@@ -983,7 +1094,7 @@
         </div>
 
         <!-- Mapa Leaflet -->
-        <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais de referência Select e Hapvida"></div>
+        <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais da rede Select e Hapvida para plano de saúde infantil em São Paulo"></div>
 
         <p class="text-xs text-gray-500 text-center mt-3">
           Mapa ilustrativo da rede na sua região. Role a página normalmente — use os botões +/− no mapa para aproximar.
@@ -995,8 +1106,8 @@
     <section class="px-4 py-12 md:py-16 bg-white" aria-labelledby="faq-title" id="faq">
       <div class="max-w-3xl mx-auto">
         <div class="text-center mb-10">
-          <h2 id="faq-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Dúvidas frequentes</h2>
-          <p class="text-gray-600">Respostas diretas, sem enrolação. Ainda com dúvida? Me chama no WhatsApp.</p>
+          <h2 id="faq-title" class="font-display text-2xl md:text-3xl font-bold text-gray-900 mb-3">Dúvidas sobre plano de saúde para criança</h2>
+          <p class="text-gray-600">Respostas diretas sobre plano infantil, CPF da criança e coparticipação. Ainda com dúvida? Me chama no WhatsApp.</p>
         </div>
 
         <div class="space-y-3">
@@ -1290,7 +1401,7 @@
     <section class="px-4 py-10 md:py-14 bg-gradient-to-b from-blue-50 to-brand-light" aria-labelledby="pf-title">
       <div class="max-w-4xl mx-auto">
         <h2 id="pf-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 text-center mb-6">
-          Por que eu recomendo Plano Pessoa Física?
+          Por que contratar plano de saúde criança CPF?
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
@@ -1301,7 +1412,7 @@
             </div>
             <div class="text-left">
               <h3 class="font-bold text-gray-900 text-sm md:text-base">CPF da criança</h3>
-              <p class="text-gray-600 text-sm mt-1 leading-snug">Contrata direto no CPF do seu filho. Só ele no plano.</p>
+              <p class="text-gray-600 text-sm mt-1 leading-snug">Plano de saúde só para filho, contratado direto no CPF dele. Só ele no plano.</p>
             </div>
           </article>
 
@@ -1347,7 +1458,7 @@
 
       <!-- CTA principal -->
       <div class="text-center mb-12">
-        <h2 class="font-display text-2xl md:text-4xl font-extrabold mb-4">Pronta para proteger seu filho?</h2>
+        <p class="font-display text-2xl md:text-4xl font-extrabold mb-4">Pronta para proteger seu filho?</p>
         <p class="text-blue-100 mb-3 max-w-lg mx-auto text-lg leading-relaxed">
           Me chama no WhatsApp. Cotação grátis e sem compromisso.
         </p>
@@ -1372,17 +1483,17 @@
       <!-- Informações de contato -->
       <div class="border-t border-blue-400/30 pt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left text-sm">
         <div>
-          <h3 class="font-bold text-white text-base mb-2">Ricardo Rossi</h3>
+          <p class="font-bold text-white text-base mb-2">Ricardo Rossi</p>
           <p class="text-blue-100">Corretor de Planos de Saúde</p>
           <p class="text-blue-200/80 mt-1">Select · Hapvida</p>
         </div>
         <div>
-          <h3 class="font-bold text-white text-base mb-2">Atendimento</h3>
+          <p class="font-bold text-white text-base mb-2">Atendimento</p>
           <p class="text-blue-100">Segunda a Sábado</p>
           <p class="text-blue-100">8h às 20h</p>
         </div>
         <div>
-          <h3 class="font-bold text-white text-base mb-2">Contato</h3>
+          <p class="font-bold text-white text-base mb-2">Contato</p>
           <p class="text-blue-100">WhatsApp</p>
           <p class="text-blue-200/80 mt-1" id="footer-telefone">(11) 95328-4219</p>
         </div>
@@ -1397,6 +1508,128 @@
     </div>
   </footer>
 
+  <!-- Schema.org: negócio local, serviços e FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://planodesaudeparacrianca.com.br/#website",
+        "url": "https://planodesaudeparacrianca.com.br/",
+        "name": "Plano de Saúde para Criança",
+        "description": "Plano de saúde infantil Select e Hapvida em São Paulo — só para o seu filho, no CPF da criança.",
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": ["LocalBusiness", "InsuranceAgency"],
+        "@id": "https://planodesaudeparacrianca.com.br/#business",
+        "name": "Ricardo Rossi — Plano de Saúde Infantil",
+        "description": "Corretor de planos de saúde especializado em plano de saúde para criança em São Paulo e região. Opções Select e Hapvida no CPF do filho.",
+        "url": "https://planodesaudeparacrianca.com.br/",
+        "image": "https://planodesaudeparacrianca.com.br/fotoricardo.jpeg",
+        "telephone": "+55-11-95328-4219",
+        "priceRange": "$$",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "São Paulo e Região Metropolitana",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "São Paulo",
+            "containedInPlace": { "@type": "Country", "name": "Brasil" }
+          }
+        },
+        "founder": {
+          "@type": "Person",
+          "name": "Ricardo Rossi",
+          "jobTitle": "Corretor de Planos de Saúde"
+        },
+        "knowsAbout": ["Plano de saúde infantil", "Plano de saúde para criança", "Select Saúde", "Hapvida", "Plano de saúde criança CPF"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Planos de Saúde Infantil",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Plano Select para Criança",
+                "description": "Plano de saúde pessoa física só para criança no CPF, com rede premium em São Paulo.",
+                "provider": { "@id": "https://planodesaudeparacrianca.com.br/#business" },
+                "areaServed": "São Paulo, SP"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Plano Hapvida para Criança",
+                "description": "Plano infantil com rede própria e mensalidade acessível em São Paulo e RMSP.",
+                "provider": { "@id": "https://planodesaudeparacrianca.com.br/#business" },
+                "areaServed": "São Paulo, SP"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://planodesaudeparacrianca.com.br/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Tem coparticipação? Quais valores?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Quase todos os planos de saúde pessoa física têm coparticipação. No Select e na Hapvida, os valores variam conforme o procedimento e o tipo de coparticipação (parcial ou total). Consulte as tabelas na página ou peça uma cotação personalizada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Há carências nos planos Select e Hapvida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Urgência e emergência: 24 horas nos dois planos. Consultas e exames simples: 15 dias no Select e 30 dias na Hapvida. Prazos maiores para internações, partos e doenças preexistentes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Consigo aproveitar carência de outro plano?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, é possível reduzir carências ao migrar de outro plano de operadora similar, desde que não tenha ficado mais de 30 dias sem cobertura após o cancelamento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso fazer plano só para meu filho?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Você não precisa colocar a família inteira. Dá para contratar só a criança, no CPF dela, e pagar menos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual a idade mínima? Select ou Hapvida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Select aceita a partir de 2 anos no CPF da criança. A Hapvida aceita desde 1 dia de vida."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Você me ajuda depois que eu contratar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. Ricardo Rossi acompanha você após a contratação — dúvidas com consulta, carteirinha ou plano podem ser resolvidas diretamente pelo WhatsApp."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
@@ -1408,6 +1641,18 @@
     function buildWhatsAppUrl(message) {
       const encoded = encodeURIComponent(message);
       return `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`;
+    }
+
+    function trackWhatsAppClick() {
+      if (typeof gtag !== 'function') return;
+
+      /* Evento personalizado — útil para relatórios e conversão por evento no Google Ads */
+      gtag('event', 'whatsapp_click');
+
+      /* Conversão Google Ads — substitua XXXXXXXXX pelo rótulo real da ação de conversão */
+      gtag('event', 'conversion', {
+        send_to: GOOGLE_ADS_ID + '/' + GOOGLE_ADS_CONVERSION_LABEL,
+      });
     }
 
     function initWhatsAppLinks() {
@@ -1423,6 +1668,11 @@
       document.querySelectorAll('.whatsapp-cta').forEach((link) => {
         const msg = link.dataset.msg || WHATSAPP_MSG_DEFAULT;
         link.href = buildWhatsAppUrl(msg);
+      });
+
+      /* Rastreamento: todos os botões de WhatsApp da página */
+      document.querySelectorAll('#nav-whatsapp, #footer-whatsapp, .whatsapp-cta').forEach((link) => {
+        link.addEventListener('click', trackWhatsAppClick);
       });
     }
 

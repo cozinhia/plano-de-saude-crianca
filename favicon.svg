@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Plano de saúde infantil">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B2D8E"/>
+      <stop offset="100%" stop-color="#2B3990"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <path fill="#00A859" d="M16 25.5s-7.2-4.6-9.4-8.4C4.6 13.8 5.8 10.5 8.8 10c1.5-.2 3 .4 4 1.6 1-1.2 2.5-1.8 4-1.6 3 .5 4.2 3.8 2.2 7.1-2.2 3.8-9.4 8.4-9.4 8.4z"/>
+  <path fill="#fff" fill-opacity=".95" d="M15.2 14.2h1.6v2.4h2.4v1.6h-2.4v2.4h-1.6v-2.4h-2.4v-1.6h2.4z"/>
+</svg>
