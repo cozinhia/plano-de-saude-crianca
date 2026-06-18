@@ -104,14 +104,125 @@
     /* Accordions de preços dos planos */
     .plano-accordion {
       transition: box-shadow 0.25s;
-      align-self: start;
       width: 100%;
+      min-height: 16rem;
+      display: flex;
+      flex-direction: column;
     }
-    .plano-accordion summary { outline: none; }
+    .plano-accordion.plano-accordion-featured {
+      padding-top: 2rem;
+    }
+    .plano-accordion summary {
+      outline: none;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 16rem;
+      box-sizing: border-box;
+    }
+    .plano-accordion.plano-accordion-featured > summary {
+      min-height: 14rem;
+    }
+    .plano-accordion-summary-main {
+      flex: 1;
+    }
+    .plano-rede-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .plano-rede-stat {
+      text-align: center;
+      padding: 0.75rem 0.5rem;
+      border-radius: 0.75rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+    .plano-rede-stat-num {
+      display: block;
+      font-size: 1.625rem;
+      font-weight: 800;
+      line-height: 1.1;
+      font-variant-numeric: tabular-nums;
+    }
+    .plano-rede-stat-label {
+      display: block;
+      font-size: 0.625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-top: 0.25rem;
+    }
+    .plano-rede-stats--select .plano-rede-stat-num { color: #5B2D8E; }
+    .plano-rede-stats--hapvida .plano-rede-stat-num { color: #0066a1; }
+    .plano-rede-stats--light .plano-rede-stat {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+    .plano-rede-stats--light .plano-rede-stat-num { color: #fff; }
+    .plano-rede-stats--light .plano-rede-stat-label { color: rgba(255, 255, 255, 0.75); }
+    .plano-btn-ver-preco {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.375rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      transition: filter 0.2s, transform 0.2s, box-shadow 0.2s;
+      pointer-events: none;
+    }
+    .plano-accordion summary:hover .plano-btn-ver-preco { filter: brightness(1.06); }
+    .plano-accordion[open] .plano-btn-ver-preco { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15); }
+    .plano-btn-ver-preco--select {
+      background: linear-gradient(135deg, #5B2D8E 0%, #4a2575 100%);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(91, 45, 142, 0.28);
+    }
+    .plano-btn-ver-preco--select-light {
+      background: rgba(255, 255, 255, 0.96);
+      color: #5B2D8E;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+    .plano-btn-ver-preco--hapvida {
+      background: linear-gradient(135deg, #0066a1 0%, #008f5a 100%);
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(0, 102, 161, 0.25);
+    }
+    .plano-btn-ver-preco--hapvida-light {
+      background: rgba(255, 255, 255, 0.96);
+      color: #0066a1;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+    .plano-accordion-ver-precos {
+      display: none;
+    }
+    .plano-accordion[open] {
+      align-self: start;
+      min-height: auto;
+      box-shadow: 0 10px 32px rgba(15, 23, 42, 0.1);
+    }
+    .plano-accordion[open] > summary {
+      min-height: auto;
+      flex: none;
+    }
     .plano-accordion summary::-webkit-details-marker { display: none; }
     .plano-accordion-chevron { transition: transform 0.3s ease; }
     .plano-accordion[open] .plano-accordion-chevron { transform: rotate(180deg); }
-    .plano-accordion[open] { box-shadow: 0 10px 32px rgba(15, 23, 42, 0.1); }
+    .plano-accordion-wrap {
+      height: 100%;
+      min-height: 16rem;
+    }
+
+    #mapa-hospitais.leaflet-container {
+      touch-action: pan-y;
+    }
 
     /* Rede hospital accordions — destaque */
     .rede-accordion-main {
@@ -187,8 +298,8 @@
   <!-- ========== CONFIG: altere o número do WhatsApp aqui ========== -->
   <!-- Formato: 55 + DDD + número (sem espaços ou símbolos) -->
   <script>
-    const WHATSAPP_NUMBER = '5511999999999';
-    const WHATSAPP_DISPLAY = '(11) 99999-9999';
+    const WHATSAPP_NUMBER = '5511953284219';
+    const WHATSAPP_DISPLAY = '(11) 95328-4219';
     const WHATSAPP_MSG_DEFAULT = 'Olá Ricardo! Quero cotar um plano de saúde para meu filho.';
   </script>
 
@@ -266,7 +377,7 @@
         <div class="bg-gradient-to-br from-select-light/80 via-white to-brand-light rounded-2xl p-6 md:p-8 md:flex md:gap-8 md:items-center shadow-md border border-gray-100 card-lift">
           <figure class="shrink-0 mb-5 md:mb-0 mx-auto md:mx-0 w-36 md:w-44">
             <img
-              src="https://placehold.co/400x400/5B2D8E/ffffff?text=Ricardo+Rossi"
+              src="fotoricardo.jpeg"
               alt="Ricardo Rossi, corretor de planos de saúde"
               class="rounded-2xl shadow-lg w-full aspect-square object-cover ring-4 ring-select-purple/20 ring-offset-2"
               width="400"
@@ -336,21 +447,23 @@
 
         <!-- Select SP -->
         <p class="text-center text-xs font-bold uppercase tracking-widest text-select-purple mb-3">Select SP</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 items-stretch">
 
-          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-gray-300 overflow-hidden group">
+          <details class="plano-accordion h-full bg-white rounded-2xl shadow-sm border-l-4 border-gray-300 overflow-hidden group">
             <summary class="list-none cursor-pointer p-5 hover:bg-gray-50/50 transition-colors">
-              <div class="flex justify-between items-start gap-3 w-full">
-                <div class="min-w-0 flex-1 text-left">
-                  <span class="text-[10px] font-bold uppercase tracking-wide text-gray-400 mb-1 block">Entrada básica · Enfermaria</span>
-                  <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-2 leading-tight">Select SP 100</h4>
-                  <p class="text-gray-500 text-xs leading-relaxed">
-                    O mais econômico. Boa rede, mas com menos hospitais premium que os planos acima.
-                  </p>
+              <span class="text-[10px] font-bold uppercase tracking-wide text-gray-400 mb-1 block">Entrada básica · Enfermaria</span>
+              <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-3 leading-tight">Select SP 100</h4>
+              <div class="plano-rede-stats plano-rede-stats--select">
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">36</span>
+                  <span class="plano-rede-stat-label">hospitais</span>
                 </div>
-                <svg class="plano-accordion-chevron w-5 h-5 text-select-purple shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">17</span>
+                  <span class="plano-rede-stat-label">laboratórios</span>
+                </div>
               </div>
-              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-purple/70 mt-3 text-left">Ver preços</p>
+              <span class="plano-btn-ver-preco plano-btn-ver-preco--select" aria-hidden="true">Ver preço</span>
             </summary>
             <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
               <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
@@ -366,21 +479,23 @@
             </div>
           </details>
 
-          <div class="relative w-full self-start">
+          <div class="plano-accordion-wrap plano-accordion-wrap-featured relative w-full h-full">
             <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-select-green text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap z-20">⭐ Melhor custo-benefício</span>
-            <details class="plano-accordion plano-accordion-featured bg-gradient-to-br from-select-purple to-select-blue rounded-2xl pt-8 shadow-xl border-l-4 border-select-green text-white ring-2 ring-select-green/50 relative z-10 overflow-hidden">
+            <details class="plano-accordion plano-accordion-featured h-full bg-gradient-to-br from-select-purple to-select-blue rounded-2xl shadow-xl border-l-4 border-select-green text-white ring-2 ring-select-green/50 relative z-10 overflow-hidden">
               <summary class="list-none cursor-pointer p-5 pt-2 hover:bg-white/5 transition-colors">
-                <div class="flex justify-between items-start gap-3 w-full">
-                  <div class="min-w-0 flex-1 text-left">
-                    <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">Quarto</span>
-                    <h4 class="font-display font-extrabold text-xl md:text-2xl mb-2 leading-tight">Select SP 200</h4>
-                    <p class="text-white/80 text-xs leading-relaxed">
-                      O que mais indico. Equilibra preço e rede — inclui hospitais importantes como <strong class="text-white">Dom Alvarenga</strong>, <strong class="text-white">Sta Rita</strong> e <strong class="text-white">São Miguel</strong>.
-                    </p>
+                <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">Quarto</span>
+                <h4 class="font-display font-extrabold text-xl md:text-2xl mb-3 leading-tight">Select SP 200</h4>
+                <div class="plano-rede-stats plano-rede-stats--light">
+                  <div class="plano-rede-stat">
+                    <span class="plano-rede-stat-num">30</span>
+                    <span class="plano-rede-stat-label">hospitais</span>
                   </div>
-                  <svg class="plano-accordion-chevron w-5 h-5 text-select-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                  <div class="plano-rede-stat">
+                    <span class="plano-rede-stat-num">17</span>
+                    <span class="plano-rede-stat-label">laboratórios</span>
+                  </div>
                 </div>
-                <p class="text-[10px] font-semibold uppercase tracking-wide text-white/60 mt-3 text-left">Ver preços</p>
+                <span class="plano-btn-ver-preco plano-btn-ver-preco--select-light" aria-hidden="true">Ver preço</span>
               </summary>
               <div class="px-5 pb-5 border-t border-white/20 pt-4 space-y-2">
                 <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
@@ -401,21 +516,23 @@
 
         <!-- Select Premium SP -->
         <p class="text-center text-xs font-bold uppercase tracking-widest text-select-green mb-3">Select Premium SP</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 items-start">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 items-stretch">
 
-          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-select-purple overflow-hidden group">
+          <details class="plano-accordion h-full bg-white rounded-2xl shadow-sm border-l-4 border-select-purple overflow-hidden group">
             <summary class="list-none cursor-pointer p-5 hover:bg-select-light/30 transition-colors">
-              <div class="flex justify-between items-start gap-3 w-full">
-                <div class="min-w-0 flex-1 text-left">
-                  <span class="text-[10px] font-bold uppercase tracking-wide text-select-purple mb-1 block">Rede ampliada · Enfermaria</span>
-                  <h4 class="font-display font-extrabold text-select-purple text-xl md:text-2xl mb-2 leading-tight">Select Premium SP 110</h4>
-                  <p class="text-gray-500 text-xs leading-relaxed">
-                    Rede maior que o SP 200. Inclui <strong>Sta Catarina</strong>, <strong>Edmundo Vasconcelos</strong> e mais opções de internação.
-                  </p>
+              <span class="text-[10px] font-bold uppercase tracking-wide text-select-purple mb-1 block">Rede ampliada · Enfermaria</span>
+              <h4 class="font-display font-extrabold text-select-purple text-xl md:text-2xl mb-3 leading-tight">Select Premium SP 110</h4>
+              <div class="plano-rede-stats plano-rede-stats--select">
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">46</span>
+                  <span class="plano-rede-stat-label">hospitais</span>
                 </div>
-                <svg class="plano-accordion-chevron w-5 h-5 text-select-purple shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">20</span>
+                  <span class="plano-rede-stat-label">laboratórios</span>
+                </div>
               </div>
-              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-purple/70 mt-3 text-left">Ver preços</p>
+              <span class="plano-btn-ver-preco plano-btn-ver-preco--select" aria-hidden="true">Ver preço</span>
             </summary>
             <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
               <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
@@ -431,19 +548,21 @@
             </div>
           </details>
 
-          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-select-green overflow-hidden group">
+          <details class="plano-accordion h-full bg-white rounded-2xl shadow-sm border-l-4 border-select-green overflow-hidden group">
             <summary class="list-none cursor-pointer p-5 hover:bg-select-light/30 transition-colors">
-              <div class="flex justify-between items-start gap-3 w-full">
-                <div class="min-w-0 flex-1 text-left">
-                  <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">O mais completo · Quarto</span>
-                  <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-2 leading-tight">Select Premium SP 120</h4>
-                  <p class="text-gray-500 text-xs leading-relaxed">
-                    Melhor rede e cobertura mais ampla. Inclui <strong>Cruz Azul</strong>, <strong>FMUSP</strong>, <strong>Nove de Julho</strong>, <strong>Samaritano</strong> e outros hospitais premium.
-                  </p>
+              <span class="text-[10px] font-bold uppercase tracking-wide text-select-green mb-1 block">O mais completo · Quarto</span>
+              <h4 class="font-display font-extrabold text-select-blue text-xl md:text-2xl mb-3 leading-tight">Select Premium SP 120</h4>
+              <div class="plano-rede-stats plano-rede-stats--select">
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">49</span>
+                  <span class="plano-rede-stat-label">hospitais</span>
                 </div>
-                <svg class="plano-accordion-chevron w-5 h-5 text-select-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">20</span>
+                  <span class="plano-rede-stat-label">laboratórios</span>
+                </div>
               </div>
-              <p class="text-[10px] font-semibold uppercase tracking-wide text-select-green/80 mt-3 text-left">Ver preços</p>
+              <span class="plano-btn-ver-preco plano-btn-ver-preco--select" aria-hidden="true">Ver preço</span>
             </summary>
             <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
               <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
@@ -609,22 +728,24 @@
         <div class="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 mb-5 max-w-2xl mx-auto text-center">
           <p class="text-sm text-amber-900"><strong>Preços válidos até 31 de agosto.</strong> Valores de tabela; a operadora pode alterar após essa data.</p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 items-start">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 items-stretch">
 
-          <div class="relative w-full self-start">
+          <div class="plano-accordion-wrap plano-accordion-wrap-featured relative w-full h-full">
             <span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide bg-hapvida-orange text-white px-3 py-1 rounded-full shadow-md whitespace-nowrap z-20">⭐ Melhor custo-benefício</span>
-            <details class="plano-accordion bg-gradient-to-br from-hapvida-blue to-hapvida-green rounded-2xl pt-8 shadow-xl border-l-4 border-hapvida-orange text-white ring-2 ring-hapvida-orange/50 relative z-10 overflow-hidden">
+            <details class="plano-accordion plano-accordion-featured h-full bg-gradient-to-br from-hapvida-blue to-hapvida-green rounded-2xl shadow-xl border-l-4 border-hapvida-orange text-white ring-2 ring-hapvida-orange/50 relative z-10 overflow-hidden">
               <summary class="list-none cursor-pointer p-5 pt-2 hover:bg-white/5 transition-colors">
-                <div class="flex justify-between items-start gap-3 w-full">
-                  <div class="min-w-0 flex-1 text-left">
-                    <h4 class="font-display font-extrabold text-xl md:text-2xl mb-2 leading-tight">Nosso Médico RMSP</h4>
-                    <p class="text-white/80 text-xs leading-relaxed">
-                      Ambulatorial + hospitalar com obstetrícia. Rede própria forte na Grande SP, ABC e capital.
-                    </p>
+                <h4 class="font-display font-extrabold text-xl md:text-2xl mb-3 leading-tight">Nosso Médico RMSP</h4>
+                <div class="plano-rede-stats plano-rede-stats--light">
+                  <div class="plano-rede-stat">
+                    <span class="plano-rede-stat-num">57</span>
+                    <span class="plano-rede-stat-label">hospitais</span>
                   </div>
-                  <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-orange shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                  <div class="plano-rede-stat">
+                    <span class="plano-rede-stat-num">7</span>
+                    <span class="plano-rede-stat-label">laboratórios</span>
+                  </div>
                 </div>
-                <p class="text-[10px] font-semibold uppercase tracking-wide text-white/60 mt-3 text-left">Ver preços</p>
+                <span class="plano-btn-ver-preco plano-btn-ver-preco--hapvida-light" aria-hidden="true">Ver preço</span>
               </summary>
               <div class="px-5 pb-5 border-t border-white/20 pt-4 space-y-2">
                 <div class="rounded-lg bg-white/15 border border-white/20 px-3 py-2">
@@ -641,19 +762,21 @@
             </details>
           </div>
 
-          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-orange overflow-hidden group">
+          <details class="plano-accordion h-full bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-orange overflow-hidden group">
             <summary class="list-none cursor-pointer p-5 hover:bg-hapvida-light/30 transition-colors">
-              <div class="flex justify-between items-start gap-3 w-full">
-                <div class="min-w-0 flex-1 text-left">
-                  <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-orange mb-2 block">Ambulatorial</span>
-                  <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-2 leading-tight">Smart UP Ambulatorial</h4>
-                  <p class="text-gray-500 text-xs leading-relaxed">
-                    Consultas, exames e urgência por até 12 horas. Opção mais econômica para quem não precisa de internação.
-                  </p>
+              <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-orange mb-1 block">Ambulatorial</span>
+              <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-3 leading-tight">Smart UP Ambulatorial</h4>
+              <div class="plano-rede-stats plano-rede-stats--hapvida">
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">73</span>
+                  <span class="plano-rede-stat-label">hospitais</span>
                 </div>
-                <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-orange shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">35</span>
+                  <span class="plano-rede-stat-label">laboratórios</span>
+                </div>
               </div>
-              <p class="text-[10px] font-semibold uppercase tracking-wide text-hapvida-orange/70 mt-3 text-left">Ver preços</p>
+              <span class="plano-btn-ver-preco plano-btn-ver-preco--hapvida" aria-hidden="true">Ver preço</span>
             </summary>
             <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
               <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
@@ -669,19 +792,21 @@
             </div>
           </details>
 
-          <details class="plano-accordion bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-green overflow-hidden group">
+          <details class="plano-accordion h-full bg-white rounded-2xl shadow-sm border-l-4 border-hapvida-green overflow-hidden group">
             <summary class="list-none cursor-pointer p-5 hover:bg-hapvida-light/30 transition-colors">
-              <div class="flex justify-between items-start gap-3 w-full">
-                <div class="min-w-0 flex-1 text-left">
-                  <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-green mb-2 block">Hospitalar</span>
-                  <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-2 leading-tight">Smart UP Enfermaria</h4>
-                  <p class="text-gray-500 text-xs leading-relaxed">
-                    Cobertura ambulatorial + hospitalar em enfermaria. Boa opção para quem quer internação com preço acessível.
-                  </p>
+              <span class="text-[10px] font-bold uppercase tracking-wide text-hapvida-green mb-1 block">Hospitalar · Enfermaria</span>
+              <h4 class="font-display font-extrabold text-hapvida-blue text-xl md:text-2xl mb-3 leading-tight">Smart UP Enfermaria</h4>
+              <div class="plano-rede-stats plano-rede-stats--hapvida">
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">83</span>
+                  <span class="plano-rede-stat-label">hospitais</span>
                 </div>
-                <svg class="plano-accordion-chevron w-5 h-5 text-hapvida-green shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                <div class="plano-rede-stat">
+                  <span class="plano-rede-stat-num">34</span>
+                  <span class="plano-rede-stat-label">laboratórios</span>
+                </div>
               </div>
-              <p class="text-[10px] font-semibold uppercase tracking-wide text-hapvida-green/80 mt-3 text-left">Ver preços</p>
+              <span class="plano-btn-ver-preco plano-btn-ver-preco--hapvida" aria-hidden="true">Ver preço</span>
             </summary>
             <div class="px-5 pb-5 border-t border-gray-100 pt-4 space-y-2">
               <div class="rounded-lg border border-gray-100 bg-gray-50 px-3 py-2">
@@ -861,7 +986,7 @@
         <div id="mapa-hospitais" class="rounded-2xl overflow-hidden shadow-md border-2 border-gray-100 bg-gray-100 z-0" style="height: 400px;" role="img" aria-label="Mapa de hospitais de referência Select e Hapvida"></div>
 
         <p class="text-xs text-gray-500 text-center mt-3">
-          Mapa ilustrativo para você ter uma ideia da rede na sua região.
+          Mapa ilustrativo da rede na sua região. Role a página normalmente — use os botões +/− no mapa para aproximar.
         </p>
       </div>
     </section>
@@ -1259,7 +1384,7 @@
         <div>
           <h3 class="font-bold text-white text-base mb-2">Contato</h3>
           <p class="text-blue-100">WhatsApp</p>
-          <p class="text-blue-200/80 mt-1" id="footer-telefone">(11) 99999-9999</p>
+          <p class="text-blue-200/80 mt-1" id="footer-telefone">(11) 95328-4219</p>
         </div>
       </div>
 
@@ -1474,7 +1599,10 @@
       const container = document.getElementById('mapa-hospitais');
       if (!container || typeof L === 'undefined') return;
 
-      mapa = L.map('mapa-hospitais').setView([-23.5505, -46.6333], 11);
+      mapa = L.map('mapa-hospitais', {
+        scrollWheelZoom: false,
+      }).setView([-23.5505, -46.6333], 11);
+      mapa.scrollWheelZoom.disable();
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         maxZoom: 18,
