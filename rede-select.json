@@ -1,0 +1,651 @@
+{
+  "São Paulo - Centro": [
+    {
+      "name": "Paulo",
+      "plans": [
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Liberdade",
+      "plans": [
+        "H, PSA, PSP",
+        "H, PSA, PSP",
+        "H, PSA, PSP, H, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "H Nove",
+      "plans": [
+        "de",
+        "Julho",
+        "- - -",
+        null
+      ]
+    },
+    {
+      "name": "Samaritano",
+      "plans": [
+        null,
+        "Paulista",
+        "H, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Sta",
+      "plans": [
+        "Catarina",
+        null,
+        "- - H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Bela",
+      "plans": [
+        "Vista",
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "São Paulo - Zona Sul": [
+    {
+      "name": "HM,PSA",
+      "plans": [
+        "H, M, PSA",
+        "H, M, PSA",
+        "H, M, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Dom",
+      "plans": [
+        "Alvarenga",
+        "H, M, PSA",
+        "H, M, PSA, M, PSA, M, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Camilo",
+      "plans": [
+        "Ipiranga",
+        "H, PSA",
+        "H, PSA, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Vila",
+      "plans": [
+        "Monumento",
+        null,
+        "É",
+        null
+      ]
+    },
+    {
+      "name": "StaRita",
+      "plans": [
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Cto",
+      "plans": [
+        "de",
+        "Tratamento",
+        "Bezerra de Menezes",
+        null
+      ]
+    },
+    {
+      "name": "Edmundo",
+      "plans": [
+        "Vasconcelos",
+        null,
+        "- HM, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Vila",
+      "plans": [
+        "Clementino",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "Santa",
+      "plans": [
+        "Joana",
+        null,
+        "- - H, M, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Brooklin",
+      "plans": [
+        "Paulista",
+        null,
+        "H",
+        null
+      ]
+    }
+  ],
+  "São Paulo - Zona Oeste": [
+    {
+      "name": "Albert",
+      "plans": [
+        "Sabin",
+        null,
+        "Lapa    H",
+        null
+      ]
+    },
+    {
+      "name": "FMUSP",
+      "plans": [
+        null,
+        "Instituto",
+        "Central HM, PSA, PSP HM, PSA, PSP HM, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Leforte",
+      "plans": [
+        null,
+        "Morumbi",
+        "HM, PSA, PSP HM, PSA, PSP HM, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "São Paulo - Zona Leste": [
+    {
+      "name": "HPSAPSP",
+      "plans": [
+        "H, PSA, PSP",
+        "H, PSA, PSP",
+        "H, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "IBC",
+      "plans": [
+        "H, PSA",
+        "H, PSA",
+        "H, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Miguel",
+      "plans": [
+        null,
+        "Ermelino",
+        "Matarazzo H, M, PSA, M, PSA, M, PSA, M, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Sta",
+      "plans": [
+        "Marcelina",
+        "HM, PSA, PSP",
+        "H, M, PSA, PSP HM, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "H Monte",
+      "plans": [
+        "Cristo",
+        null,
+        "SP, - H -",
+        null
+      ]
+    }
+  ],
+  "São Paulo - Zona Norte": [
+    {
+      "name": "H,M,PSA,PSP",
+      "plans": [
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP",
+        "HM, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Hospital",
+      "plans": [
+        "Sao",
+        "Camilo",
+        "- Santana H, PSA, PSP H, PSA, PSP H, PSA, PSP H, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "LSANP",
+      "plans": [
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP",
+        "HM, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "Grande SP": [
+    {
+      "name": "Serra",
+      "plans": [
+        "H, PSA",
+        "H, PSA",
+        "H, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Olhos",
+      "plans": [
+        "CRO",
+        "H, PSA",
+        "H, PSA, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Nova",
+      "plans": [
+        "Vida",
+        "HM, PSA",
+        "PSP H, M, PSA, PSP HM, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "H e",
+      "plans": [
+        "Mat",
+        "Cruzeiro",
+        "do Sul HM, PSA PSP - HM, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "ABCD": [
+    {
+      "name": "Gama",
+      "plans": [
+        null,
+        "Diadema",
+        "H, M, PSA, PSP H, M, PSA, PSP H, M, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Gama",
+      "plans": [
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP",
+        "H, M, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Bernardo",
+      "plans": [
+        "do",
+        "Campo",
+        "H, PSA, PSA, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Berardo",
+      "plans": [
+        "do",
+        "Campo",
+        "i i i",
+        null
+      ]
+    },
+    {
+      "name": "Stella",
+      "plans": [
+        "Maris",
+        null,
+        "H, M, PSA, M, PSA",
+        null
+      ]
+    }
+  ],
+  "Alto Tietê": [
+    {
+      "name": "H e",
+      "plans": [
+        "Mat",
+        "Mogi",
+        "Mater HM, PSAM, PSAM, PSA, M, PSA",
+        null
+      ]
+    },
+    {
+      "name": "H Saint",
+      "plans": [
+        "Nicholas",
+        "H, PSA, PSP",
+        "H, PSA, PSP H, PSA, PSP H, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "StaCasa",
+      "plans": [
+        "HM, PSA, PSP",
+        "HM, PSA, PSP",
+        "HM, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Hsantama",
+      "plans": [
+        "HM, PSA, PSP",
+        null,
+        "HM, PSA, PSP H, M, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "Campinas e Região": [
+    {
+      "name": "H Rumo",
+      "plans": [
+        "Certo",
+        "H, PSA",
+        "H, PSA, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Leonardo",
+      "plans": [
+        "da",
+        "Vinci",
+        null,
+        null
+      ]
+    }
+  ],
+  "Sorocaba e Região": [
+    {
+      "name": "Notrecare",
+      "plans": [
+        null,
+        "Sorocaba",
+        "H, M, PSA, PSP H, M, PSA, PSP H, M, PSA, PSP HM, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "Vale do Paraíba": [
+    {
+      "name": "Antoninho",
+      "plans": [
+        "da",
+        "Rocha",
+        "Marmo - - H, M, PSA, PSP, H, M, PSA, PSP",
+        null
+      ]
+    },
+    {
+      "name": "Campos",
+      "plans": [
+        null,
+        null,
+        "o",
+        null
+      ]
+    }
+  ],
+  "Interior": [
+    {
+      "name": "H Araraquara",
+      "plans": [
+        "H, PSA",
+        null,
+        "H, PSA, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Francisco",
+      "plans": [
+        null,
+        "Unid",
+        "Netto Campello HM, PSA, PSP  H, M, PSA, PSP HM, PSA PSP",
+        null
+      ]
+    },
+    {
+      "name": "Presidente",
+      "plans": [
+        "Prudente",
+        "H, PSA",
+        "H, PSA",
+        null
+      ]
+    },
+    {
+      "name": "Presidente",
+      "plans": [
+        "Prudente",
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "H lamada",
+      "plans": [
+        null,
+        null,
+        "H, M, PSA",
+        null
+      ]
+    }
+  ],
+  "Baixada Santista": [
+    {
+      "name": "HM,PSA.PSP",
+      "plans": [
+        "HM, PSA, PSP",
+        "HM, PSA, PSP",
+        "HM, PSA, PSP",
+        null
+      ]
+    }
+  ],
+  "Laboratórios": [
+    {
+      "name": "Alpha",
+      "plans": [
+        "Diag",
+        null,
+        "SP LAB LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Alta",
+      "plans": [
+        null,
+        null,
+        "LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Bio",
+      "plans": [
+        "Lab",
+        null,
+        "- LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Delboni",
+      "plans": [
+        "Auriemo",
+        "LAB",
+        "LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Deliberato",
+      "plans": [
+        "LAB",
+        "LAB",
+        "LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Exame",
+      "plans": [
+        "Brasil",
+        "LAB",
+        "LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Genoa",
+      "plans": [
+        "Biotecnologia",
+        "LAB",
+        "LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Labi",
+      "plans": [
+        "Exames",
+        "LAB",
+        "LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Lavoisier",
+      "plans": [
+        null,
+        "SP",
+        "LAB LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Marlene",
+      "plans": [
+        "Spir",
+        null,
+        "- LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Oswaldo",
+      "plans": [
+        "Cruz",
+        null,
+        "SP LAB LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Platta",
+      "plans": [
+        null,
+        "SP",
+        "LAB LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Zoppi",
+      "plans": [
+        "LAB",
+        "LAB",
+        "LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Sancet",
+      "plans": [
+        "LAB",
+        "LAB",
+        "LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Sonilab",
+      "plans": [
+        "LAB",
+        "LAB",
+        "LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Vale",
+      "plans": [
+        "Clin",
+        null,
+        "SP LAB LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Vital",
+      "plans": [
+        "Lab",
+        "LAB",
+        "LAB LAB LAB",
+        null
+      ]
+    },
+    {
+      "name": "Para",
+      "plans": [
+        "acessar",
+        "a",
+        "rede completa - Clique aqui",
+        null
+      ]
+    }
+  ]
+}

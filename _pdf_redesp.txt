@@ -1,0 +1,3298 @@
+Hospital (28) (28)
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia /
+Nome Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Hospital 09/01/2025 HOSPITAL DOM
+ALVARENGA
+ASSOCIACAO
+BENEFICENTE
+NOSSA SENHORA
+DE NAZARE
+Sim Não Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 09/01/2025 HOSPITAL SANTA
+VIRGINIA
+ASSOCIACAO
+HOSPITALAR
+FILHAS DE NOSSA
+SENHORA DO M
+Sim Não Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+SEM REDE PREMIUM
+ESPECIAL
+APARTAMENTO
+SP Hospital 09/01/2025 HOSPITAL SANTA
+RITA
+CASA DE SAÚDE
+SANTA RITA SA
+Sim Sim Não Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 09/01/2025 HOSPITAL SÃO
+MIGUEL - UNIDADE
+ERMELINO
+MATARAZZO
+DAY HOSPITAL DE
+ERMELINO
+MATARAZZO LTDA
+Sim Não Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 09/01/2025 HOSPITAL
+EDMUNDO
+VASCONCELOS
+FUNDACAO
+INSTITUTO DE
+MOLESTIAS DO
+APARELHO DIGEST
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+Atende as rede: Básica
+Apartamento, Premium
+Apartamento, Premium
+Especial Apartamento e
+Black
+Apartamento;Smart
+Apartamento
+SP Hospital 09/01/2025 BLANC SP Sim Não Sim Sim Sim Sim Sim Sim Select SÃO -
+
+-- 1 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia /
+Nome Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+HOSPITAL BDW SP
+LTDA
+São
+Paulo
+PAULO
+SP Hospital 09/01/2025 MONTE CRISTO
+HOSPITAL DE
+MULTI
+ESPECIALIDADES
+HOSPITAL DIA
+MONTE CRISTO
+LTDA
+Não Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+POSSUI REDE
+BÁSICA ENFERMARIA
+E NÃO TEM BÁSICA
+APARTAMENTO
+POSSUI REDE
+PREMIUM
+ENFERMARIAE NÃO
+TEM PREMIUM
+APARTAMENTO
+SP Hospital 05/02/2025 CRUZ AZUL DE
+SÃO PAULO
+HOSPITAL E
+MATERNIDADE
+SANTA MARIA
+CRUZ AZUL
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 05/02/2025 HOSPITAL SÃO
+MIGUEL
+HOSPITAL E
+MATERNIDADE SÃO
+MIGUEL S A
+Sim Sim Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 05/02/2025 HOSPITAL
+LEFORTE
+LIBERDADE
+HOSPITAL
+LEFORTE
+LIBERDADE S A
+Sim Sim Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 17/03/2025 HOSPITAL
+LEFORTE S A
+HOSPITAL
+LEFORTE S A
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 2 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia /
+Nome Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Hospital 27/03/2025 HOSPITAL 9 DE
+JULHO
+IMPAR SERVIÇOS
+HOSPITALARES S/A
+Sim Não Sim Sim Não Não Sim Não Select
+São
+Paulo
+SÃO
+PAULO
+Exclusivo: Premium
+Apartamento, Premium
+Especial Apartamento e
+Black Apartamento
+SP Hospital 01/04/2025 HOSPITAL SANTA
+PAULA
+IMPAR SERVIÇOS
+HOSPITALARES
+SA-FILIAL
+Sim Não Sim Sim Não Sim Sim Não Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 21/07/2025 HOSPITAL SANTA
+CATARINA
+ASSOCIACAO
+CONGREGACAO
+DE SANTA
+CATARINA
+Sim Sim Sim Sim Sim Sim Sim Não Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 24/07/2025 HC DA FMUSP
+HOSPITAL DAS
+CLÍNICAS SAO
+PAULO
+FUNDAÇÃO
+FACULDADE DE
+MEDICINA (HC DA
+FMUSP – HOSPITAL
+DAS CLÍNICAS SÃO
+PAULO)
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 28/07/2025 HOSPITAL SANTA
+MARCELINA
+CASA DE SAÚDE
+SANTA MARCELINA
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 30/07/2025 HOSPITAL ALBERT
+SABIN
+Não Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 3 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia /
+Nome Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+LAPA -
+ASSISTÊNCIA
+MÉDICA LTDA
+SP Hospital 04/08/2025 CLINICA VERA
+CRUZ
+HOSPITAL VERA
+CRUZ LTDA
+Sim Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 14/08/2025 HOSPITAL SAO
+CAMILO - POMPEIA
+SOCIEDADE
+BENEFICENTE SAO
+CAMILO
+Sim Sim Sim Sim Não Não Sim Não Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 14/08/2025 HOSPITAL SAO
+CAMILO - IPIRANGA
+SOCIEDADE
+BENEFICENTE SAO
+CAMILO
+Sim Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 14/08/2025 HOSPITAL SAO
+CAMILO - SANTANA
+SOCIEDADE
+BENEFICENTE SAO
+CAMILO
+Sim Sim Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 25/08/2025 HOSPITAL SANTA
+CATARINA
+ASSOCIACAO
+CONGREGACAO
+DE SANTA
+CATARINA
+Sim Sim Sim Sim Sim Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 10/09/2025 IBCC ONCOLOGIA
+INSTITUTO
+Sim Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 4 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia /
+Nome Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+BRASILEIRO DE
+CONTROLE DO
+CANCER
+SP Hospital 17/09/2025 HCLOE HOSPITAL
+DE OLHOS
+HCLOE HOSPITAL
+DE OLHOS LTDA
+Não Não Sim Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 03/10/2025 BENVISTA
+OFTALMOLOGIA
+VMOFTSP CLINICA
+MEDICA
+OFTALMOLOGICA
+LTDA
+Não Não Sim Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 14/10/2025 IOL PERDIZES
+OFTALMOLOGIA
+IOL PERDIZES
+OFTALMOLOGIA
+LTDA
+Não Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 29/10/2025 ESHO EMPRESA
+DE SERVICOS
+HOSPITALARES
+ESHO EMPRESA
+DE SERVICOS
+HOSPITALARES
+S.A.
+Sim Sim Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Hospital 29/10/2025 SAMARITANO
+PAULISTA
+HOSPITAL
+ALVORADA
+TAGUATINGA S.A.
+Sim Não Sim Sim Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+Laboratório (9) (9)
+
+-- 5 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Laboratório 09/01/2025 GIP MEDICINA
+DIAGNOSTICA SA
+CENTRAL
+GIP
+MEDICINA DIAGNOSTICA
+SA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+São
+PAULO
+-
+SP Laboratório 09/01/2025 GIP MEDICINA
+DIAGNOSTICA SA
+CENTRAL
+GIP
+MEDICINA DIAGNOSTICA
+SA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 09/01/2025 PLATTA LABORATÓRIO
+GRANADO LAB LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 11/04/2025 BR DIAGNÓSTICO
+BR
+DIAGNÓSTICO
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 29/04/2025 SONILAB
+SONILAB MEDICINA
+DIAGNÓSTICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 16/05/2025 BIO CIÊNCIA LAVOISIER -
+SÃO PAULO
+DIAGNÓSTICOS DA
+AMÉRICA S.A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 16/05/2025 SALOMÃO & ZOPPI
+SALOMÃO E ZOPPI
+SERVIÇOS MÉDICOS E
+PARTICIPAÇÕES S/A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Laboratório 12/06/2025 GENOA/LPCM MEDICINA
+DIAGNOSTICA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 6 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+LABORATÓRIO DE
+PATOLOGIA CIRURGICA
+DE SÃO PAULO LTDA
+SP Laboratório 19/08/2025 A+ MEDICINA
+DIAGNOSTICA
+FLEURY
+S.A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+Clínica (189) (189)
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 09/01/2025 ALPHA SOLUCOES
+MÉDICAS
+ALPHA
+SOLUCOES MÉDICAS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CENTRO CLINICO
+EVOLLUIR LTDA
+CENTRO
+CLINICO EVOLLUIR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CENTRO CLINICO JP
+CENTRO
+CLINICO JULIANA PRADO
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CEONG
+CEONG
+CLÍNICA ESPECIALIZADA
+DE OUVIDO, NARIZ E GAR
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 7 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 09/01/2025 CLÍNICA CASA COLORIDA
+CLÍNICA
+CASA COLORIDA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA DE CARDIOLOGIA
+DR. MARIO RISEGATO NETO
+LTD
+CLÍNICA
+DE CARDIOLOGIA DR.
+MARIO RISEGATO NETO
+LTD
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA DE FRATURAS E
+ORTOPEDIA SANTA CLARA
+CLÍNICA
+DE FRATURAS E
+ORTOPEDIA SANTA CLARA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA ERGO
+CLÍNICA
+ERGO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA GINECOLOGICA E
+OBSTETRICIA ATTYA LTDA
+CLÍNICA
+GINECOLOGICA E
+OBSTETRICIA ATTYA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA INFANTIL DE
+ITAQUERA
+CLÍNICA
+INFANTIL DE ITAQUERA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA PAULISTA DE
+ALERGIA
+CLÍNICA
+PAULISTA DE ALERGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA PSAI - SERVIÇOS
+DE SAÚDE LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+SÃO
+PAULO
+-
+
+-- 8 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+CLÍNICA
+PSAI - SERVIÇOS DE
+SAÚDE LTDA
+Paulo
+SP Clínica 09/01/2025 COGNITIVECARE
+INSTITUTO DE TERAPIAS
+INTEGRADAS E D
+COGNITIVECARE
+INSTITUTO DE TERAPIAS
+INTEGRADAS E D
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 MÉDICAL CENTER
+CRENITTE MÉDICOS
+ASSOCIADOS
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 DERMOVISAGE
+DERMOVISAGE CLÍNICA DE
+ESPECIALIDADES S/S LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA PEDRIATRICA DE
+ALERGIA E PNEUMOLOGIA
+CPAP
+DR LUIZ
+BACARINI LEITE CLÍNICA
+PEDIATRIA E PNEUMOL
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 DR. OSVALDO LEME -
+SERVIÇOS MÉDICOS LTDA.
+DR.
+OSVALDO LEME -
+SERVIÇOS MÉDICOS LTDA.
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 ELCIO TARKIELTAUB
+DIAGNÓSTICO CLINICO
+ELCIO
+TARKIELTAUB
+DIAGNÓSTICO CLINICO
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 9 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 09/01/2025 ESTACAO SAÚDE LTDA
+ESTACAO
+SAÚDE LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 FISIO LIFE FISIOTERAPIA
+LTDA
+FISIO
+LIFE FISIOTERAPIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 FISIOTERAPIA IASO
+FISIOTERAPIA IASO LTDA -
+ME
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 DOUTOR POP
+FOUR
+CLÍNICA DE
+ESPECIALIDADES LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/01/2025 CLÍNICA DERMATOLOGICA
+DRA.SARAH FREUA
+GODOY E
+FREUA CLÍNICA MÉDICA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 10/01/2025 GRUPO DE APOIO DE
+CLÍNICA MÉDICA
+GRUPO
+DE APOIO DE CLÍNICA
+MÉDICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 13/01/2025 HREABILITAR SERVIÇOS DE
+FISIOTERAPIA LTDA
+HREABILITAR SERVIÇOS DE
+FISIOTERAPIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/01/2025 ALOYSIO AUGUSTO TAHAN
+DE CAMPOS NETTO
+INSTITUTO PAULISTA DE
+OTOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 10 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 15/01/2025 IRIS - INSTITUTO DE
+REABILITACAO INTEGRAL
+DA SAÚDE
+IRIS -
+INSTITUTO DE
+REABILITACAO INTEGRAL
+DA SAÚDE
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 20/01/2025 CLÍNICA LOTHUS
+LOTHUS
+CLÍNICA DE PSICOLOGIA E
+NUTRICAO S/S LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/01/2025 CLÍNICA DR. JAMAL S.
+AZZAM
+PRONTO
+CLÍNICA O R L SS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/02/2025 PREMIUM TEA MATRIZ
+CENTRO
+DE DESENVOLVIMENTO
+COMPORTAMENTAL
+PREMIUM T
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/02/2025 INSTITUTO ESPACO
+CRIANCA TEA
+CLÍNICA
+TEA ESPACO CRIANCA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/02/2025 PRO EXAME
+DOUTOR
+IMAGEM CLÍNICA DE
+RADIOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/02/2025 F E R REABILITACAO E
+SAÚDE
+F E R
+REABILITACAO E SAÚDE
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/02/2025 ITEGUI Não Não Não Não Não Sim Sim Sim Select SÃO -
+
+-- 11 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+ITEGUI -
+INSTITUTO DE ESTUDOS E
+TERAPIA INTEGRADA
+São
+Paulo
+PAULO
+SP Clínica 21/02/2025 CLÍNICA GXJ
+GISLAINE
+XAVIER JANTCHC LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/02/2025 LMIRANDA MEDICINA
+LMIRANDA MEDICINA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 27/02/2025 CLÍNICA ORTOPÉDICA
+BROOKLIN
+CLÍNICA
+ORTOPÉDICA BROOKLIN
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 27/02/2025 COT CLÍNICA ORTOPÉDICA
+TATUAPE
+COT
+CLÍNICA ORTOPÉDICA
+TATUAPE S.A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 05/03/2025 LR CLÍNICA MÉDICA E
+DIAGNÓSTICA (SOLER)
+LR
+CLÍNICA MÉDICA E
+DIAGNÓSTICA LIMITADA
+(SOLER)
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 05/03/2025 CLÍNICA MÉDICO
+CIRÚRGICA ARS CURANDI
+CLÍNICA
+MÉDICO CIRÚRGICA ARS
+CURANDI SC LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 10/03/2025 CLÍNICA FATOR HUMANO
+CLÍNICA
+MÉDICA FATOR HUMANO
+SOCIEDADE SIMPLES LTDA
+Não Não Não Não Não Sim Sim Não Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 12 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 11/03/2025 CENTRO DERMATOLOGICO
+KAUAI
+CENTRO
+DERMATOLOGICO KAUAI
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 11/03/2025 INSTITUTO OPUS
+COMPORTAMENTAL
+CLÍNICA
+DE PSICOLOGIA
+COMPORTAMENTAL HCLL
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/03/2025 SIMARO E SALOMAO
+CLÍNICA MÉDICA
+SIMARO
+E SALOMAO CLÍNICA
+MÉDICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+SEM REDE
+PREMIUM
+ESPECIAL
+APARTAMENTO
+SP Clínica 18/03/2025 RITA C BIERBRAUER
+SERVIÇOS DE PSICOLOGIA
+RITA C.
+BIERBRAUER SERVIÇOS DE
+PSICOLOGIA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/03/2025 ACOR CLÍNICA MÉDICA
+ACOR
+CLÍNICA MÉDICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/03/2025 CONS. MÉDICO ANA NEY
+ANA NEY
+CLÍNICA MÉDICA E
+REUMATOLÓGICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/04/2025 AIRA SAÚDE
+AIRA
+SAÚDE S A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 08/04/2025 CLINIC SPOT
+CLINIC
+SPOT SERVIÇOS MÉDICOS
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 13 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 10/04/2025 CENTRO ORTOPÉDICO
+ALTO DE PINHEIROS
+ORTO FF
+SERVIÇOS MÉDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 11/04/2025 DIGA PSICOLOGIA
+DIG
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 14/04/2025 CLÍNICA ARTUR ALVIM
+CLÍNICA
+DE FRATURAS E
+ORTOPEDIA ARTUR ALVIM
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 16/04/2025 PSICOSER CLÍNICA DE
+PSICOLOGIA
+PSICOSER CLÍNICA DE
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 16/04/2025 CASA AMORE NÚCLEO DE
+DESENVOLVIMENTO
+CASA
+AMORE NÚCLEO DE
+DESENVOLVIMENTO
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 17/04/2025 RONALDO DO PATROCÍNIO
+GINECOLOGIA E
+OBSTETRÍCIA
+RONALDO DO PATROCÍNIO
+GINECOLOGIA E
+OBSTETRÍCIA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 23/04/2025 CARDIO CARE DRA. BERTA
+PAULA NAPCHAN BOER
+CARDIO
+CARE DRA. BERTA PAULA
+NAPCHAN BOER LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/04/2025 CLÍNICA DE Não Não Não Não Não Sim Sim Sim Select SÃO -
+
+-- 14 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+FONOAUDIOLOGIA KATIA
+DIAS
+CLÍNICA
+DE FONOAUDIOLOGIA
+KATIA DIAS S/S LTDA
+São
+Paulo
+PAULO
+SP Clínica 25/04/2025 MEDLIGHT CARE
+MEDLIGHT CARE SERVIÇOS
+MÉDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/04/2025 FOUR FISIO
+FISIOTERAPIA VANESSA
+CORDEIRO LTDA ME
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/04/2025 CETENE
+CETENE
+CENTRO DE TERAPIA
+NEFROLÓGICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/04/2025 IPC
+IPC
+ONCOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/04/2025 IPC
+IPC
+ONCOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 06/05/2025 AUDI PREV
+DR.
+KHALIL HANNA - AUDI PREV
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/05/2025 DIOMED
+DIOMED
+ESPECIALIDADES MÉDICAS
+E REABILITAÇÃO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/05/2025 GONZALEZ REYES Não Não Não Não Não Sim Sim Sim Select
+São
+SÃO
+PAULO
+-
+
+-- 15 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+GONZALEZ REYES
+SERVIÇOS MÉDICOS
+Paulo
+SP Clínica 15/05/2025 LÚCIA MARINARO
+LÚCIA
+MARINARO COLON LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/05/2025 AMAR - TEA
+AMAR -
+TEA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/05/2025 DAVITA INDIANOPOLIS
+DAVITA
+BRASIL PARTICIPAÇÕES E
+SERVIÇOS DE NEFROLOGIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/05/2025 DAVITA SANTA CECILIA
+DAVITA
+BRASIL PARTICIPAÇÕES E
+SERVIÇOS DE NEFROLOGIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/05/2025 DAVITA PAULISTA
+DAVITA
+BRASIL PARTICIPAÇÕES E
+SERVIÇOS DE NEFROLOGIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 21/05/2025 LS SERVIÇOS MÉDICOS
+ESPECIALIZADOS
+LS
+SERVIÇOS MÉDICOS
+ESPECIALIZADOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/05/2025 DAVITA
+DAVITA
+SERVIÇOS DE NEFROLOGIA
+SANTANA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/05/2025 DAVITA JOAO DIAS Não Não Não Não Não Sim Sim Sim Select SÃO -
+
+-- 16 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+DAVITA
+BRASIL PARTICIPAÇÕES E
+SERVIÇOS DE NEFROLOGIA
+LTDA
+São
+Paulo
+PAULO
+SP Clínica 29/05/2025 DAVITA ARICANDUVA
+DAVITA
+SERVIÇOS DE NEFROLOGIA
+VILA ARICANDUVA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 30/05/2025 CLÍNICA DE OLHOS
+HOLZCHUH LTDA
+CLÍNICA
+DE OLHOS HOLZCHUH
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 05/06/2025 ATTIVAMENTE
+ATTIVAMENTE CLÍNICA
+MULTIDISCIPLINAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 06/06/2025 ANAUATE MEDICINA LTDA
+ANAUATE
+MEDICINA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 16/06/2025 IMEP
+INSTITUTO DA MENTE E
+EQUILIBRIO PSICOLOGICO
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 24/06/2025 CENTRO MÉDICO
+HIPERBARICO DE SÃO
+PAULO
+CENTRO
+MÉDICO HIPERBARICO DE
+SÃO PAULO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/06/2025 MENDELICS ANÁLISES
+GENOMICA
+MENDELICS ANÁLISES
+GENOMICA S A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 17 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 25/06/2025 MEDIN MEDICINA
+INTEGRADA
+MEDIN
+MEDICINA INTEGRADA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 26/06/2025 IBET CLÍNICA DE
+ESPECIALIDADES
+IBET
+CLÍNICA DE
+ESPECIALIDADES E
+EDUCACAO CONTINUADA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 30/06/2025 CLÍNICA LA VIE
+PSICOLOGIA E BEM ESTAR
+CLÍNICA
+LA VIE PSICOLOGIA E BEM
+ESTAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/07/2025 CLINOFT
+CLÍNICA
+DE OLHOS COMENDADOR
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/07/2025 INSTITUTO DA FACE
+CLÍNICA
+DR WEDER CARDOSO E CIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/07/2025 CLÍNICA LUANVER
+LUIZ
+MARCELO ALVES DOS
+SANTOS
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/07/2025 MOLINARI
+MOLINARI OFTALMOLOGIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 02/07/2025 VISOCLÍNICA
+-OFTALMOLOGIA
+Não Não Não Não Não Sim Sim Sim Select
+São
+SÃO
+PAULO
+-
+
+-- 18 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+VISOCLÍNICA - CENTRO DE
+OFTALMOLOGIA LTDA
+Paulo
+SP Clínica 02/07/2025 DR MICHEL EID FARAH
+OFTALMOLOGIA
+DR
+MICHEL EID FARAH -
+OFTALMOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 03/07/2025 INSTITUTO NERE
+INSTITUTO NERE LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 04/07/2025 DIAGCORP SERVIÇOS
+MÉDICOS
+DIAGCORP SERVIÇOS
+MÉDICOS S S LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 08/07/2025 ECOFISIO PILATES E
+FISIOTERAPIA
+ECOFISIO FISIOTERAPIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/07/2025 CLÍNICA MERAKI
+CLÍNICA
+MERAKI LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/07/2025 CLÍNICA MÉDICA POPULAR
+CLÍNICA
+MÉDICA POPULAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/07/2025 CLINIQUE ETERNITE
+CLINIQUE ETERNITE
+CLÍNICA MÉDICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 11/07/2025 MARTINS E DEVIDO
+SERVIÇOS MÉDICOS
+Não Não Não Não Não Sim Sim Sim Select
+São
+SÃO
+PAULO
+-
+
+-- 19 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+MARTINS
+E DEVIDO SERVIÇOS
+MÉDICOS LTDA
+Paulo
+SP Clínica 11/07/2025 GRUPO ACCESS
+ACCESS
+SERVIÇOS MÉDICOS,
+ASSESSORIA,
+ADMINISTRACAO E
+REPRESE
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 14/07/2025 OFTALMOCARE SANTO
+AMARO
+OFTALMOCARE MÉDICAL
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/07/2025 CLÍNICA DE NEFROLOGIA
+SANTA RITA LTDA
+CLÍNICA
+DE NEFROLOGIA SANTA
+RITA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/07/2025 PSIPIN
+PSICOLOGIA PINHEIROS
+SERVIÇOS DE CLÍNICA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 15/07/2025 CARDIO-LOGICA IPIRANGA
+CARDIO-LOGICA CENTRO
+DE CARDIODIAGNÓSTICOS
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 16/07/2025 IOCB
+INSTITUTO DE ORTOPEDIA
+E TRAUMATOLOGIA CAMPO
+BELO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 21/07/2025 BANCO DE SANGUE DE
+SAO PAULO
+Não Não Não Não Não Sim Sim Sim Select
+São
+SÃO
+PAULO
+-
+
+-- 20 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+G S H
+CORP PARTICIPAÇÕES S.A
+Paulo
+SP Clínica 22/07/2025 ONCOLOGICA SERVICOS
+MEDICOS
+ONCOLÓGICA SERVIÇOS
+MÉDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 28/07/2025 ROSSI SERVICO DE FONO E
+APOIO ADMINISTRATIVO
+ROSSI
+SERVICO DE FONO E
+APOIO ADMINISTRATIVO
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 28/07/2025 CLINICA SANTIAGO
+VASCULARE ANGIOLOGIA E
+CIRURGIA VASCULAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA VITA
+VITA
+MEDICINA INTEGRADA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 UROM - UROLOGIA
+ASSISTENCIA MEDICA
+UROM -
+UROLOGIA ASSISTENCIA
+MEDICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 GRUPO ACCESS
+ACCESS
+SERVICOS MEDICOS,
+ASSESSORIA,
+ADMINISTRACAO E
+REPRESE
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 NEPHRON
+NEPHRON ASSISTENCIA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 21 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+NEFROLOGICA LTDA
+SP Clínica 29/07/2025 MUNDO NEUROPSI CLINICA
+DE SAUDE MENTAL
+MUNDO
+NEUROPSI CLINICA DE
+SAUDE MENTAL LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CONS MEDICO MARTINELLI
+E MACEDO
+MARTINELLI & MACEDO
+MEDICOS ASSOCIADOS
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 INSTITUTO DE CLINICA E
+CIRURGIA OFTALMOLOGICA
+INSTITUTO DE CLINICA E
+CIRURGIA OFTALMOLOGICA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 DR WALDIR PORTELLINHA
+OFTALMOLOGIA LTDA
+DR.
+WALDIR PORTELLINHA
+OFTALMOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA PERRUCINI
+D S
+PERRUCINI LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA DESENVOLVIDA
+CLINICA
+MEDICA HANAI E
+YAMAMOTO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA MEDICA DRA
+LILIAN DE PAIVA
+RODRIGUES E DR.HSU
+WEN SH
+CLINICA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 22 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+MEDICA DRA LILIAN DE
+PAIVA RODRIGUES E
+DR.HSU WEN SH
+SP Clínica 29/07/2025 CLINICA JARDIM AVELINO
+CLINICA
+JARDIM AVELINO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 WANDERLEIA DE OLIVEIRA
+SILVA LTDA
+WANDERLEIA DE OLIVEIRA
+SILVA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 TIAGO A OLIVEIRA ROSSI
+TIAGO A
+OLIVEIRA ROSSI LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 TEACLIN - TRANSTORNO
+DO ESPECTRO AUTISTA
+LTDA
+TEACLIN
+- TRANSTORNO DO
+ESPECTRO AUTISTA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICAS YUNA
+CLINICAS
+YUNA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 HOSPITAL ADVENTISTA DE
+SAO PAULO
+INSTITUICAO PAULISTA
+ADVENTISTA DE EDUC E
+ASS SOCIAL
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 ITULAB
+ITULAB
+-LABORATORIO DE
+ANALISES CLINICAS DE ITU
+LIMITADA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 23 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 29/07/2025 ABA TERAPIAS
+ABA
+INTERVENCOES
+PSICOLOGICAS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA SAM
+SAM
+CLINICA DE PSICOLOGIA
+INTEGRADA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 MR CLINICA
+MULTIDISCIPLINAR
+JUSSIARA DUTRA LEITE
+VIEIRA E CIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 LAMOUR CLINIC
+DRA
+AMANDA A DA SILVA ALVES
+SAUDE E ESTETICA
+LAMOUR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA INCLUSIVA -
+ESPACO MULTIDISCIPLINAR
+ABA
+D. A. DO
+CARMO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CURA CENTRO DE
+ULTRASSONOGRAFIA E
+RADIOLOGIA
+CURA
+CENTRO DE
+ULTRASSONOGRAFIA E
+RADIOLOGIA S A
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLISAM CLINICA DE
+PSICOLOGIA
+CLISAM
+CLINICA DE PSICOLOGIA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 24 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 29/07/2025 CLINICA PRISMA DE
+PSIQUIATRIA E PSICOLOGIA
+CLÍNICA
+PRISMA DE PSIQUIATRIA E
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/07/2025 CLINICA PRISMA
+CLÍNICA
+PRISMA DE PSIQUIATRIA E
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 31/07/2025 TRIADES
+CENTER-TRADICAO E
+EXPERTISE EM SAUDE DA
+MULHER
+MEDICAL
+PLACE ASSESSORIA
+TÉCNICA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 31/07/2025 DR FRANCISCO CARLOS
+ANELLO & CIA
+DR.
+FRANCISCO CARLOS
+ANELLO & CIA S/S LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 01/08/2025 COMPANHIA DO AUTISMO
+BLOOM -
+TERAPIA BASEADA EM
+EVIDÊNCIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/08/2025 MEDICALSEER CLINICA DE
+SAUDE
+RAQUEL
+MARTINS CLINICA SAUDE
+SEER LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/08/2025 E F I - SERVICOS DE
+OFTALMOLOGIA
+E F I -
+SERVICOS DE
+OFTALMOLOGIA SS
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 25 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 08/08/2025 INSTITUTO JO CLEMENTE
+ASSOCIACAO DE PAIS E
+AMIGOS DOS
+EXCEPCIONAIS DE S PAULO
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 08/08/2025 CLINICA DA VILA
+CLINICA
+MEDICA VILA GUILHERMINA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 11/08/2025 CENTRO PAULISTA
+CENTRO
+PAULISTA DE DIAGNOSTICO
+E TRATAMENTO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 11/08/2025 CLINICA MDR SERVICOS
+MEDICOS
+MDR
+SERVICOS MEDICOS S S
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/08/2025 GINECLIN
+GINECLIN - CLINICA EM
+GINECOLOGIA E
+OBSTETRICIA S/S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 18/08/2025 FENIX SERVICOS MEDICOS
+VILA NOVA CONCEICAO
+FENIX
+SERVICOS MEDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 18/08/2025 FENIX ANALIA FRANCO
+FENIX
+ANALIA FRANCO -
+SERVICOS MEDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 18/08/2025 FENIX REPUBLICA DO
+LIBANO
+FENIX
+REPUBLICA DO LIBANO -
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 26 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SERVICOS MEDICOS LTDA
+SP Clínica 20/08/2025 CLINICA MDR SERVICOS
+MEDICOS
+MDR
+SERVICOS MEDICOS S S
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 20/08/2025 RENAL QUALITY
+CLINICA
+MEDICA DE NEFROLOGIA
+DE JUNDIAI LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 21/08/2025 PSICOVITALITY
+CONSULTORIO DE
+PSICOLOGIA
+PSICOVITALITY
+CONSULTORIO DE
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/08/2025 LUIS FELIPE CORAZZA
+MARTINS
+LF
+CORAZZA MARTINS
+SERVICOS MEDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/08/2025 GUEDES MENDONCA
+SERVICOS MEDICOS
+GUEDES
+MENDONCA SERVICOS
+MEDICOS S/S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/08/2025 OBA & BOURROUL CLINICA
+DO APARELHO DIGESTIVO
+OBA &
+BOURROUL CLINICA DO
+APARELHO DIGESTIVO S/S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/08/2025 CLINICA MEDICOS DO BEM
+MDB
+SERVICOS MEDICOS S/S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 27 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 22/08/2025 TEABA CLINICA
+MULTIDISCIPLINAR
+TEABA
+CLINICA MULTIDISCIPLINAR
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/08/2025 PRIME SERVICOS MEDICOS
+PRIME
+JBR MEDICAL GROUP LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/08/2025 THERAPY MINDS
+THERAPY MINDS CLINICA
+MULTIDISCIPLINAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 29/08/2025 CLINICA PRISMA DE
+PSIQUIATRIA E PSICOLOGIA
+CLINICA
+PRISMA DE PSIQUIATRIA E
+PSICOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/09/2025 CENTROCORDIS
+CENTROCORDIS CENTRO
+DE DIAGNOSTICO DE
+DOENCAS DO CORACAO
+LTD
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/09/2025 BRAINSKILLS CLINICA
+ESPECIALIZADA
+BRAINSKILLS BF
+ASSESSORIA EM
+DESENVOLVIMENTO
+HUMANO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/09/2025 LITTLE PRINCE
+LITTLE
+PRINCE REABILITACAO
+NEUROLOGICA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 09/09/2025 SINAPSE Não Não Não Não Não Sim Sim Sim Select SÃO -
+
+-- 28 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SINAPSE
+S A
+São
+Paulo
+PAULO
+SP Clínica 10/09/2025 CLINICA MULTIDISCIPLINAR
+JOY
+CLINICA
+MULTIDISCIPLINAR JOY
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 10/09/2025 CECOP
+CECOP
+CENTRO DE
+CONSULTORIOS
+PARTICULARES LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 17/09/2025 UPO HOSPITAL DIA
+UNIDADE
+PAULISTA DE MEDICINA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 18/09/2025 CENTRO DERMATOLOGICO
+SKINLASER
+SKINLASER
+DERMATOLOGIA MEDICA
+LIMITADA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/08/2025 NUCLEO ALMA
+TESF
+ORTOPEDIA E
+TRAUMATOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 19/08/2025 DR MIGUEL NETO
+MIGUEL
+MARTINS RODRIGUES
+NETO
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 22/09/2025 INVOICE
+VOICE
+CLINICA DE
+FONOAUDIOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 29 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 24/09/2025 LUME TERAPIAS
+LUME
+TERAPIAS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/09/2025 NEURO REAB JJ SERVICOS
+MEDICOS
+NEURO
+REAB JJ SERVICOS
+MEDICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 25/09/2025 REABILLITY CARE
+LKS
+SERVICOS DE SAUDE LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 26/09/2025 CLINICA VITA CUORI
+VITA
+CUORI CLINICA MEDICA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 26/09/2025 KOUROS MEDICINA
+DIAGNOSTICA
+KOUROS
+MEDICINA DIAGNOSTICA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 30/09/2025 ILUMI SERVICOS MEDICOS
+ILUMI
+SERVICOS MEDICOS SS
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 03/10/2025 COMUNICARE CLINICA E
+CONSULTORIA
+MULTIDISCIPLINAR
+COMUNICARE CLINICA E
+CONSULTORIA
+MULTIDISCIPLINAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/10/2025 ESPACO SINESTESIA
+SERVICOS MEDICOS
+ESPACO
+SINESTESIA SERVICOS
+MEDICOS S S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 30 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Clínica 07/10/2025 CLINICA RAZZINI SAUDE
+INTEGRAL
+CLINICA
+RAZZINI SAUDE INTEGRAL
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 08/10/2025 FALE MELHOR
+QUALYMARKET SERVICOS
+EM FONOAUDIOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 10/10/2025 MENTAL + SAUDE
+MENTAL
+MAIS SAUDE LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 14/10/2025 HOSPITAL ALEMAO
+OSWALDO CRUZ
+HOSPITAL ALEMAO
+OSWALDO CRUZ
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 14/10/2025 CIRCARDIOPED SERVICOS
+MEDICOS
+MOISE
+DALVA SERVICOS MEDICOS
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 30/10/2025 CENTRO DE
+OFTALMOLOGIA
+ESPECIALIZADA
+CENTRO
+DE OFTALMOLOGIA
+ESPECIALIZADA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 30/10/2025 MEDICINA HIPERBARICA
+MEDICINA HIPERBARICA
+ZONA SUL LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 31/10/2025 CLINICA SANTS
+CLINICA
+SANT S PSICOLOGIA E
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 31 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+ESPECIALIDADES LTDA
+SP Clínica 05/11/2025 CLINRAD
+CEPRO
+CENTRO PAULISTA DE
+RADIOTERAPIA E
+ONCOLOGIA LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/11/2025 CINTRA CLINICA E
+CIRURGIA OTORRINOLARIN
+GOLOGICA
+CINTRA
+CLINICA E CIRURGIA OTOR
+RINOLARINGOLOGICA S/S
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/11/2025 PROMOVE
+PROMOVE INTERVENCAO
+COMPORTAMENTAL
+INTERDISCIPLINAR LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 07/11/2025 R.A.L.G. SERVICOS
+OFTALMOLOGICOS
+R.A.L.G.
+SERVICOS
+OFTALMOLOGICOS LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Clínica 12/11/2025 CLINICA MEDICA DRA.
+ANARY E DR. MICHEL
+ROSSI E
+SILVA SOCIEDADE MEDICA
+LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+Centro de Imagem (8) (8)
+
+-- 32 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Centro
+de
+Imagem
+09/01/2025 PREMIUM TEA MATRIZ
+PREMIUM
+TEA MATRIZ
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+09/01/2025 INSTITUTO ESPACO CRIANCA
+TEA
+INSTITUTO
+ESPACO CRIANCA TEA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+09/01/2025 PRO EXAME
+PRO
+EXAME
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+09/01/2025 F E R REABILITACAO E
+SAÚDE
+F E R
+REABILITACAO E SAÚDE
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+09/01/2025 ITEGUI
+ITEGUI
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+09/07/2025 LABORLABIS DIAGNÓSTICOS
+DE PRECISÃO
+LABORLABIS DIAGNÓSTICOS
+DE PRECISÃO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+11/08/2025 CENTRO MEDICO
+CAREZZATO
+HOSPITAL
+NOVA VIDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+SP Centro
+de
+Imagem
+18/08/2025 CENTRO DIAGNOSTICO UCD
+UCD
+ULTRA SONOGRAFIA
+CENTRO DIAGNOSTICO LTDA
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+Remoção (1) (1)
+
+-- 33 of 34 --
+
+Estado Tipo Data que
+foi
+adicionado
+Nome Fantasia / Nome
+Comercial
+Pronto
+Socorro
+Adulto
+Pronto
+Socorro
+Pediatrico
+Consultas
+Eletivas
+Internação Maternidade Rede
+Basica
+Select
+Premium
+Select
+Smart
+Produto Cidade Observação
+SP Remoção 25/08/2025 INOVE
+INOVE
+ADMINISTRACAO GESTAO E
+PARTICIPACOES EM
+SERVICOS MEDIC
+Não Não Não Não Não Sim Sim Sim Select
+São
+Paulo
+SÃO
+PAULO
+-
+
+-- 34 of 34 --
+

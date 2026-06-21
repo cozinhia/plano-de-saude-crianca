@@ -1,0 +1,111 @@
+10/2024
+REDUTOR DE CARÊNCIAS | SELECT
+I. DOCUMENTOS OBRIGATÓRIOS PARA REDUÇÃO
+DOCUMENTOS OBRIGATÓRIOS
+2 (dois) últimos comprovantes de pagamentos do plano anterior (sendo o último dentro de 60 dias
+do envio).
++
+Cópia da carteirinha do plano anterior (frente e verso) OU Declaração de Permancência do plano
+anterior.
+o Cliente NÃO apresentou cópia do cartão com data de inclusão, mas apresentou os
+comprovantes de pagamento da operadora anterior, poderá ser considerado na contagem
+do tempo de plano:
+▪ Exemplo 1 : cliente enviou os 6 (seis) últimos comprovantes de pagamento (sendo o
+último dentro de 60 dias do envio): será considerado Nível I.
+▪ Exemplo 2: cliente enviou os 4 (quatro) últimos comprovantes de pagamento (sendo
+o último dentro de 60 dias do envio): não haverá redução, pois o tempo mínimo de
+plano anterior para redução é de 6 meses.
+o Cliente apresentou cópia do cartão, mas NÃO consta a data de inclusão, mas apresentou o
+1º (primeiro) e os dois últimos comprovantes de pagamento anterior (dentro de 60 dias).
+Aproveitaremos o tempo entre o 1º e o último pagamento (conforme nível).
+o Cliente apresentou cópia do cartão, mas NÃO consta a data de inclusão, porém apresentou
+a Proposta de Adesão do plano anterior (assinada e datada) e os dois últimos
+comprovantes de pagamento anterior (dentro de 60 dias), será aceito.
+o Cliente APRESENTOU carta de permanência da operadora anterior, porém o documento cita
+a palavra “PORTABILIDADE”, será obrigatória o envio de uma carta de próprio punho com a
+ciência que NÃO trata-se de Portabilidade.
+II. Níveis de Redutor de carências para Principais Operadoras Nível I e II:
+• Nível I - mínimo 6 meses de plano anterior
+• Nível II - mínimo 1 anos de plano anterior
+• Máximo de 60 dias do cancelamento, sem inadimplência.
+• Sem redução para plano ambulatorial
+
+-- 1 of 3 --
+
+10/2024
+• Nível 10: Mínimo de 2 anos de plano anterior
+• Idade de 0 a 64 anos 11 meses e 29 dias
+• Máximo de 30 dias do cancelamento, sem inadimplência
+• Sem redução para plano ambulatorial
+PRINCIPAIS OPERADORAS
+PROCEDIMENTOS CARÊNCIA
+CONTRATUAL
+CARÊNCIA
+NÍVEL 10
+Urgência e Emergência (acidentes pessoais) 24 horas 24 horas
+Consultas e Exames Simples 15 dias 24 horas
+Exames e Procedimentos Especiais 180 dias 30 dias
+Terapias 180 dias 180 dias
+Internações Clínicas, Cirúrgicas e em UTI
+(não relacionadas a Doenças/Lesões Pré
+Existentes).
+180 dias 24 horas
+Saúde Mental (consultas e sessões) 180 dias 180 dias
+Partos 300 dias 300 dias
+Doenças ou Lesões Preexistentes 720 dias 720 dias
+III. Níveis de Redutor de carências para AUTOGESTÃO Nível III E IV
+• Nível III - mínimo 1 ano de plano anterior
+• Nível IV - mínimo 2 anos de plano anterior
+• Sem redução para plano ambulatorial
+• Auto Gestão: Assefaz, Cassi, Caixa, Imas, Ipasgo e Petrobras, Medsul e Tempo Med.
+PRINCIPAIS OPERADORAS
+PROCEDIMENTOS
+CARÊNCIA
+CONTRATUAL
+CARÊNCIA
+NÍVEL I
+CARÊNCIA
+NÍVEL
+II
+Urgência e Emergência (acidentes
+pessoais)
+24 horas 24 horas 24 horas
+Consultas e Exames Simples 15 dias 15 dias 15 dias
+Exames e Procedimentos Especiais 180 dias 90 dias 30 dias
+Terapias 180 dias 180 dias 180 dias
+Internações Clínicas, Cirúrgicas e em
+UTI
+(não relacionadas a Doenças/Lesões
+Pré Existentes).
+180 dias 90 dias 30 dias
+Saúde Mental (consultas e sessões) 180 dias 180 dias 180 dias
+Partos 300 dias 300 dias 300 dias
+Doenças ou Lesões Preexistentes 720 dias 720 dias 720 dias
+
+-- 2 of 3 --
+
+10/2024
+REGIÃO AUTOGESTÃO
+PROCEDIMENTOS CARÊNCIA
+CONTRATUAL
+CARÊNCIA
+NÍVEL III
+CARÊNCIA
+NÍVEL IV
+Urgência e Emergência (acidentes
+pessoais)
+24 horas 24 horas 24 horas
+Consultas e Exames Simples 15 dias 15 dias 15 dias
+Exames e Procedimentos Especiais 180 dias 90 dias 30 dias
+Terapias 180 dias 180 dias 180 dias
+Internações Clínicas, Cirúrgicas e em
+UTI
+(não relacionadas a Doenças/Lesões
+Pré Existentes).
+180 dias 90 dias 30 dias
+Saúde Mental (consultas e sessões) 180 dias 180 dias 180 dias
+Partos 300 dias 300 dias 300 dias
+Doenças ou Lesões Preexistentes 720 dias 720 dias 720 dias
+
+-- 3 of 3 --
+

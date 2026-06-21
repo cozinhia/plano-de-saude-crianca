@@ -1,0 +1,494 @@
+Rede Credenciada - Select Operadora
+Estado: SP
+Cidade: SÃO PAULO
+1/1
+Hospital (25)
+Prestador Cidade do
+Prestador
+Produto PS Adulto PS Pediatrico Consultas Internação Maternidade Básica
+100/200
+Premium Smart Obs
+HOSPITAL DOM
+ALVARENGA
+SÃO PAULO Select São Paulo Sim Não Sim Sim Sim Sim Sim Sim
+HOSPITAL SANTA
+VIRGINIA
+SÃO PAULO Select São Paulo Sim Não Sim Sim Sim Sim Sim Sim SEM REDE
+PREMIUM
+ESPECIAL A
+PARTAMEN
+TO
+HOSPITAL SANTA RITA SÃO PAULO Select São Paulo Sim Sim Não Sim Sim Sim Sim Sim
+HOSPITAL SÃO MIGUEL -
+UNIDADE ERMELINO
+MATARAZZO
+SÃO PAULO Select São Paulo Sim Não Sim Sim Sim Sim Sim Sim
+HOSPITAL EDMUNDO
+VASCONCELOS
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim Atende as
+rede:
+Básica Apart
+amento,
+Premium Ap
+artamento,
+Premium
+Especial
+Apartamento
+e Black Apar
+tamento;Sm
+art
+Apartamento
+BLANC SP SÃO PAULO Select São Paulo Sim Não Sim Sim Sim Sim Sim Sim
+MONTE CRISTO HOSPITAL
+DE MULTI
+ESPECIALIDADES
+SÃO PAULO Select São Paulo Não Não Sim Sim Não Sim Sim Sim POSSUI
+REDE
+BÁSICA EN
+1/14
+
+-- 1 of 14 --
+
+Prestador Cidade do
+Prestador
+Produto PS Adulto PS Pediatrico Consultas Internação Maternidade Básica
+100/200
+Premium Smart Obs
+FERMARIA
+E NÃO TEM
+BÁSICA APA
+RTAMENTO
+POSSUI
+REDE
+PREMIUM E
+NFERMARI
+AE NÃO
+TEM
+PREMIUM A
+PARTAMEN
+TO
+CRUZ AZUL DE SÃO
+PAULO
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim
+HOSPITAL SÃO MIGUEL SÃO PAULO Select São Paulo Sim Sim Sim Sim Não Sim Sim Sim
+HOSPITAL LEFORTE
+LIBERDADE
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Não Sim Sim Sim
+HOSPITAL LEFORTE S A SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim
+HOSPITAL 9 DE JULHO SÃO PAULO Select São Paulo Sim Não Sim Sim Não Não Sim Não Exclusivo:
+Premium Ap
+artamento,
+Premium
+Especial
+Apartamento
+e Black
+Apartamento
+HOSPITAL SANTA PAULA SÃO PAULO Select São Paulo Sim Não Sim Sim Não Sim Sim Não
+HOSPITAL SANTA
+CATARINA
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Não
+HC DA FMUSP HOSPITAL
+DAS CLÍNICAS SAO PAULO
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim
+HOSPITAL SANTA SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim
+2/14
+
+-- 2 of 14 --
+
+Prestador Cidade do
+Prestador
+Produto PS Adulto PS Pediatrico Consultas Internação Maternidade Básica
+100/200
+Premium Smart Obs
+MARCELINA
+HOSPITAL ALBERT SABIN SÃO PAULO Select São Paulo Não Não Sim Sim Não Sim Sim Sim
+CLINICA VERA CRUZ SÃO PAULO Select São Paulo Sim Não Sim Sim Não Sim Sim Sim
+HOSPITAL SAO CAMILO -
+POMPEIA
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Não Não Sim Não
+HOSPITAL SAO CAMILO -
+IPIRANGA
+SÃO PAULO Select São Paulo Sim Não Sim Sim Não Sim Sim Sim
+HOSPITAL SAO CAMILO -
+SANTANA
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Não Sim Sim Sim
+HOSPITAL SANTA
+CATARINA
+SÃO PAULO Select São Paulo Sim Sim Sim Sim Sim Sim Sim Sim
+IBCC ONCOLOGIA SÃO PAULO Select São Paulo Sim Não Sim Sim Não Sim Sim Sim
+HCLOE HOSPITAL DE
+OLHOS
+SÃO PAULO Select São Paulo Não Não Não Não Não Sim Sim Sim
+BENVISTA OFTALMOLOGIA SÃO PAULO Select São Paulo Não Não Não Não Não Sim Sim Sim
+Centro de Imagem (8)
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+PREMIUM TEA MATRIZ SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO ESPACO CRIANCA TEA SÃO PAULO Select São Paulo Não Sim Sim
+3/14
+
+-- 3 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+PRO EXAME SÃO PAULO Select São Paulo Não Sim Sim
+F E R REABILITACAO E SAÚDE SÃO PAULO Select São Paulo Não Sim Sim
+ITEGUI SÃO PAULO Select São Paulo Não Sim Sim
+LABORLABIS DIAGNÓSTICOS DE
+PRECISÃO
+SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO MEDICO CAREZZATO SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO DIAGNOSTICO UCD SÃO PAULO Select São Paulo Não Sim Sim
+Laboratório (8)
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+GIP MEDICINA DIAGNOSTICA SA
+CENTRAL
+SÃO PAULO Select São Paulo Não Sim Sim
+PLATTA LABORATÓRIO SÃO PAULO Select São Paulo Não Sim Sim
+BR DIAGNÓSTICO SÃO PAULO Select São Paulo Não Sim Sim
+SONILAB SÃO PAULO Select São Paulo Não Sim Sim
+BIO CIÊNCIA LAVOISIER - SÃO PAULO SÃO PAULO Select São Paulo Não Sim Sim
+SALOMÃO & ZOPPI SÃO PAULO Select São Paulo Não Sim Sim
+GENOA/LPCM MEDICINA DIAGNOSTICA SÃO PAULO Select São Paulo Não Sim Sim
+A+ MEDICINA DIAGNOSTICA SÃO PAULO Select São Paulo Não Sim Sim
+Clínica (175) 4/14
+
+-- 4 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+ALPHA SOLUCOES MÉDICAS SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO CLINICO EVOLLUIR LTDA SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO CLINICO JP SÃO PAULO Select São Paulo Não Sim Sim
+CEONG SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA CASA COLORIDA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DE CARDIOLOGIA DR. MARIO
+RISEGATO NETO LTD
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DE FRATURAS E ORTOPEDIA
+SANTA CLARA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA ERGO SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA GINECOLOGICA E OBSTETRICIA
+ATTYA LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA INFANTIL DE ITAQUERA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA PAULISTA DE ALERGIA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA PSAI - SERVIÇOS DE SAÚDE
+LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+COGNITIVECARE INSTITUTO DE
+TERAPIAS INTEGRADAS E D
+SÃO PAULO Select São Paulo Não Sim Sim
+MÉDICAL CENTER SÃO PAULO Select São Paulo Não Sim Sim
+DERMOVISAGE SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA PEDRIATRICA DE ALERGIA E
+PNEUMOLOGIA CPAP
+SÃO PAULO Select São Paulo Não Sim Sim
+DR. OSVALDO LEME - SERVIÇOS
+MÉDICOS LTDA.
+SÃO PAULO Select São Paulo Não Sim Sim
+5/14
+
+-- 5 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+ELCIO TARKIELTAUB DIAGNÓSTICO
+CLINICO
+SÃO PAULO Select São Paulo Não Sim Sim
+ESTACAO SAÚDE LTDA SÃO PAULO Select São Paulo Não Sim Sim
+FISIO LIFE FISIOTERAPIA LTDA SÃO PAULO Select São Paulo Não Sim Sim
+FISIOTERAPIA IASO SÃO PAULO Select São Paulo Não Sim Sim
+DOUTOR POP SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DERMATOLOGICA DRA.SARAH
+FREUA
+SÃO PAULO Select São Paulo Não Sim Sim
+GRUPO DE APOIO DE CLÍNICA MÉDICA SÃO PAULO Select São Paulo Não Sim Sim
+HREABILITAR SERVIÇOS DE
+FISIOTERAPIA LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+ALOYSIO AUGUSTO TAHAN DE CAMPOS
+NETTO
+SÃO PAULO Select São Paulo Não Sim Sim
+IRIS - INSTITUTO DE REABILITACAO
+INTEGRAL DA SAÚDE
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA LOTHUS SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DR. JAMAL S. AZZAM SÃO PAULO Select São Paulo Não Sim Sim
+PREMIUM TEA MATRIZ SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO ESPACO CRIANCA TEA SÃO PAULO Select São Paulo Não Sim Sim
+PRO EXAME SÃO PAULO Select São Paulo Não Sim Sim
+F E R REABILITACAO E SAÚDE SÃO PAULO Select São Paulo Não Sim Sim
+ITEGUI SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA GXJ SÃO PAULO Select São Paulo Não Sim Sim
+6/14
+
+-- 6 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+LMIRANDA MEDICINA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA ORTOPÉDICA BROOKLIN SÃO PAULO Select São Paulo Não Sim Sim
+COT CLÍNICA ORTOPÉDICA TATUAPE SÃO PAULO Select São Paulo Não Sim Sim
+LR CLÍNICA MÉDICA E DIAGNÓSTICA
+(SOLER)
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA MÉDICO CIRÚRGICA ARS
+CURANDI
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA FATOR HUMANO SÃO PAULO Select São Paulo Não Sim Não
+CENTRO DERMATOLOGICO KAUAI SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO OPUS COMPORTAMENTAL SÃO PAULO Select São Paulo Não Sim Sim
+SIMARO E SALOMAO CLÍNICA MÉDICA SÃO PAULO Select São Paulo Não Sim Sim SEM REDE PREMIUM ESPECIAL APARTAMENTO
+RITA C BIERBRAUER SERVIÇOS DE
+PSICOLOGIA
+SÃO PAULO Select São Paulo Não Sim Sim
+ACOR CLÍNICA MÉDICA SÃO PAULO Select São Paulo Não Sim Sim
+CONS. MÉDICO ANA NEY SÃO PAULO Select São Paulo Não Sim Sim
+AIRA SAÚDE SÃO PAULO Select São Paulo Não Sim Sim
+CLINIC SPOT SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO ORTOPÉDICO ALTO DE
+PINHEIROS
+SÃO PAULO Select São Paulo Não Sim Sim
+DIGA PSICOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA ARTUR ALVIM SÃO PAULO Select São Paulo Não Sim Sim
+PSICOSER CLÍNICA DE PSICOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+7/14
+
+-- 7 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+CASA AMORE NÚCLEO DE
+DESENVOLVIMENTO
+SÃO PAULO Select São Paulo Não Sim Sim
+RONALDO DO PATROCÍNIO
+GINECOLOGIA E OBSTETRÍCIA
+SÃO PAULO Select São Paulo Não Sim Sim
+CARDIO CARE DRA. BERTA PAULA
+NAPCHAN BOER
+SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DE FONOAUDIOLOGIA KATIA
+DIAS
+SÃO PAULO Select São Paulo Não Sim Sim
+MEDLIGHT CARE SÃO PAULO Select São Paulo Não Sim Sim
+FOUR FISIO SÃO PAULO Select São Paulo Não Sim Sim
+CETENE SÃO PAULO Select São Paulo Não Sim Sim
+IPC SÃO PAULO Select São Paulo Não Sim Sim
+IPC SÃO PAULO Select São Paulo Não Sim Sim
+AUDI PREV SÃO PAULO Select São Paulo Não Sim Sim
+DIOMED SÃO PAULO Select São Paulo Não Sim Sim
+GONZALEZ REYES SÃO PAULO Select São Paulo Não Sim Sim
+LÚCIA MARINARO SÃO PAULO Select São Paulo Não Sim Sim
+AMAR - TEA SÃO PAULO Select São Paulo Não Sim Sim
+DAVITA INDIANOPOLIS SÃO PAULO Select São Paulo Não Sim Sim
+DAVITA SANTA CECILIA SÃO PAULO Select São Paulo Não Sim Sim
+DAVITA PAULISTA SÃO PAULO Select São Paulo Não Sim Sim
+LS SERVIÇOS MÉDICOS
+ESPECIALIZADOS
+SÃO PAULO Select São Paulo Não Sim Sim
+8/14
+
+-- 8 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+DAVITA SÃO PAULO Select São Paulo Não Sim Sim
+DAVITA JOAO DIAS SÃO PAULO Select São Paulo Não Sim Sim
+DAVITA ARICANDUVA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DE OLHOS HOLZCHUH LTDA SÃO PAULO Select São Paulo Não Sim Sim
+ATTIVAMENTE SÃO PAULO Select São Paulo Não Sim Sim
+ANAUATE MEDICINA LTDA SÃO PAULO Select São Paulo Não Sim Sim
+IMEP SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO MÉDICO HIPERBARICO DE SÃO
+PAULO
+SÃO PAULO Select São Paulo Não Sim Sim
+MENDELICS ANÁLISES GENOMICA SÃO PAULO Select São Paulo Não Sim Sim
+MEDIN MEDICINA INTEGRADA SÃO PAULO Select São Paulo Não Sim Sim
+IBET CLÍNICA DE ESPECIALIDADES SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA LA VIE PSICOLOGIA E BEM
+ESTAR
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINOFT SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO DA FACE SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA LUANVER SÃO PAULO Select São Paulo Não Sim Sim
+MOLINARI SÃO PAULO Select São Paulo Não Sim Sim
+VISOCLÍNICA -OFTALMOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+DR MICHEL EID FARAH OFTALMOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO NERE SÃO PAULO Select São Paulo Não Sim Sim
+9/14
+
+-- 9 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+DIAGCORP SERVIÇOS MÉDICOS SÃO PAULO Select São Paulo Não Sim Sim
+ECOFISIO PILATES E FISIOTERAPIA SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA MERAKI SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA MÉDICA POPULAR SÃO PAULO Select São Paulo Não Sim Sim
+CLINIQUE ETERNITE SÃO PAULO Select São Paulo Não Sim Sim
+MARTINS E DEVIDO SERVIÇOS MÉDICOS SÃO PAULO Select São Paulo Não Sim Sim
+GRUPO ACCESS SÃO PAULO Select São Paulo Não Sim Sim
+OFTALMOCARE SANTO AMARO SÃO PAULO Select São Paulo Não Sim Sim
+CLÍNICA DE NEFROLOGIA SANTA RITA
+LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+PSIPIN SÃO PAULO Select São Paulo Não Sim Sim
+CARDIO-LOGICA IPIRANGA SÃO PAULO Select São Paulo Não Sim Sim
+IOCB SÃO PAULO Select São Paulo Não Sim Sim
+BANCO DE SANGUE DE SAO PAULO SÃO PAULO Select São Paulo Não Sim Sim
+ONCOLOGICA SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+ROSSI SERVICO DE FONO E APOIO
+ADMINISTRATIVO
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA SANTIAGO SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA VITA SÃO PAULO Select São Paulo Não Sim Sim
+UROM - UROLOGIA ASSISTENCIA
+MEDICA
+SÃO PAULO Select São Paulo Não Sim Sim
+GRUPO ACCESS SÃO PAULO Select São Paulo Não Sim Sim
+10/14
+
+-- 10 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+NEPHRON SÃO PAULO Select São Paulo Não Sim Sim
+MUNDO NEUROPSI CLINICA DE SAUDE
+MENTAL
+SÃO PAULO Select São Paulo Não Sim Sim
+CONS MEDICO MARTINELLI E MACEDO SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO DE CLINICA E CIRURGIA
+OFTALMOLOGICA
+SÃO PAULO Select São Paulo Não Sim Sim
+DR WALDIR PORTELLINHA
+OFTALMOLOGIA LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA PERRUCINI SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA DESENVOLVIDA SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA MEDICA DRA LILIAN DE PAIVA
+RODRIGUES E DR.HSU WEN SH
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA JARDIM AVELINO SÃO PAULO Select São Paulo Não Sim Sim
+WANDERLEIA DE OLIVEIRA SILVA LTDA SÃO PAULO Select São Paulo Não Sim Sim
+TIAGO A OLIVEIRA ROSSI SÃO PAULO Select São Paulo Não Sim Sim
+TEACLIN - TRANSTORNO DO ESPECTRO
+AUTISTA LTDA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICAS YUNA SÃO PAULO Select São Paulo Não Sim Sim
+HOSPITAL ADVENTISTA DE SAO PAULO SÃO PAULO Select São Paulo Não Sim Sim
+ITULAB SÃO PAULO Select São Paulo Não Sim Sim
+ABA TERAPIAS SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA SAM SÃO PAULO Select São Paulo Não Sim Sim
+MR CLINICA MULTIDISCIPLINAR SÃO PAULO Select São Paulo Não Sim Sim
+11/14
+
+-- 11 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+LAMOUR CLINIC SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA INCLUSIVA - ESPACO
+MULTIDISCIPLINAR ABA
+SÃO PAULO Select São Paulo Não Sim Sim
+CURA CENTRO DE ULTRASSONOGRAFIA
+E RADIOLOGIA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLISAM CLINICA DE PSICOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA PRISMA DE PSIQUIATRIA E
+PSICOLOGIA
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA PRISMA SÃO PAULO Select São Paulo Não Sim Sim
+TRIADES CENTER-TRADICAO E
+EXPERTISE EM SAUDE DA MULHER
+SÃO PAULO Select São Paulo Não Sim Sim
+DR FRANCISCO CARLOS ANELLO & CIA SÃO PAULO Select São Paulo Não Sim Sim
+COMPANHIA DO AUTISMO SÃO PAULO Select São Paulo Não Sim Sim
+MEDICALSEER CLINICA DE SAUDE SÃO PAULO Select São Paulo Não Sim Sim
+E F I - SERVICOS DE OFTALMOLOGIA SÃO PAULO Select São Paulo Não Sim Sim
+INSTITUTO JO CLEMENTE SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA DA VILA SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO PAULISTA SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA MDR SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+GINECLIN SÃO PAULO Select São Paulo Não Sim Sim
+FENIX SERVICOS MEDICOS VILA NOVA
+CONCEICAO
+SÃO PAULO Select São Paulo Não Sim Sim
+FENIX ANALIA FRANCO SÃO PAULO Select São Paulo Não Sim Sim
+12/14
+
+-- 12 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+FENIX REPUBLICA DO LIBANO SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA MDR SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+RENAL QUALITY SÃO PAULO Select São Paulo Não Sim Sim
+PSICOVITALITY CONSULTORIO DE
+PSICOLOGIA
+SÃO PAULO Select São Paulo Não Sim Sim
+LUIS FELIPE CORAZZA MARTINS SÃO PAULO Select São Paulo Não Sim Sim
+GUEDES MENDONCA SERVICOS
+MEDICOS
+SÃO PAULO Select São Paulo Não Sim Sim
+OBA & BOURROUL CLINICA DO
+APARELHO DIGESTIVO
+SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA MEDICOS DO BEM SÃO PAULO Select São Paulo Não Sim Sim
+TEABA CLINICA MULTIDISCIPLINAR SÃO PAULO Select São Paulo Não Sim Sim
+PRIME SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+THERAPY MINDS SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA PRISMA DE PSIQUIATRIA E
+PSICOLOGIA
+SÃO PAULO Select São Paulo Não Sim Sim
+CENTROCORDIS SÃO PAULO Select São Paulo Não Sim Sim
+BRAINSKILLS CLINICA ESPECIALIZADA SÃO PAULO Select São Paulo Não Sim Sim
+LITTLE PRINCE SÃO PAULO Select São Paulo Não Sim Sim
+SINAPSE SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA MULTIDISCIPLINAR JOY SÃO PAULO Select São Paulo Não Sim Sim
+CECOP SÃO PAULO Select São Paulo Não Sim Sim
+13/14
+
+-- 13 of 14 --
+
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+UPO HOSPITAL DIA SÃO PAULO Select São Paulo Não Sim Sim
+CENTRO DERMATOLOGICO SKINLASER SÃO PAULO Select São Paulo Não Sim Sim
+NUCLEO ALMA SÃO PAULO Select São Paulo Não Sim Sim
+DR MIGUEL NETO SÃO PAULO Select São Paulo Não Sim Sim
+INVOICE SÃO PAULO Select São Paulo Não Sim Sim
+LUME TERAPIAS SÃO PAULO Select São Paulo Não Sim Sim
+NEURO REAB JJ SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+REABILLITY CARE SÃO PAULO Select São Paulo Não Sim Sim
+CLINICA VITA CUORI SÃO PAULO Select São Paulo Não Sim Sim
+KOUROS MEDICINA DIAGNOSTICA SÃO PAULO Select São Paulo Não Sim Sim
+ILUMI SERVICOS MEDICOS SÃO PAULO Select São Paulo Não Sim Sim
+COMUNICARE CLINICA E CONSULTORIA
+MULTIDISCIPLINAR
+SÃO PAULO Select São Paulo Não Sim Sim
+Remoção (1)
+Prestador Cidade do Prestador Produto Básica
+100/200
+Premium Smart Observações
+INOVE SÃO PAULO Select São Paulo Não Sim Sim
+14/14
+Relatório gerado em: 06/10/2025, 10:46:32
+
+-- 14 of 14 --
+
