@@ -1684,6 +1684,9 @@
     let marcadoresRede = [];
     let marcadorCasa = null;
     let camadaRede = null;
+    let iconeSelect = null;
+    let iconeHapvida = null;
+    let iconeCasa = null;
 
     function criarIcone(cor, tamanho = 22) {
       const metade = tamanho / 2;
@@ -1696,9 +1699,6 @@
       });
     }
 
-    const iconeSelect = criarIcone('#5B2D8E');
-    const iconeHapvida = criarIcone('#F7941D');
-
     function criarIconeCasa() {
       return L.divIcon({
         className: 'pin-casa-leaflet',
@@ -1708,8 +1708,6 @@
         popupAnchor: [0, -42],
       });
     }
-
-    const iconeCasa = criarIconeCasa();
 
     function escapeHtmlMapa(str) {
       return String(str)
@@ -1725,7 +1723,12 @@
     }
 
     function iconePorOperadora(operadora) {
-      return operadora === 'select' ? iconeSelect : iconeHapvida;
+      if (operadora === 'select') {
+        if (!iconeSelect) iconeSelect = criarIcone('#5B2D8E');
+        return iconeSelect;
+      }
+      if (!iconeHapvida) iconeHapvida = criarIcone('#F7941D');
+      return iconeHapvida;
     }
 
     function renderizarRedeNoMapa() {
@@ -1764,6 +1767,8 @@
 
     function centralizarNoCep(lat, lng, enderecoTexto) {
       limparMarcadorCasa();
+
+      if (!iconeCasa) iconeCasa = criarIconeCasa();
 
       marcadorCasa = L.marker([lat, lng], {
         icon: iconeCasa,
