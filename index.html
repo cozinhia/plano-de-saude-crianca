@@ -42,22 +42,22 @@
 
   <!--
     Google tag (gtag.js) — Google Ads
-    ID da conta: AW-7968415381
-    Para trocar de conta, substitua AW-7968415381 nos dois lugares abaixo (src do script e gtag('config')).
+    ID da conta: AW-1789935278
+    Para trocar de conta, substitua AW-1789935278 nos dois lugares abaixo (src do script e gtag('config')).
     Conversão WhatsApp: após criar a ação de conversão no Google Ads, substitua GOOGLE_ADS_CONVERSION_LABEL
     no bloco CONFIG (perto do número do WhatsApp) e o send_to em trackWhatsAppClick().
     No Google Ads: Ferramentas → Conversões → Nova conversão → Site → evento personalizado ou tag de conversão.
     Para evento whatsapp_click: configure como conversão secundária em Metas → Conversões → Importar do Google Analytics
-    ou use a tag conversion com o rótulo (label) gerado em AW-7968415381/XXXXXXXXX.
+    ou use a tag conversion com o rótulo (label) gerado em AW-1789935278/XXXXXXXXX.
   -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-7968415381"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1789935278"></script>
   <!-- Google tag (gtag.js) - GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHTPF9W7CH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'AW-7968415381');
+    gtag('config', 'AW-1789935278');
     gtag('config', 'G-EHTPF9W7CH');
   </script>
 
@@ -403,11 +403,11 @@
     const WHATSAPP_DISPLAY = '(11) 95328-4219';
     const WHATSAPP_MSG_DEFAULT = 'Olá Ricardo! Quero cotar um plano de saúde para meu filho.';
 
-    /* Google Ads — ID da conta AW-7968415381
+    /* Google Ads — ID da conta AW-1789935278
        Após criar a conversão no Google Ads, cole o rótulo (label) abaixo.
-       Ex.: se o send_to for AW-7968415381/AbCdEfGhIj, use 'AbCdEfGhIj' */
-    const GOOGLE_ADS_ID = 'AW-7968415381';
-    const GOOGLE_ADS_CONVERSION_LABEL = 'XXXXXXXXX';
+       Ex.: se o send_to for AW-1789935278/AbCdEfGhIj, use 'AbCdEfGhIj' */
+    const GOOGLE_ADS_ID = 'AW-1789935278';
+    const GOOGLE_ADS_CONVERSION_LABEL = 'oBtaCJ6aqMcBJjliddC';
   </script>
 
   <!-- ========== NAVBAR ========== -->
@@ -1652,7 +1652,7 @@
       /* Evento personalizado — útil para relatórios e conversão por evento no Google Ads */
       gtag('event', 'whatsapp_click');
 
-      /* Conversão Google Ads — substitua XXXXXXXXX pelo rótulo real da ação de conversão */
+      /* Conversão Google Ads */
       gtag('event', 'conversion', {
         send_to: GOOGLE_ADS_ID + '/' + GOOGLE_ADS_CONVERSION_LABEL,
       });
