@@ -132,6 +132,35 @@
     }
     .btn-whatsapp-pulse { animation: wa-pulse 2.2s ease-in-out infinite; }
 
+    .home-pick-card {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .home-pick-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+    }
+
+    #floating-whatsapp {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      z-index: 55;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    #floating-whatsapp.is-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    @media (min-width: 1024px) {
+      #floating-whatsapp { display: none; }
+    }
+
     /* Hero blobs */
     @keyframes float-blob {
       0%, 100% { transform: translate(0, 0) scale(1); }
@@ -466,7 +495,7 @@
           Crianças precisam de cuidados com mais frequência. Aqui você encontra opções Select e Hapvida para contratar apenas o seu filho, com rede credenciada na capital e Grande SP.
         </p>
 
-        <ul class="flex flex-wrap justify-center gap-2 mb-4 text-sm font-medium">
+        <ul class="flex flex-wrap justify-center gap-2 mb-8 text-sm font-medium">
           <li class="glass-badge rounded-full px-4 py-2 text-white/95 flex items-center gap-2">
             <svg class="w-4 h-4 text-select-green shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             Sem empresa
@@ -480,50 +509,89 @@
             Suporte pós-venda
           </li>
         </ul>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href="#"
+            id="hero-whatsapp"
+            class="btn-whatsapp-pulse whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-whatsapp hover:bg-green-500 text-white font-bold text-base md:text-lg px-8 py-4 rounded-full transition-all shadow-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Cotação grátis no WhatsApp
+          </a>
+          <a
+            href="#mapa-inicio"
+            class="inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold text-base px-8 py-4 rounded-full border border-white/25 transition-colors"
+          >
+            Ver planos e preços
+          </a>
+        </div>
+        <p class="text-slate-400 text-sm mt-4">Respondo eu mesmo · sem compromisso · Seg–Sáb 8h–20h</p>
       </div>
 
       <!-- Wave para próxima seção -->
       <svg class="section-wave absolute bottom-0 left-0 text-white" viewBox="0 0 1440 48" fill="currentColor" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C360,64 720,0 1080,32 C1260,48 1380,40 1440,32 L1440,48 L0,48 Z"/></svg>
     </section>
 
-    <!-- ========== BOX RICARDO ========== -->
-    <section class="px-4 py-10 md:py-14 bg-white" aria-labelledby="ricardo-title">
-      <div class="max-w-5xl mx-auto">
-        <div class="bg-gradient-to-br from-select-light/80 via-white to-brand-light rounded-2xl p-6 md:p-8 md:flex md:gap-8 md:items-center shadow-md border border-gray-100 card-lift">
-          <figure class="shrink-0 mb-5 md:mb-0 mx-auto md:mx-0 w-36 md:w-44">
-            <img
-              src="fotoricardo.jpeg"
-              alt="Ricardo Rossi, corretor de plano de saúde infantil em São Paulo — Select e Hapvida"
-              class="rounded-2xl shadow-lg w-full aspect-square object-cover ring-4 ring-select-purple/20 ring-offset-2"
-              width="400"
-              height="400"
-              loading="lazy"
-            >
-            <figcaption class="text-center mt-2 text-sm font-bold text-select-purple font-display">Ricardo Rossi</figcaption>
-          </figure>
-          <div>
-            <h2 id="ricardo-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Seu corretor de plano de saúde infantil</h2>
-            <p class="text-gray-600 leading-relaxed mb-4">
-              Sou o Ricardo Rossi e ajudo mães a encontrar <strong class="text-select-purple">plano de saúde para criança</strong> em São Paulo. Trabalho com <strong class="text-select-purple">Select</strong> e <strong class="text-hapvida-blue">Hapvida</strong> — explico tudo simples, sem enrolação.
-            </p>
-            <div class="bg-white rounded-xl border-l-4 border-green-500 p-4 mb-4 shadow-sm">
-              <p class="text-gray-900 font-bold leading-snug">
-                Se você contratar comigo, eu não te deixo na mão depois da venda.
-              </p>
-              <p class="text-gray-500 text-sm mt-2">
-                Qualquer dúvida com o plano, é comigo que você fala.
-              </p>
-            </div>
-            <p class="text-gray-800 font-semibold">
-              Me chama no WhatsApp — eu mesmo que respondo.
-            </p>
-          </div>
+    <!-- ========== AS 2 OPÇÕES QUE EU INDICO ========== -->
+    <section id="mapa-inicio" class="px-4 py-10 md:py-16 bg-white" aria-labelledby="mapa-inicio-title">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-8 md:mb-10">
+          <h2 id="mapa-inicio-title" class="font-display text-xl md:text-3xl font-extrabold text-gray-900 mb-3 tracking-tight">As 2 opções que eu mais indico para criança em SP</h2>
+          <p class="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">Depende da idade do seu filho e do que você prioriza: <strong class="text-gray-800">rede hospitalar de alto nível</strong> ou <strong class="text-gray-800">mensalidade mais acessível</strong>.</p>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-4 md:gap-6 mb-8">
+
+          <!-- Hapvida primeiro no mobile (bebês) · direita no desktop -->
+          <a href="#hapvida" class="home-pick-card order-1 md:order-2 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl bg-gradient-to-br from-hapvida-orange via-[#E8871A] to-[#C96A10] text-white ring-2 ring-hapvida-orange/40">
+            <span class="inline-block self-start text-[10px] md:text-xs font-bold uppercase tracking-widest bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full mb-4">Melhor custo-benefício</span>
+            <p class="font-display text-3xl md:text-4xl font-extrabold tracking-tight mb-1">Hapvida</p>
+            <p class="text-white/85 text-sm md:text-base font-medium mb-5">Rede própria · desde o nascimento</p>
+            <ul class="text-sm md:text-base text-white/95 space-y-2.5 flex-1 mb-6">
+              <li class="flex items-start gap-2"><span class="text-white font-bold shrink-0">✓</span> Desde <strong>1 dia de vida</strong> no CPF</li>
+              <li class="flex items-start gap-2"><span class="text-white font-bold shrink-0">✓</span> Clínicas e hospitais da operadora</li>
+              <li class="flex items-start gap-2"><span class="text-white font-bold shrink-0">✓</span> Odontológico incluso · urgência na rede própria</li>
+              <li class="flex items-start gap-2"><span class="text-white font-bold shrink-0">✓</span> Desde <strong class="text-lg">R$ 173/mês</strong></li>
+            </ul>
+            <span class="inline-flex items-center justify-center gap-2 w-full bg-white text-hapvida-orange font-bold text-sm md:text-base py-3.5 rounded-xl shadow-md">
+              Ver planos Hapvida
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </span>
+          </a>
+
+          <!-- Select · esquerda no desktop -->
+          <a href="#select" class="home-pick-card order-2 md:order-1 rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-xl bg-gradient-to-br from-select-purple via-select-blue to-[#1a1040] text-white ring-2 ring-select-purple/40">
+            <span class="inline-block self-start text-[10px] md:text-xs font-bold uppercase tracking-widest bg-select-green/30 text-select-green px-3 py-1 rounded-full mb-4 border border-select-green/40">Melhor rede hospitalar</span>
+            <p class="font-display text-3xl md:text-4xl font-extrabold tracking-tight mb-1">Select</p>
+            <p class="text-white/85 text-sm md:text-base font-medium mb-5">Hospitais de referência · a partir de 2 anos</p>
+            <ul class="text-sm md:text-base text-white/95 space-y-2.5 flex-1 mb-6">
+              <li class="flex items-start gap-2"><span class="text-select-green font-bold shrink-0">✓</span> A partir de <strong>2 anos</strong> no CPF da criança</li>
+              <li class="flex items-start gap-2"><span class="text-select-green font-bold shrink-0">✓</span> Portuguesa, Samaritano, Leforte, Nove de Julho…</li>
+              <li class="flex items-start gap-2"><span class="text-select-green font-bold shrink-0">✓</span> Urgência nacional · telemedicina 24h</li>
+              <li class="flex items-start gap-2"><span class="text-select-green font-bold shrink-0">✓</span> Desde <strong class="text-lg">R$ 389/mês</strong></li>
+            </ul>
+            <span class="inline-flex items-center justify-center gap-2 w-full bg-white text-select-purple font-bold text-sm md:text-base py-3.5 rounded-xl shadow-md">
+              Ver planos Select
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+            </span>
+          </a>
+
+        </div>
+
+        <p class="text-center text-sm text-gray-500">
+          Também nesta página:
+          <a href="#hospitais" class="text-select-purple font-semibold hover:underline">Mapa de hospitais por CEP</a>
+          <span class="text-gray-300 mx-1">·</span>
+          <a href="#faq" class="text-select-purple font-semibold hover:underline">Dúvidas frequentes</a>
+        </p>
       </div>
     </section>
 
-    <!-- ========== SEÇÃO SELECT ========== -->
     <div class="h-1 bg-gradient-to-r from-select-purple via-select-blue to-select-green" aria-hidden="true"></div>
+
     <section id="select" class="px-4 py-10 md:py-16 bg-gradient-to-b from-select-light/90 to-white" aria-labelledby="select-title">
       <div class="max-w-5xl mx-auto">
 
@@ -704,14 +772,14 @@
           <a
             href="#"
             class="whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-select-purple hover:bg-select-blue text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-md"
-            data-msg="Olá Ricardo! Quero fechar o plano Select para meu filho."
+            data-msg="Olá Ricardo! Quero cotação do plano Select para meu filho."
             target="_blank"
             rel="noopener noreferrer"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            Quero fechar
+            Quero cotação grátis
           </a>
         </div>
 
@@ -953,14 +1021,14 @@
           <a
             href="#"
             class="whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-hapvida-blue hover:bg-hapvida-green text-white font-bold text-lg px-8 py-4 rounded-full transition-colors shadow-md"
-            data-msg="Olá Ricardo! Quero fechar o plano Hapvida para meu filho."
+            data-msg="Olá Ricardo! Quero cotação do plano Hapvida para meu filho."
             target="_blank"
             rel="noopener noreferrer"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
             </svg>
-            Quero fechar
+            Quero cotação grátis
           </a>
         </div>
 
@@ -1110,6 +1178,20 @@
         <p class="text-xs text-gray-500 text-center mt-3">
           Mapa ilustrativo da rede na sua região. Role a página normalmente — use os botões +/− no mapa para aproximar.
         </p>
+
+        <div class="text-center mt-8">
+          <p class="text-gray-600 text-sm mb-4 max-w-md mx-auto">Quer saber qual plano cobre hospitais perto de você? Me chama que eu te ajudo a comparar.</p>
+          <a
+            href="#"
+            class="whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-whatsapp hover:bg-green-600 text-white font-bold text-base px-8 py-3.5 rounded-full transition-colors shadow-md"
+            data-msg="Olá Ricardo! Vi o mapa de hospitais no site. Quero cotação para meu filho."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Cotação grátis no WhatsApp
+          </a>
+        </div>
       </div>
     </section>
 
@@ -1408,6 +1490,50 @@
       </div>
     </section>
 
+    <!-- ========== BOX RICARDO (após FAQ) ========== -->
+    <section id="ricardo" class="px-4 py-10 md:py-14 bg-gradient-to-b from-select-light/50 to-white" aria-labelledby="ricardo-title">
+      <div class="max-w-5xl mx-auto">
+        <div class="bg-gradient-to-br from-select-light/80 via-white to-brand-light rounded-2xl p-6 md:p-8 md:flex md:gap-8 md:items-center shadow-md border border-gray-100 card-lift">
+          <figure class="shrink-0 mb-5 md:mb-0 mx-auto md:mx-0 w-36 md:w-44">
+            <img
+              src="fotoricardo.jpeg"
+              alt="Ricardo Rossi, corretor de plano de saúde infantil em São Paulo — Select e Hapvida"
+              class="rounded-2xl shadow-lg w-full aspect-square object-cover ring-4 ring-select-purple/20 ring-offset-2"
+              width="400"
+              height="400"
+              loading="lazy"
+            >
+            <figcaption class="text-center mt-2 text-sm font-bold text-select-purple font-display">Ricardo Rossi</figcaption>
+          </figure>
+          <div class="text-center md:text-left">
+            <h2 id="ricardo-title" class="font-display text-xl md:text-2xl font-bold text-gray-900 mb-3">Seu corretor de plano de saúde infantil</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+              Sou o Ricardo Rossi e ajudo mães a encontrar <strong class="text-select-purple">plano de saúde para criança</strong> em São Paulo. Trabalho com <strong class="text-select-purple">Select</strong> e <strong class="text-hapvida-blue">Hapvida</strong> — explico tudo simples, sem enrolação.
+            </p>
+            <div class="bg-white rounded-xl border-l-4 border-green-500 p-4 mb-5 shadow-sm text-left">
+              <p class="text-gray-900 font-bold leading-snug">
+                Se você contratar comigo, eu não te deixo na mão depois da venda.
+              </p>
+              <p class="text-gray-500 text-sm mt-2">
+                Qualquer dúvida com o plano, é comigo que você fala — eu mesmo que respondo no WhatsApp.
+              </p>
+            </div>
+            <a
+              href="#"
+              id="ricardo-whatsapp"
+              class="btn-whatsapp-pulse whatsapp-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto bg-whatsapp hover:bg-green-600 text-white font-bold text-base px-8 py-4 rounded-full transition-colors shadow-md"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chamar Ricardo no WhatsApp
+            </a>
+            <p class="text-gray-500 text-xs mt-3">Cotação grátis · Segunda a Sábado, 8h às 20h</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== POR QUE PLANO PESSOA FÍSICA? ========== -->
     <section class="px-4 py-10 md:py-14 bg-gradient-to-b from-blue-50 to-brand-light" aria-labelledby="pf-title">
       <div class="max-w-4xl mx-auto">
@@ -1462,6 +1588,19 @@
     </section>
 
   </main>
+
+  <!-- Botão flutuante WhatsApp (mobile) -->
+  <a
+    href="#"
+    id="floating-whatsapp"
+    class="btn-whatsapp-pulse whatsapp-cta inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-green-600 text-white font-bold text-sm px-5 py-3.5 rounded-full shadow-xl"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Cotação grátis no WhatsApp"
+  >
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer-pattern text-white">
@@ -1667,24 +1806,28 @@
     }
 
     function initWhatsAppLinks() {
-      const defaultLinks = [
-        document.getElementById('nav-whatsapp'),
-        document.getElementById('footer-whatsapp'),
-      ];
+      const selectors = '#nav-whatsapp, #footer-whatsapp, #hero-whatsapp, #ricardo-whatsapp, #floating-whatsapp, .whatsapp-cta';
+      const bound = new Set();
 
-      defaultLinks.forEach((link) => {
-        if (link) link.href = buildWhatsAppUrl(WHATSAPP_MSG_DEFAULT);
-      });
-
-      document.querySelectorAll('.whatsapp-cta').forEach((link) => {
+      document.querySelectorAll(selectors).forEach((link) => {
+        if (bound.has(link)) return;
+        bound.add(link);
         const msg = link.dataset.msg || WHATSAPP_MSG_DEFAULT;
         link.href = buildWhatsAppUrl(msg);
-      });
-
-      /* Rastreamento: todos os botões de WhatsApp da página */
-      document.querySelectorAll('#nav-whatsapp, #footer-whatsapp, .whatsapp-cta').forEach((link) => {
         link.addEventListener('click', trackWhatsAppClick);
       });
+    }
+
+    function initFloatingWhatsApp() {
+      const floater = document.getElementById('floating-whatsapp');
+      if (!floater) return;
+
+      const onScroll = () => {
+        floater.classList.toggle('is-visible', window.scrollY > 320);
+      };
+
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
     }
 
     /* ---------- Mapa de hospitais (Leaflet) ---------- */
@@ -2100,6 +2243,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       initNavbarScroll();
       initWhatsAppLinks();
+      initFloatingWhatsApp();
       initRedeAccordions();
       initMapa();
       initFooterContato();
