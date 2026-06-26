@@ -270,7 +270,7 @@
       flex-direction: column;
       flex-shrink: 0;
       width: min(82vw, 260px);
-      height: 13rem;
+      min-height: 14rem;
       background: linear-gradient(165deg, #2563eb 0%, #1e40af 55%, #1e3a8a 100%);
       border-radius: 1.25rem;
       padding: 1.25rem;
@@ -289,6 +289,7 @@
       padding: 0.3rem 0.75rem;
       border-radius: 9999px;
       margin-bottom: 0.75rem;
+      flex-shrink: 0;
     }
     .select-card__body {
       display: flex;
@@ -296,12 +297,20 @@
       flex: 1;
       min-height: 0;
     }
+    .select-card__title-slot {
+      display: flex;
+      align-items: flex-start;
+      min-height: 2.875rem;
+      margin-bottom: 0.5rem;
+      flex-shrink: 0;
+    }
     .select-card__title {
       font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
       font-size: 1.25rem;
       font-weight: 800;
+      line-height: 1.15;
       color: #fff;
-      margin: auto 0 0.5rem;
+      margin: 0;
       letter-spacing: -0.02em;
     }
     .select-card__text {
@@ -309,6 +318,10 @@
       line-height: 1.45;
       color: rgba(255, 255, 255, 0.88);
       margin: 0;
+    }
+    .select-card__footer {
+      margin-top: auto;
+      padding-top: 0.35rem;
     }
     .select-card__price {
       font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
@@ -446,7 +459,9 @@
             <article class="select-card">
               <span class="select-card__badge">Novidade</span>
               <div class="select-card__body">
-                <h3 class="select-card__title">Select</h3>
+                <div class="select-card__title-slot">
+                  <h3 class="select-card__title">Select</h3>
+                </div>
                 <p class="select-card__text">
                   Plano de saúde infantil de qualidade, agora disponível em São Paulo.
                   Contratação simples e pode ser feito apenas no CPF da criança.
@@ -457,7 +472,9 @@
             <article class="select-card">
               <span class="select-card__badge">Hospitais</span>
               <div class="select-card__body">
-                <h3 class="select-card__title">Hospitais de excelência</h3>
+                <div class="select-card__title-slot">
+                  <h3 class="select-card__title">Hospitais de excelência</h3>
+                </div>
                 <p class="select-card__text">
                   Rede com hospitais de referência como Beneficência Portuguesa,
                   Lefort, São Camilo e Santa Catarina.
@@ -468,7 +485,9 @@
             <article class="select-card">
               <span class="select-card__badge">Rede</span>
               <div class="select-card__body">
-                <h3 class="select-card__title">54 credenciados</h3>
+                <div class="select-card__title-slot">
+                  <h3 class="select-card__title">54 credenciados</h3>
+                </div>
                 <p class="select-card__text">
                   Mais de 54 hospitais, clínicas e laboratórios credenciados
                   em São Paulo para atender sua família.
@@ -479,10 +498,14 @@
             <article class="select-card">
               <span class="select-card__badge">Preços</span>
               <div class="select-card__body">
-                <h3 class="select-card__title">Valores acessíveis</h3>
+                <div class="select-card__title-slot">
+                  <h3 class="select-card__title">Valores acessíveis</h3>
+                </div>
                 <p class="select-card__text">Planos a partir de</p>
-                <p class="select-card__price tabular-nums">R$ 389,27</p>
-                <p class="select-card__price-range">até R$ 580,92 por mês</p>
+                <div class="select-card__footer">
+                  <p class="select-card__price tabular-nums">R$ 389,27</p>
+                  <p class="select-card__price-range">até R$ 580,92 por mês</p>
+                </div>
               </div>
             </article>
 
