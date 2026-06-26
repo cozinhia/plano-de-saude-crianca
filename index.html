@@ -204,6 +204,23 @@
       opacity: 0.95;
     }
 
+    .plan-card__highlight {
+      font-size: 0.625rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.4rem 0.65rem;
+      border-radius: 0.65rem;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .plan-card--orange .plan-card__highlight {
+      color: #14532d;
+      background: #bbf7d0;
+      border: 1.5px solid #4ade80;
+    }
+
     .plan-card__network {
       margin: 0;
       padding: 0;
@@ -603,7 +620,8 @@
     const PLANS = [
       { name: 'Hapvida', theme: 'orange', age: '0+ · Nascimento', min: '172,83', max: '318,47', network: 61, msg: 'Olá Ricardo! Quero cotação Hapvida para meu filho desde o nascimento.' },
       { name: 'Prevent Senior', theme: 'orange', age: '0+ · Nascimento', min: '759,84', max: '1.055,50', network: 48, msg: 'Olá Ricardo! Quero cotação Prevent Senior para recém-nascido.' },
-      { name: 'Med-Tour', theme: 'orange', age: '0+ · Nascimento', min: '185,47', max: '367,08', network: 21, msg: 'Olá Ricardo! Quero cotação Med-Tour para recém-nascido.' },
+      { name: 'Med-Tour', theme: 'orange', age: '0+ · Nascimento', min: '504,00', max: '609,84', network: 21, highlight: 'Sem coparticipação', msg: 'Olá Ricardo! Quero cotação Med-Tour para recém-nascido.' },
+      { name: 'Med-Tour', theme: 'orange', age: '13+ anos', min: '185,47', max: '367,08', network: 21, highlight: 'Sem coparticipação', msg: 'Olá Ricardo! Meu filho tem 13 anos ou mais. Quero cotação Med-Tour.' },
       { name: 'Santa Casa de Mauá', theme: 'orange', age: '0+ · Nascimento', min: '199,65', max: '199,65', network: 7, msg: 'Olá Ricardo! Quero cotação Santa Casa de Mauá para recém-nascido.' },
       { name: 'Plena Saúde', theme: 'blue', age: '2+ anos', min: '207,80', max: '351,35', network: 40, msg: 'Olá Ricardo! Meu filho tem 2 anos ou mais. Quero cotação Plena Saúde.' },
       { name: 'Select Saúde', theme: 'blue', age: '2+ anos', min: '389,27', max: '580,92', network: 54, msg: 'Olá Ricardo! Meu filho tem 2 anos ou mais. Quero cotação Select Saúde.' },
@@ -624,11 +642,15 @@
 
     function renderPlanCard(plan) {
       var networkNum = plan.network != null ? plan.network : '—';
+      var highlight = plan.highlight
+        ? '<p class="plan-card__highlight">' + plan.highlight + '</p>'
+        : '';
       return (
         '<article class="plan-card plan-card--' + plan.theme + ' shrink-0 w-[min(86vw,300px)] flex flex-col">' +
           '<span class="plan-card__age">' + plan.age + '</span>' +
           '<div class="plan-card__name-slot"><h3 class="plan-card__name">' + plan.name + '</h3></div>' +
           '<p class="plan-card__price tabular-nums">' + formatPrice(plan) + '</p>' +
+          highlight +
           '<div class="plan-card__network">' +
             '<div class="plan-card__num">' + networkNum + '</div>' +
             '<p class="plan-card__network-label">estabelecimentos · Grande SP</p>' +
