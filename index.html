@@ -77,6 +77,14 @@
     }
     .wa-pulse { animation: wa-pulse 2.2s ease-in-out infinite; }
 
+    @keyframes scroll-hint-bounce {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(5px); opacity: 0.45; }
+    }
+    .scroll-hint {
+      animation: scroll-hint-bounce 1.4s ease-in-out infinite;
+    }
+
     .cards-scroll {
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
@@ -254,6 +262,111 @@
       .carousel-btn { display: flex; }
       .carousel-wrap { padding: 0 2.5rem; }
     }
+
+    /* Select — cards do carrossel promocional */
+    .select-card {
+      scroll-snap-align: center;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: min(82vw, 260px);
+      min-height: 11.75rem;
+      background: linear-gradient(165deg, #2563eb 0%, #1e40af 55%, #1e3a8a 100%);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+    }
+    .select-card__badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: #bef264;
+      color: #1a2e05;
+      font-size: 0.625rem;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 0.75rem;
+    }
+    .select-card__body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .select-card__title {
+      font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0 0 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .select-card__text {
+      font-size: 0.8125rem;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.88);
+      flex: 1;
+      margin: 0;
+    }
+    .select-card__price {
+      font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+      font-size: 1.625rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 0;
+    }
+    .select-card__price-range {
+      font-size: 0.8125rem;
+      color: #d9f99d;
+      margin: 0.15rem 0 0;
+    }
+
+    #select .select-heading-label {
+      font-size: 0.6875rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6b7280;
+    }
+    #select .select-heading-brand {
+      font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+      font-size: clamp(1.75rem, 7vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: #111827;
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.375rem;
+      padding-top: 0.5rem;
+    }
+    .carousel-dot {
+      width: 0.375rem;
+      height: 0.375rem;
+      border-radius: 9999px;
+      background: #d1d5db;
+    }
+    .carousel-dot--active {
+      width: 1.125rem;
+      background: #7c3aed;
+    }
+
+    /* Botões do carrossel Select */
+    #select .carousel-btn {
+      border-color: rgba(37, 99, 235, 0.3);
+      color: #2563eb;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.12);
+    }
+    #select .carousel-btn:hover {
+      background: #eff6ff;
+      border-color: #2563eb;
+      color: #1d4ed8;
+    }
   </style>
 </head>
 
@@ -271,7 +384,7 @@
       <a
         href="#"
         id="nav-whatsapp"
-        class="whatsapp-cta wa-pulse shrink-0 inline-flex items-center gap-2 bg-whatsapp hover:bg-green-600 text-white text-xs sm:text-sm font-bold px-3.5 sm:px-4 py-2.5 rounded-full transition-colors"
+        class="whatsapp-cta wa-pulse shrink-0 hidden md:inline-flex items-center gap-2 bg-whatsapp hover:bg-green-600 text-white text-xs sm:text-sm font-bold px-3.5 sm:px-4 py-2.5 rounded-full transition-colors"
         data-msg="Olá Ricardo! Quero cotar plano de saúde para meu filho."
         target="_blank"
         rel="noopener noreferrer"
@@ -288,25 +401,103 @@
   <main class="pt-11">
 
     <!-- ========== 2. HERO ========== -->
-    <section id="hero" class="px-4 pt-5 pb-4" aria-labelledby="hero-title">
+    <section id="hero" class="px-4 pt-3 pb-1" aria-labelledby="hero-title">
       <div class="max-w-lg mx-auto text-center">
-        <h1 id="hero-title" class="font-display text-[clamp(1.85rem,7.5vw,2.5rem)] font-extrabold text-gray-900 leading-[1.1] tracking-tight">
+        <h1 id="hero-title" class="font-display text-[clamp(1.75rem,7vw,2.35rem)] font-extrabold text-gray-900 leading-[1.08] tracking-tight">
           Plano de saúde<br>
-          <span class="bg-gradient-to-r from-violet-600 to-fuchsia-500 bg-clip-text text-transparent">só para a criança</span>
+          <span class="text-violet-600">só para a criança</span>
         </h1>
-        <p class="font-display text-[clamp(1.1rem,4.5vw,1.35rem)] font-extrabold text-violet-700 mt-3 tracking-tight">no CPF dele</p>
-        <p class="text-sm font-semibold text-gray-500 mt-1">São Paulo</p>
+        <p class="text-sm font-semibold text-gray-500 mt-2">no CPF dele · São Paulo</p>
       </div>
     </section>
+
+    <!-- ========== SELECT - PLANO INFANTIL ========== -->
+    <section id="select" class="px-4 pt-2 pb-1" aria-labelledby="select-title">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-3">
+          <p class="select-heading-label">plano em destaque</p>
+          <h2 id="select-title" class="select-heading-brand mt-1">SELECT</h2>
+          <p class="text-gray-600 text-sm font-medium mt-1.5 px-3 max-w-[18rem] mx-auto leading-relaxed text-balance">
+            Novidade em São Paulo. Pode ser feito só no CPF do seu filho.
+          </p>
+        </div>
+
+        <div class="carousel-wrap">
+          <button type="button" id="select-prev" class="carousel-btn carousel-btn--prev" aria-label="Informações anteriores">‹</button>
+          <div id="select-cards" class="cards-scroll flex gap-4 overflow-x-auto pb-1 pt-1">
+
+            <article class="select-card">
+              <span class="select-card__badge">Novidade</span>
+              <div class="select-card__body">
+                <h3 class="select-card__title">Select</h3>
+                <p class="select-card__text">
+                  Plano de saúde infantil de qualidade, agora disponível em São Paulo.
+                  Contratação simples e pode ser feito apenas no CPF da criança.
+                </p>
+              </div>
+            </article>
+
+            <article class="select-card">
+              <span class="select-card__badge">Hospitais</span>
+              <div class="select-card__body">
+                <h3 class="select-card__title">Hospitais de excelência</h3>
+                <p class="select-card__text">
+                  Rede com hospitais de referência como Beneficência Portuguesa,
+                  Lefort, São Camilo e Santa Catarina.
+                </p>
+              </div>
+            </article>
+
+            <article class="select-card">
+              <span class="select-card__badge">Rede</span>
+              <div class="select-card__body">
+                <h3 class="select-card__title">54 credenciados</h3>
+                <p class="select-card__text">
+                  Mais de 54 hospitais, clínicas e laboratórios credenciados
+                  em São Paulo para atender sua família.
+                </p>
+              </div>
+            </article>
+
+            <article class="select-card">
+              <span class="select-card__badge">Preços</span>
+              <div class="select-card__body">
+                <h3 class="select-card__title">Valores acessíveis</h3>
+                <p class="select-card__text">Planos a partir de</p>
+                <div class="mt-auto pt-2">
+                  <p class="select-card__price tabular-nums">R$ 389,27</p>
+                  <p class="select-card__price-range">até R$ 580,92 por mês</p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <button type="button" id="select-next" class="carousel-btn carousel-btn--next" aria-label="Próximas informações">›</button>
+        </div>
+
+        <div class="carousel-dots md:hidden" aria-hidden="true">
+          <span class="carousel-dot carousel-dot--active"></span>
+          <span class="carousel-dot"></span>
+          <span class="carousel-dot"></span>
+          <span class="carousel-dot"></span>
+        </div>
+
+        <a href="#planos" class="scroll-hint flex justify-center pt-1.5 pb-0 text-gray-400 md:hidden" aria-label="Ver mais conteúdo abaixo">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- ========== FIM SELECT ========== -->
 
     <!-- ========== 3. CARDS POR IDADE ========== -->
     <section id="planos" class="px-4 pt-1 pb-3" aria-labelledby="planos-title">
       <div class="max-w-5xl mx-auto">
         <h2 id="planos-title" class="sr-only">Planos por idade</h2>
-        <p class="text-center text-sm font-semibold text-gray-700 mb-2 px-2 leading-snug">
-          Segue a lista das operadoras que fazem <span class="text-violet-600 font-extrabold">só para a criança</span>
+        <p class="text-center text-sm font-semibold text-gray-800 mb-3 px-3 max-w-xs mx-auto leading-relaxed text-balance">
+          Operadoras com plano <span class="text-violet-600 font-extrabold">só para a criança</span>
         </p>
-        <p class="text-center text-[11px] font-bold uppercase tracking-widest text-violet-500/80 mb-4 md:hidden">← deslize →</p>
         <div class="carousel-wrap">
           <button type="button" id="cards-prev" class="carousel-btn carousel-btn--prev" aria-label="Planos anteriores">‹</button>
           <div id="planos-cards" class="cards-scroll flex gap-5 overflow-x-auto pb-5 pt-4"></div>
@@ -413,15 +604,15 @@
       container.innerHTML = PLANS.map(renderPlanCard).join('');
     }
 
-    function initCarouselNav() {
-      var scroll = document.getElementById('planos-cards');
-      var prev = document.getElementById('cards-prev');
-      var next = document.getElementById('cards-next');
+    function initCarouselNav(scrollId, prevId, nextId, cardSelector) {
+      var scroll = document.getElementById(scrollId);
+      var prev = document.getElementById(prevId);
+      var next = document.getElementById(nextId);
       if (!scroll || !prev || !next) return;
 
       function scrollCards(direction) {
-        var card = scroll.querySelector('.plan-card');
-        var gap = 16;
+        var card = scroll.querySelector(cardSelector);
+        var gap = 20;
         var amount = card ? card.offsetWidth + gap : 300;
         scroll.scrollBy({ left: direction * amount, behavior: 'smooth' });
       }
@@ -430,7 +621,8 @@
       next.addEventListener('click', function () { scrollCards(1); });
     }
 
-    initCarouselNav();
+    initCarouselNav('planos-cards', 'cards-prev', 'cards-next', '.plan-card');
+    initCarouselNav('select-cards', 'select-prev', 'select-next', '.select-card');
 
     function buildWhatsAppUrl(msg) {
       return 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg || WHATSAPP_MSG_DEFAULT);
