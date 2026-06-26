@@ -270,7 +270,7 @@
       flex-direction: column;
       flex-shrink: 0;
       width: min(82vw, 260px);
-      min-height: 11.75rem;
+      height: 13rem;
       background: linear-gradient(165deg, #2563eb 0%, #1e40af 55%, #1e3a8a 100%);
       border-radius: 1.25rem;
       padding: 1.25rem;
@@ -294,20 +294,20 @@
       display: flex;
       flex-direction: column;
       flex: 1;
+      min-height: 0;
     }
     .select-card__title {
       font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
       font-size: 1.25rem;
       font-weight: 800;
       color: #fff;
-      margin: 0 0 0.5rem;
+      margin: auto 0 0.5rem;
       letter-spacing: -0.02em;
     }
     .select-card__text {
       font-size: 0.8125rem;
       line-height: 1.45;
       color: rgba(255, 255, 255, 0.88);
-      flex: 1;
       margin: 0;
     }
     .select-card__price {
@@ -337,6 +337,19 @@
       line-height: 1;
       letter-spacing: -0.03em;
       color: #111827;
+    }
+    #select .select-age-label {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #1d4ed8;
+      background: #dbeafe;
+      border: 1.5px solid #93c5fd;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      margin-bottom: 0.75rem;
     }
 
     .carousel-dots {
@@ -422,6 +435,10 @@
           </p>
         </div>
 
+        <p class="text-center">
+          <span class="select-age-label">A partir de 2 anos</span>
+        </p>
+
         <div class="carousel-wrap">
           <button type="button" id="select-prev" class="carousel-btn carousel-btn--prev" aria-label="Informações anteriores">‹</button>
           <div id="select-cards" class="cards-scroll flex gap-4 overflow-x-auto pb-1 pt-1">
@@ -464,10 +481,8 @@
               <div class="select-card__body">
                 <h3 class="select-card__title">Valores acessíveis</h3>
                 <p class="select-card__text">Planos a partir de</p>
-                <div class="mt-auto pt-2">
-                  <p class="select-card__price tabular-nums">R$ 389,27</p>
-                  <p class="select-card__price-range">até R$ 580,92 por mês</p>
-                </div>
+                <p class="select-card__price tabular-nums">R$ 389,27</p>
+                <p class="select-card__price-range">até R$ 580,92 por mês</p>
               </div>
             </article>
 
